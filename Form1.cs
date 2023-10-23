@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Security;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -94,6 +95,20 @@ namespace PathFinder_2e_CharacterSheet
 
         private void textBox_WisMod_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void progressBar_clicked(object sender, EventArgs e)
+        {
+            ProgressBar pBar = sender as ProgressBar;
+            if (pBar.Value >= pBar.Maximum)
+            {
+                pBar.Value = 0;
+            }
+            else
+            {
+                pBar.Value += 1;
+            }
 
         }
     }
