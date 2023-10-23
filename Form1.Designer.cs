@@ -58,8 +58,8 @@
             this.progressBar_Light = new System.Windows.Forms.ProgressBar();
             this.progressBar_Medium = new System.Windows.Forms.ProgressBar();
             this.progressBar_Heavy = new System.Windows.Forms.ProgressBar();
-            this.textBox_MaxHitPoints = new System.Windows.Forms.TextBox();
-            this.textBox_CurrentHitPoints = new System.Windows.Forms.TextBox();
+            this.textBox_HitPointsMax = new System.Windows.Forms.TextBox();
+            this.textBox_HitPointsCurrent = new System.Windows.Forms.TextBox();
             this.progressBar_Fortitude = new System.Windows.Forms.ProgressBar();
             this.progressBar_Reflex = new System.Windows.Forms.ProgressBar();
             this.progressBar_Will = new System.Windows.Forms.ProgressBar();
@@ -96,6 +96,39 @@
             this.progressBar_ArmorClass = new System.Windows.Forms.ProgressBar();
             this.button_AddResistanceImmunity = new System.Windows.Forms.Button();
             this.button_AddCondition = new System.Windows.Forms.Button();
+            this.textBox_DCKey = new System.Windows.Forms.TextBox();
+            this.textBox_DCProf = new System.Windows.Forms.TextBox();
+            this.textBox_DCItem = new System.Windows.Forms.TextBox();
+            this.textBox_HitPointsTemp = new System.Windows.Forms.TextBox();
+            this.label_Perception = new System.Windows.Forms.Label();
+            this.textBox_PercptionWis = new System.Windows.Forms.TextBox();
+            this.textBox_PerceptionProf = new System.Windows.Forms.TextBox();
+            this.textBox_PerceptionItem = new System.Windows.Forms.TextBox();
+            this.button_AddSense = new System.Windows.Forms.Button();
+            this.textBox_Notes = new System.Windows.Forms.TextBox();
+            this.label_Fortitude = new System.Windows.Forms.Label();
+            this.textBox_FortitudeCon = new System.Windows.Forms.TextBox();
+            this.textBox_FortitudeProf = new System.Windows.Forms.TextBox();
+            this.textBox_FortitudeItem = new System.Windows.Forms.TextBox();
+            this.textBox_ReflexItem = new System.Windows.Forms.TextBox();
+            this.textBox_ReflexProf = new System.Windows.Forms.TextBox();
+            this.textBox_ReflexDex = new System.Windows.Forms.TextBox();
+            this.label_Reflex = new System.Windows.Forms.Label();
+            this.textBox_WillItem = new System.Windows.Forms.TextBox();
+            this.textBox_WillProf = new System.Windows.Forms.TextBox();
+            this.textBox_WillWis = new System.Windows.Forms.TextBox();
+            this.label_Will = new System.Windows.Forms.Label();
+            this.textBox_ACDex = new System.Windows.Forms.TextBox();
+            this.textBox_ACCap = new System.Windows.Forms.TextBox();
+            this.textBox_ACProf = new System.Windows.Forms.TextBox();
+            this.textBox_ACItem = new System.Windows.Forms.TextBox();
+            this.textBox_ACShield = new System.Windows.Forms.TextBox();
+            this.textBox_ACHardness = new System.Windows.Forms.TextBox();
+            this.textBox_ACMaxHP = new System.Windows.Forms.TextBox();
+            this.textBox_ACBT = new System.Windows.Forms.TextBox();
+            this.textBox_ACCurrentHP = new System.Windows.Forms.TextBox();
+            this.textBox_Speed = new System.Windows.Forms.TextBox();
+            this.button_AddMovement = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -351,19 +384,19 @@
             this.progressBar_Heavy.TabIndex = 34;
             this.progressBar_Heavy.Click += new System.EventHandler(this.progressBar_clicked);
             // 
-            // textBox_MaxHitPoints
+            // textBox_HitPointsMax
             // 
-            this.textBox_MaxHitPoints.Location = new System.Drawing.Point(905, 220);
-            this.textBox_MaxHitPoints.Name = "textBox_MaxHitPoints";
-            this.textBox_MaxHitPoints.Size = new System.Drawing.Size(46, 20);
-            this.textBox_MaxHitPoints.TabIndex = 35;
+            this.textBox_HitPointsMax.Location = new System.Drawing.Point(905, 220);
+            this.textBox_HitPointsMax.Name = "textBox_HitPointsMax";
+            this.textBox_HitPointsMax.Size = new System.Drawing.Size(46, 20);
+            this.textBox_HitPointsMax.TabIndex = 35;
             // 
-            // textBox_CurrentHitPoints
+            // textBox_HitPointsCurrent
             // 
-            this.textBox_CurrentHitPoints.Location = new System.Drawing.Point(961, 263);
-            this.textBox_CurrentHitPoints.Name = "textBox_CurrentHitPoints";
-            this.textBox_CurrentHitPoints.Size = new System.Drawing.Size(46, 20);
-            this.textBox_CurrentHitPoints.TabIndex = 36;
+            this.textBox_HitPointsCurrent.Location = new System.Drawing.Point(961, 263);
+            this.textBox_HitPointsCurrent.Name = "textBox_HitPointsCurrent";
+            this.textBox_HitPointsCurrent.Size = new System.Drawing.Size(46, 20);
+            this.textBox_HitPointsCurrent.TabIndex = 36;
             // 
             // progressBar_Fortitude
             // 
@@ -763,6 +796,255 @@
             this.button_AddCondition.Text = "Add+";
             this.button_AddCondition.UseVisualStyleBackColor = true;
             // 
+            // textBox_DCKey
+            // 
+            this.textBox_DCKey.Location = new System.Drawing.Point(185, 591);
+            this.textBox_DCKey.Name = "textBox_DCKey";
+            this.textBox_DCKey.Size = new System.Drawing.Size(33, 20);
+            this.textBox_DCKey.TabIndex = 73;
+            // 
+            // textBox_DCProf
+            // 
+            this.textBox_DCProf.Location = new System.Drawing.Point(234, 591);
+            this.textBox_DCProf.Name = "textBox_DCProf";
+            this.textBox_DCProf.Size = new System.Drawing.Size(33, 20);
+            this.textBox_DCProf.TabIndex = 74;
+            // 
+            // textBox_DCItem
+            // 
+            this.textBox_DCItem.Location = new System.Drawing.Point(348, 591);
+            this.textBox_DCItem.Name = "textBox_DCItem";
+            this.textBox_DCItem.Size = new System.Drawing.Size(33, 20);
+            this.textBox_DCItem.TabIndex = 75;
+            // 
+            // textBox_HitPointsTemp
+            // 
+            this.textBox_HitPointsTemp.Location = new System.Drawing.Point(1051, 263);
+            this.textBox_HitPointsTemp.Name = "textBox_HitPointsTemp";
+            this.textBox_HitPointsTemp.Size = new System.Drawing.Size(46, 20);
+            this.textBox_HitPointsTemp.TabIndex = 76;
+            // 
+            // label_Perception
+            // 
+            this.label_Perception.AutoSize = true;
+            this.label_Perception.Location = new System.Drawing.Point(887, 493);
+            this.label_Perception.Name = "label_Perception";
+            this.label_Perception.Size = new System.Drawing.Size(58, 13);
+            this.label_Perception.TabIndex = 77;
+            this.label_Perception.Text = "Perception";
+            // 
+            // textBox_PercptionWis
+            // 
+            this.textBox_PercptionWis.Location = new System.Drawing.Point(941, 526);
+            this.textBox_PercptionWis.Name = "textBox_PercptionWis";
+            this.textBox_PercptionWis.Size = new System.Drawing.Size(36, 20);
+            this.textBox_PercptionWis.TabIndex = 78;
+            // 
+            // textBox_PerceptionProf
+            // 
+            this.textBox_PerceptionProf.Location = new System.Drawing.Point(985, 526);
+            this.textBox_PerceptionProf.Name = "textBox_PerceptionProf";
+            this.textBox_PerceptionProf.Size = new System.Drawing.Size(36, 20);
+            this.textBox_PerceptionProf.TabIndex = 79;
+            // 
+            // textBox_PerceptionItem
+            // 
+            this.textBox_PerceptionItem.Location = new System.Drawing.Point(1092, 527);
+            this.textBox_PerceptionItem.Name = "textBox_PerceptionItem";
+            this.textBox_PerceptionItem.Size = new System.Drawing.Size(36, 20);
+            this.textBox_PerceptionItem.TabIndex = 80;
+            // 
+            // button_AddSense
+            // 
+            this.button_AddSense.FlatAppearance.BorderSize = 0;
+            this.button_AddSense.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_AddSense.Location = new System.Drawing.Point(1070, 560);
+            this.button_AddSense.Margin = new System.Windows.Forms.Padding(0);
+            this.button_AddSense.Name = "button_AddSense";
+            this.button_AddSense.Size = new System.Drawing.Size(52, 18);
+            this.button_AddSense.TabIndex = 81;
+            this.button_AddSense.Text = "Add+";
+            this.button_AddSense.UseVisualStyleBackColor = true;
+            // 
+            // textBox_Notes
+            // 
+            this.textBox_Notes.Location = new System.Drawing.Point(476, 573);
+            this.textBox_Notes.Name = "textBox_Notes";
+            this.textBox_Notes.Size = new System.Drawing.Size(366, 20);
+            this.textBox_Notes.TabIndex = 82;
+            // 
+            // label_Fortitude
+            // 
+            this.label_Fortitude.AutoSize = true;
+            this.label_Fortitude.Location = new System.Drawing.Point(473, 444);
+            this.label_Fortitude.Name = "label_Fortitude";
+            this.label_Fortitude.Size = new System.Drawing.Size(48, 13);
+            this.label_Fortitude.TabIndex = 83;
+            this.label_Fortitude.Text = "Fortitude";
+            // 
+            // textBox_FortitudeCon
+            // 
+            this.textBox_FortitudeCon.Location = new System.Drawing.Point(448, 493);
+            this.textBox_FortitudeCon.Name = "textBox_FortitudeCon";
+            this.textBox_FortitudeCon.Size = new System.Drawing.Size(33, 20);
+            this.textBox_FortitudeCon.TabIndex = 84;
+            // 
+            // textBox_FortitudeProf
+            // 
+            this.textBox_FortitudeProf.Location = new System.Drawing.Point(507, 493);
+            this.textBox_FortitudeProf.Name = "textBox_FortitudeProf";
+            this.textBox_FortitudeProf.Size = new System.Drawing.Size(33, 20);
+            this.textBox_FortitudeProf.TabIndex = 85;
+            // 
+            // textBox_FortitudeItem
+            // 
+            this.textBox_FortitudeItem.Location = new System.Drawing.Point(448, 541);
+            this.textBox_FortitudeItem.Name = "textBox_FortitudeItem";
+            this.textBox_FortitudeItem.Size = new System.Drawing.Size(33, 20);
+            this.textBox_FortitudeItem.TabIndex = 86;
+            // 
+            // textBox_ReflexItem
+            // 
+            this.textBox_ReflexItem.Location = new System.Drawing.Point(601, 541);
+            this.textBox_ReflexItem.Name = "textBox_ReflexItem";
+            this.textBox_ReflexItem.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ReflexItem.TabIndex = 90;
+            // 
+            // textBox_ReflexProf
+            // 
+            this.textBox_ReflexProf.Location = new System.Drawing.Point(660, 493);
+            this.textBox_ReflexProf.Name = "textBox_ReflexProf";
+            this.textBox_ReflexProf.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ReflexProf.TabIndex = 89;
+            // 
+            // textBox_ReflexDex
+            // 
+            this.textBox_ReflexDex.Location = new System.Drawing.Point(601, 493);
+            this.textBox_ReflexDex.Name = "textBox_ReflexDex";
+            this.textBox_ReflexDex.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ReflexDex.TabIndex = 88;
+            // 
+            // label_Reflex
+            // 
+            this.label_Reflex.AutoSize = true;
+            this.label_Reflex.Location = new System.Drawing.Point(626, 444);
+            this.label_Reflex.Name = "label_Reflex";
+            this.label_Reflex.Size = new System.Drawing.Size(37, 13);
+            this.label_Reflex.TabIndex = 87;
+            this.label_Reflex.Text = "Reflex";
+            // 
+            // textBox_WillItem
+            // 
+            this.textBox_WillItem.Location = new System.Drawing.Point(754, 541);
+            this.textBox_WillItem.Name = "textBox_WillItem";
+            this.textBox_WillItem.Size = new System.Drawing.Size(33, 20);
+            this.textBox_WillItem.TabIndex = 94;
+            // 
+            // textBox_WillProf
+            // 
+            this.textBox_WillProf.Location = new System.Drawing.Point(813, 493);
+            this.textBox_WillProf.Name = "textBox_WillProf";
+            this.textBox_WillProf.Size = new System.Drawing.Size(33, 20);
+            this.textBox_WillProf.TabIndex = 93;
+            // 
+            // textBox_WillWis
+            // 
+            this.textBox_WillWis.Location = new System.Drawing.Point(754, 493);
+            this.textBox_WillWis.Name = "textBox_WillWis";
+            this.textBox_WillWis.Size = new System.Drawing.Size(33, 20);
+            this.textBox_WillWis.TabIndex = 92;
+            // 
+            // label_Will
+            // 
+            this.label_Will.AutoSize = true;
+            this.label_Will.Location = new System.Drawing.Point(779, 444);
+            this.label_Will.Name = "label_Will";
+            this.label_Will.Size = new System.Drawing.Size(24, 13);
+            this.label_Will.TabIndex = 91;
+            this.label_Will.Text = "Will";
+            // 
+            // textBox_ACDex
+            // 
+            this.textBox_ACDex.Location = new System.Drawing.Point(601, 251);
+            this.textBox_ACDex.Name = "textBox_ACDex";
+            this.textBox_ACDex.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACDex.TabIndex = 95;
+            // 
+            // textBox_ACCap
+            // 
+            this.textBox_ACCap.Location = new System.Drawing.Point(654, 251);
+            this.textBox_ACCap.Name = "textBox_ACCap";
+            this.textBox_ACCap.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACCap.TabIndex = 96;
+            // 
+            // textBox_ACProf
+            // 
+            this.textBox_ACProf.Location = new System.Drawing.Point(701, 251);
+            this.textBox_ACProf.Name = "textBox_ACProf";
+            this.textBox_ACProf.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACProf.TabIndex = 97;
+            // 
+            // textBox_ACItem
+            // 
+            this.textBox_ACItem.Location = new System.Drawing.Point(816, 251);
+            this.textBox_ACItem.Name = "textBox_ACItem";
+            this.textBox_ACItem.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACItem.TabIndex = 98;
+            // 
+            // textBox_ACShield
+            // 
+            this.textBox_ACShield.Location = new System.Drawing.Point(604, 342);
+            this.textBox_ACShield.Name = "textBox_ACShield";
+            this.textBox_ACShield.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACShield.TabIndex = 99;
+            // 
+            // textBox_ACHardness
+            // 
+            this.textBox_ACHardness.Location = new System.Drawing.Point(667, 350);
+            this.textBox_ACHardness.Name = "textBox_ACHardness";
+            this.textBox_ACHardness.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACHardness.TabIndex = 100;
+            // 
+            // textBox_ACMaxHP
+            // 
+            this.textBox_ACMaxHP.Location = new System.Drawing.Point(733, 350);
+            this.textBox_ACMaxHP.Name = "textBox_ACMaxHP";
+            this.textBox_ACMaxHP.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ACMaxHP.TabIndex = 101;
+            // 
+            // textBox_ACBT
+            // 
+            this.textBox_ACBT.Location = new System.Drawing.Point(772, 350);
+            this.textBox_ACBT.Name = "textBox_ACBT";
+            this.textBox_ACBT.Size = new System.Drawing.Size(31, 20);
+            this.textBox_ACBT.TabIndex = 102;
+            // 
+            // textBox_ACCurrentHP
+            // 
+            this.textBox_ACCurrentHP.Location = new System.Drawing.Point(813, 350);
+            this.textBox_ACCurrentHP.Name = "textBox_ACCurrentHP";
+            this.textBox_ACCurrentHP.Size = new System.Drawing.Size(55, 20);
+            this.textBox_ACCurrentHP.TabIndex = 103;
+            // 
+            // textBox_Speed
+            // 
+            this.textBox_Speed.Location = new System.Drawing.Point(167, 633);
+            this.textBox_Speed.Name = "textBox_Speed";
+            this.textBox_Speed.Size = new System.Drawing.Size(72, 20);
+            this.textBox_Speed.TabIndex = 104;
+            // 
+            // button_AddMovement
+            // 
+            this.button_AddMovement.FlatAppearance.BorderSize = 0;
+            this.button_AddMovement.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_AddMovement.Location = new System.Drawing.Point(552, 624);
+            this.button_AddMovement.Margin = new System.Windows.Forms.Padding(0);
+            this.button_AddMovement.Name = "button_AddMovement";
+            this.button_AddMovement.Size = new System.Drawing.Size(52, 18);
+            this.button_AddMovement.TabIndex = 105;
+            this.button_AddMovement.Text = "Add+";
+            this.button_AddMovement.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -771,6 +1053,39 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.button_AddMovement);
+            this.Controls.Add(this.textBox_Speed);
+            this.Controls.Add(this.textBox_ACCurrentHP);
+            this.Controls.Add(this.textBox_ACBT);
+            this.Controls.Add(this.textBox_ACMaxHP);
+            this.Controls.Add(this.textBox_ACHardness);
+            this.Controls.Add(this.textBox_ACShield);
+            this.Controls.Add(this.textBox_ACItem);
+            this.Controls.Add(this.textBox_ACProf);
+            this.Controls.Add(this.textBox_ACCap);
+            this.Controls.Add(this.textBox_ACDex);
+            this.Controls.Add(this.textBox_WillItem);
+            this.Controls.Add(this.textBox_WillProf);
+            this.Controls.Add(this.textBox_WillWis);
+            this.Controls.Add(this.label_Will);
+            this.Controls.Add(this.textBox_ReflexItem);
+            this.Controls.Add(this.textBox_ReflexProf);
+            this.Controls.Add(this.textBox_ReflexDex);
+            this.Controls.Add(this.label_Reflex);
+            this.Controls.Add(this.textBox_FortitudeItem);
+            this.Controls.Add(this.textBox_FortitudeProf);
+            this.Controls.Add(this.textBox_FortitudeCon);
+            this.Controls.Add(this.label_Fortitude);
+            this.Controls.Add(this.textBox_Notes);
+            this.Controls.Add(this.button_AddSense);
+            this.Controls.Add(this.textBox_PerceptionItem);
+            this.Controls.Add(this.textBox_PerceptionProf);
+            this.Controls.Add(this.textBox_PercptionWis);
+            this.Controls.Add(this.label_Perception);
+            this.Controls.Add(this.textBox_HitPointsTemp);
+            this.Controls.Add(this.textBox_DCItem);
+            this.Controls.Add(this.textBox_DCProf);
+            this.Controls.Add(this.textBox_DCKey);
             this.Controls.Add(this.button_AddCondition);
             this.Controls.Add(this.button_AddResistanceImmunity);
             this.Controls.Add(this.progressBar_ArmorClass);
@@ -807,8 +1122,8 @@
             this.Controls.Add(this.progressBar_Will);
             this.Controls.Add(this.progressBar_Reflex);
             this.Controls.Add(this.progressBar_Fortitude);
-            this.Controls.Add(this.textBox_CurrentHitPoints);
-            this.Controls.Add(this.textBox_MaxHitPoints);
+            this.Controls.Add(this.textBox_HitPointsCurrent);
+            this.Controls.Add(this.textBox_HitPointsMax);
             this.Controls.Add(this.progressBar_Heavy);
             this.Controls.Add(this.progressBar_Medium);
             this.Controls.Add(this.progressBar_Light);
@@ -881,8 +1196,8 @@
         private System.Windows.Forms.ProgressBar progressBar_Light;
         private System.Windows.Forms.ProgressBar progressBar_Medium;
         private System.Windows.Forms.ProgressBar progressBar_Heavy;
-        private System.Windows.Forms.TextBox textBox_MaxHitPoints;
-        private System.Windows.Forms.TextBox textBox_CurrentHitPoints;
+        private System.Windows.Forms.TextBox textBox_HitPointsMax;
+        private System.Windows.Forms.TextBox textBox_HitPointsCurrent;
         private System.Windows.Forms.ProgressBar progressBar_Fortitude;
         private System.Windows.Forms.ProgressBar progressBar_Reflex;
         private System.Windows.Forms.ProgressBar progressBar_Will;
@@ -919,6 +1234,39 @@
         private System.Windows.Forms.ProgressBar progressBar_ArmorClass;
         private System.Windows.Forms.Button button_AddResistanceImmunity;
         private System.Windows.Forms.Button button_AddCondition;
+        private System.Windows.Forms.TextBox textBox_DCKey;
+        private System.Windows.Forms.TextBox textBox_DCProf;
+        private System.Windows.Forms.TextBox textBox_DCItem;
+        private System.Windows.Forms.TextBox textBox_HitPointsTemp;
+        private System.Windows.Forms.Label label_Perception;
+        private System.Windows.Forms.TextBox textBox_PercptionWis;
+        private System.Windows.Forms.TextBox textBox_PerceptionProf;
+        private System.Windows.Forms.TextBox textBox_PerceptionItem;
+        private System.Windows.Forms.Button button_AddSense;
+        private System.Windows.Forms.TextBox textBox_Notes;
+        private System.Windows.Forms.Label label_Fortitude;
+        private System.Windows.Forms.TextBox textBox_FortitudeCon;
+        private System.Windows.Forms.TextBox textBox_FortitudeProf;
+        private System.Windows.Forms.TextBox textBox_FortitudeItem;
+        private System.Windows.Forms.TextBox textBox_ReflexItem;
+        private System.Windows.Forms.TextBox textBox_ReflexProf;
+        private System.Windows.Forms.TextBox textBox_ReflexDex;
+        private System.Windows.Forms.Label label_Reflex;
+        private System.Windows.Forms.TextBox textBox_WillItem;
+        private System.Windows.Forms.TextBox textBox_WillProf;
+        private System.Windows.Forms.TextBox textBox_WillWis;
+        private System.Windows.Forms.Label label_Will;
+        private System.Windows.Forms.TextBox textBox_ACDex;
+        private System.Windows.Forms.TextBox textBox_ACCap;
+        private System.Windows.Forms.TextBox textBox_ACProf;
+        private System.Windows.Forms.TextBox textBox_ACItem;
+        private System.Windows.Forms.TextBox textBox_ACShield;
+        private System.Windows.Forms.TextBox textBox_ACHardness;
+        private System.Windows.Forms.TextBox textBox_ACMaxHP;
+        private System.Windows.Forms.TextBox textBox_ACBT;
+        private System.Windows.Forms.TextBox textBox_ACCurrentHP;
+        private System.Windows.Forms.TextBox textBox_Speed;
+        private System.Windows.Forms.Button button_AddMovement;
     }
 }
 
