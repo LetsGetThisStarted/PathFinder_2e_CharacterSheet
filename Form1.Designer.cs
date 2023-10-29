@@ -205,10 +205,102 @@
             this.textBox_PerformanceProfMod = new System.Windows.Forms.TextBox();
             this.label_PerformancyASMod = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.textBox_Lore1SubType = new System.Windows.Forms.TextBox();
+            this.textBox_Lore2SubType = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.textBox_Melee1Name = new System.Windows.Forms.TextBox();
+            this.textBox_Melee2Name = new System.Windows.Forms.TextBox();
+            this.textBox_Melee3Name = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1Name = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Name = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Name = new System.Windows.Forms.TextBox();
+            this.label_Melee1Accuracy = new System.Windows.Forms.Label();
+            this.label_Melee1AB1 = new System.Windows.Forms.Label();
+            this.textBox_Melee1Prof = new System.Windows.Forms.TextBox();
+            this.textBox_Melee1Item = new System.Windows.Forms.TextBox();
+            this.textBox_Melee1Dice = new System.Windows.Forms.TextBox();
+            this.label_Melee1AB2 = new System.Windows.Forms.Label();
+            this.textBox_Melee1WSpec = new System.Windows.Forms.TextBox();
+            this.textBox_Melee1Other = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox_Melee2Other = new System.Windows.Forms.TextBox();
+            this.textBox_Melee2WSpec = new System.Windows.Forms.TextBox();
+            this.label_Melee2AB2 = new System.Windows.Forms.Label();
+            this.textBox_Melee2Dice = new System.Windows.Forms.TextBox();
+            this.textBox_Melee2Item = new System.Windows.Forms.TextBox();
+            this.textBox_Melee2Prof = new System.Windows.Forms.TextBox();
+            this.label_Melee2AB1 = new System.Windows.Forms.Label();
+            this.label_Melee2Accuracy = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox_Melee3Other = new System.Windows.Forms.TextBox();
+            this.textBox_Melee3WSpec = new System.Windows.Forms.TextBox();
+            this.label_Melee3AB2 = new System.Windows.Forms.Label();
+            this.textBox_Melee3Dice = new System.Windows.Forms.TextBox();
+            this.textBox_Melee3Item = new System.Windows.Forms.TextBox();
+            this.textBox_Melee3Prof = new System.Windows.Forms.TextBox();
+            this.label_Melee3AB1 = new System.Windows.Forms.Label();
+            this.label_Melee3Accuracy = new System.Windows.Forms.Label();
+            this.label_Ranged1Accuracy = new System.Windows.Forms.Label();
+            this.textBox_Ranged1Traits = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1Other = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1WSpec = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1Dice = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1Item = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged1Prof = new System.Windows.Forms.TextBox();
+            this.label_Ranged1AB = new System.Windows.Forms.Label();
+            this.textBox_Ranged1Special = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Special = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Traits = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Other = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2WSpec = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Dice = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Item = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged2Prof = new System.Windows.Forms.TextBox();
+            this.label_Ranged2AB = new System.Windows.Forms.Label();
+            this.label_Ranged2Accuracy = new System.Windows.Forms.Label();
+            this.textBox_Ranged3Special = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Traits = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Other = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3WSpec = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Dice = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Item = new System.Windows.Forms.TextBox();
+            this.textBox_Ranged3Prof = new System.Windows.Forms.TextBox();
+            this.label_Ranged3AB = new System.Windows.Forms.Label();
+            this.label_Ranged3Accuracy = new System.Windows.Forms.Label();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox47 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox_Deity
@@ -1731,19 +1823,19 @@
             this.label36.TabIndex = 181;
             this.label36.Text = "Performance";
             // 
-            // textBox41
+            // textBox_Lore1SubType
             // 
-            this.textBox41.Location = new System.Drawing.Point(629, 956);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(104, 20);
-            this.textBox41.TabIndex = 185;
+            this.textBox_Lore1SubType.Location = new System.Drawing.Point(629, 956);
+            this.textBox_Lore1SubType.Name = "textBox_Lore1SubType";
+            this.textBox_Lore1SubType.Size = new System.Drawing.Size(104, 20);
+            this.textBox_Lore1SubType.TabIndex = 185;
             // 
-            // textBox42
+            // textBox_Lore2SubType
             // 
-            this.textBox42.Location = new System.Drawing.Point(629, 998);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(104, 20);
-            this.textBox42.TabIndex = 186;
+            this.textBox_Lore2SubType.Location = new System.Drawing.Point(629, 998);
+            this.textBox_Lore2SubType.Name = "textBox_Lore2SubType";
+            this.textBox_Lore2SubType.Size = new System.Drawing.Size(104, 20);
+            this.textBox_Lore2SubType.TabIndex = 186;
             // 
             // button1
             // 
@@ -1757,6 +1849,746 @@
             this.button1.Text = "Add+";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton1.Location = new System.Drawing.Point(4, 7);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 188;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(164, 757);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(20, 50);
+            this.groupBox1.TabIndex = 189;
+            this.groupBox1.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton2.Location = new System.Drawing.Point(4, 21);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 189;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton4.Location = new System.Drawing.Point(4, 35);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton4.TabIndex = 190;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton5);
+            this.groupBox2.Controls.Add(this.radioButton6);
+            this.groupBox2.Location = new System.Drawing.Point(164, 868);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(20, 50);
+            this.groupBox2.TabIndex = 190;
+            this.groupBox2.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton3.Location = new System.Drawing.Point(4, 35);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.TabIndex = 190;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton5.Location = new System.Drawing.Point(4, 21);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton5.TabIndex = 189;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton6.Location = new System.Drawing.Point(4, 7);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(14, 13);
+            this.radioButton6.TabIndex = 188;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox3.Controls.Add(this.radioButton7);
+            this.groupBox3.Controls.Add(this.radioButton8);
+            this.groupBox3.Controls.Add(this.radioButton9);
+            this.groupBox3.Location = new System.Drawing.Point(164, 979);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(20, 50);
+            this.groupBox3.TabIndex = 191;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton7.Location = new System.Drawing.Point(4, 35);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(14, 13);
+            this.radioButton7.TabIndex = 190;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.UseVisualStyleBackColor = false;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton8.Location = new System.Drawing.Point(4, 21);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(14, 13);
+            this.radioButton8.TabIndex = 189;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.UseVisualStyleBackColor = false;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton9.Location = new System.Drawing.Point(4, 7);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(14, 13);
+            this.radioButton9.TabIndex = 188;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.UseVisualStyleBackColor = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox4.Controls.Add(this.radioButton10);
+            this.groupBox4.Controls.Add(this.radioButton11);
+            this.groupBox4.Controls.Add(this.radioButton12);
+            this.groupBox4.Location = new System.Drawing.Point(164, 1120);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(20, 50);
+            this.groupBox4.TabIndex = 192;
+            this.groupBox4.TabStop = false;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton10.Location = new System.Drawing.Point(4, 35);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(14, 13);
+            this.radioButton10.TabIndex = 190;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.UseVisualStyleBackColor = false;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton11.Location = new System.Drawing.Point(4, 21);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(14, 13);
+            this.radioButton11.TabIndex = 189;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.UseVisualStyleBackColor = false;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton12.Location = new System.Drawing.Point(4, 7);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(14, 13);
+            this.radioButton12.TabIndex = 188;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.UseVisualStyleBackColor = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox5.Controls.Add(this.radioButton13);
+            this.groupBox5.Controls.Add(this.radioButton14);
+            this.groupBox5.Controls.Add(this.radioButton15);
+            this.groupBox5.Location = new System.Drawing.Point(164, 1229);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(20, 50);
+            this.groupBox5.TabIndex = 193;
+            this.groupBox5.TabStop = false;
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.AutoSize = true;
+            this.radioButton13.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton13.Location = new System.Drawing.Point(4, 35);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.Size = new System.Drawing.Size(14, 13);
+            this.radioButton13.TabIndex = 190;
+            this.radioButton13.TabStop = true;
+            this.radioButton13.UseVisualStyleBackColor = false;
+            // 
+            // radioButton14
+            // 
+            this.radioButton14.AutoSize = true;
+            this.radioButton14.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton14.Location = new System.Drawing.Point(4, 21);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.Size = new System.Drawing.Size(14, 13);
+            this.radioButton14.TabIndex = 189;
+            this.radioButton14.TabStop = true;
+            this.radioButton14.UseVisualStyleBackColor = false;
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton15.Location = new System.Drawing.Point(4, 7);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Size = new System.Drawing.Size(14, 13);
+            this.radioButton15.TabIndex = 188;
+            this.radioButton15.TabStop = true;
+            this.radioButton15.UseVisualStyleBackColor = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.Sienna;
+            this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox6.Controls.Add(this.radioButton16);
+            this.groupBox6.Controls.Add(this.radioButton17);
+            this.groupBox6.Controls.Add(this.radioButton18);
+            this.groupBox6.Location = new System.Drawing.Point(164, 1337);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(20, 50);
+            this.groupBox6.TabIndex = 194;
+            this.groupBox6.TabStop = false;
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.AutoSize = true;
+            this.radioButton16.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton16.Location = new System.Drawing.Point(4, 35);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.Size = new System.Drawing.Size(14, 13);
+            this.radioButton16.TabIndex = 190;
+            this.radioButton16.TabStop = true;
+            this.radioButton16.UseVisualStyleBackColor = false;
+            // 
+            // radioButton17
+            // 
+            this.radioButton17.AutoSize = true;
+            this.radioButton17.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton17.Location = new System.Drawing.Point(4, 21);
+            this.radioButton17.Name = "radioButton17";
+            this.radioButton17.Size = new System.Drawing.Size(14, 13);
+            this.radioButton17.TabIndex = 189;
+            this.radioButton17.TabStop = true;
+            this.radioButton17.UseVisualStyleBackColor = false;
+            // 
+            // radioButton18
+            // 
+            this.radioButton18.AutoSize = true;
+            this.radioButton18.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton18.Location = new System.Drawing.Point(4, 7);
+            this.radioButton18.Name = "radioButton18";
+            this.radioButton18.Size = new System.Drawing.Size(14, 13);
+            this.radioButton18.TabIndex = 188;
+            this.radioButton18.TabStop = true;
+            this.radioButton18.UseVisualStyleBackColor = false;
+            // 
+            // textBox_Melee1Name
+            // 
+            this.textBox_Melee1Name.Location = new System.Drawing.Point(57, 721);
+            this.textBox_Melee1Name.Name = "textBox_Melee1Name";
+            this.textBox_Melee1Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Melee1Name.TabIndex = 195;
+            // 
+            // textBox_Melee2Name
+            // 
+            this.textBox_Melee2Name.Location = new System.Drawing.Point(57, 833);
+            this.textBox_Melee2Name.Name = "textBox_Melee2Name";
+            this.textBox_Melee2Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Melee2Name.TabIndex = 196;
+            // 
+            // textBox_Melee3Name
+            // 
+            this.textBox_Melee3Name.Location = new System.Drawing.Point(57, 944);
+            this.textBox_Melee3Name.Name = "textBox_Melee3Name";
+            this.textBox_Melee3Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Melee3Name.TabIndex = 197;
+            // 
+            // textBox_Ranged1Name
+            // 
+            this.textBox_Ranged1Name.Location = new System.Drawing.Point(57, 1084);
+            this.textBox_Ranged1Name.Name = "textBox_Ranged1Name";
+            this.textBox_Ranged1Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Ranged1Name.TabIndex = 198;
+            // 
+            // textBox_Ranged2Name
+            // 
+            this.textBox_Ranged2Name.Location = new System.Drawing.Point(57, 1193);
+            this.textBox_Ranged2Name.Name = "textBox_Ranged2Name";
+            this.textBox_Ranged2Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Ranged2Name.TabIndex = 199;
+            // 
+            // textBox_Ranged3Name
+            // 
+            this.textBox_Ranged3Name.Location = new System.Drawing.Point(57, 1301);
+            this.textBox_Ranged3Name.Name = "textBox_Ranged3Name";
+            this.textBox_Ranged3Name.Size = new System.Drawing.Size(232, 20);
+            this.textBox_Ranged3Name.TabIndex = 200;
+            // 
+            // label_Melee1Accuracy
+            // 
+            this.label_Melee1Accuracy.AutoSize = true;
+            this.label_Melee1Accuracy.Location = new System.Drawing.Point(316, 718);
+            this.label_Melee1Accuracy.Name = "label_Melee1Accuracy";
+            this.label_Melee1Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee1Accuracy.TabIndex = 201;
+            this.label_Melee1Accuracy.Text = "Accuracy";
+            // 
+            // label_Melee1AB1
+            // 
+            this.label_Melee1AB1.AutoSize = true;
+            this.label_Melee1AB1.Location = new System.Drawing.Point(407, 728);
+            this.label_Melee1AB1.Name = "label_Melee1AB1";
+            this.label_Melee1AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee1AB1.TabIndex = 202;
+            this.label_Melee1AB1.Text = "Str";
+            // 
+            // textBox_Melee1Prof
+            // 
+            this.textBox_Melee1Prof.Location = new System.Drawing.Point(452, 723);
+            this.textBox_Melee1Prof.Name = "textBox_Melee1Prof";
+            this.textBox_Melee1Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee1Prof.TabIndex = 203;
+            // 
+            // textBox_Melee1Item
+            // 
+            this.textBox_Melee1Item.Location = new System.Drawing.Point(568, 723);
+            this.textBox_Melee1Item.Name = "textBox_Melee1Item";
+            this.textBox_Melee1Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee1Item.TabIndex = 204;
+            // 
+            // textBox_Melee1Dice
+            // 
+            this.textBox_Melee1Dice.Location = new System.Drawing.Point(61, 783);
+            this.textBox_Melee1Dice.Name = "textBox_Melee1Dice";
+            this.textBox_Melee1Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee1Dice.TabIndex = 205;
+            // 
+            // label_Melee1AB2
+            // 
+            this.label_Melee1AB2.AutoSize = true;
+            this.label_Melee1AB2.Location = new System.Drawing.Point(123, 785);
+            this.label_Melee1AB2.Name = "label_Melee1AB2";
+            this.label_Melee1AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee1AB2.TabIndex = 206;
+            this.label_Melee1AB2.Text = "Str";
+            // 
+            // textBox_Melee1WSpec
+            // 
+            this.textBox_Melee1WSpec.Location = new System.Drawing.Point(215, 783);
+            this.textBox_Melee1WSpec.Name = "textBox_Melee1WSpec";
+            this.textBox_Melee1WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee1WSpec.TabIndex = 207;
+            // 
+            // textBox_Melee1Other
+            // 
+            this.textBox_Melee1Other.Location = new System.Drawing.Point(266, 783);
+            this.textBox_Melee1Other.Name = "textBox_Melee1Other";
+            this.textBox_Melee1Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Melee1Other.TabIndex = 208;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(399, 783);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(205, 20);
+            this.textBox12.TabIndex = 209;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(399, 893);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(205, 20);
+            this.textBox13.TabIndex = 218;
+            // 
+            // textBox_Melee2Other
+            // 
+            this.textBox_Melee2Other.Location = new System.Drawing.Point(266, 893);
+            this.textBox_Melee2Other.Name = "textBox_Melee2Other";
+            this.textBox_Melee2Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Melee2Other.TabIndex = 217;
+            // 
+            // textBox_Melee2WSpec
+            // 
+            this.textBox_Melee2WSpec.Location = new System.Drawing.Point(215, 893);
+            this.textBox_Melee2WSpec.Name = "textBox_Melee2WSpec";
+            this.textBox_Melee2WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee2WSpec.TabIndex = 216;
+            // 
+            // label_Melee2AB2
+            // 
+            this.label_Melee2AB2.AutoSize = true;
+            this.label_Melee2AB2.Location = new System.Drawing.Point(123, 895);
+            this.label_Melee2AB2.Name = "label_Melee2AB2";
+            this.label_Melee2AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee2AB2.TabIndex = 215;
+            this.label_Melee2AB2.Text = "Str";
+            // 
+            // textBox_Melee2Dice
+            // 
+            this.textBox_Melee2Dice.Location = new System.Drawing.Point(61, 893);
+            this.textBox_Melee2Dice.Name = "textBox_Melee2Dice";
+            this.textBox_Melee2Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee2Dice.TabIndex = 214;
+            // 
+            // textBox_Melee2Item
+            // 
+            this.textBox_Melee2Item.Location = new System.Drawing.Point(568, 833);
+            this.textBox_Melee2Item.Name = "textBox_Melee2Item";
+            this.textBox_Melee2Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee2Item.TabIndex = 213;
+            // 
+            // textBox_Melee2Prof
+            // 
+            this.textBox_Melee2Prof.Location = new System.Drawing.Point(452, 833);
+            this.textBox_Melee2Prof.Name = "textBox_Melee2Prof";
+            this.textBox_Melee2Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee2Prof.TabIndex = 212;
+            // 
+            // label_Melee2AB1
+            // 
+            this.label_Melee2AB1.AutoSize = true;
+            this.label_Melee2AB1.Location = new System.Drawing.Point(407, 838);
+            this.label_Melee2AB1.Name = "label_Melee2AB1";
+            this.label_Melee2AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee2AB1.TabIndex = 211;
+            this.label_Melee2AB1.Text = "Str";
+            // 
+            // label_Melee2Accuracy
+            // 
+            this.label_Melee2Accuracy.AutoSize = true;
+            this.label_Melee2Accuracy.Location = new System.Drawing.Point(316, 828);
+            this.label_Melee2Accuracy.Name = "label_Melee2Accuracy";
+            this.label_Melee2Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee2Accuracy.TabIndex = 210;
+            this.label_Melee2Accuracy.Text = "Accuracy";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(399, 1005);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(205, 20);
+            this.textBox19.TabIndex = 227;
+            // 
+            // textBox_Melee3Other
+            // 
+            this.textBox_Melee3Other.Location = new System.Drawing.Point(266, 1005);
+            this.textBox_Melee3Other.Name = "textBox_Melee3Other";
+            this.textBox_Melee3Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Melee3Other.TabIndex = 226;
+            // 
+            // textBox_Melee3WSpec
+            // 
+            this.textBox_Melee3WSpec.Location = new System.Drawing.Point(215, 1005);
+            this.textBox_Melee3WSpec.Name = "textBox_Melee3WSpec";
+            this.textBox_Melee3WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee3WSpec.TabIndex = 225;
+            // 
+            // label_Melee3AB2
+            // 
+            this.label_Melee3AB2.AutoSize = true;
+            this.label_Melee3AB2.Location = new System.Drawing.Point(123, 1007);
+            this.label_Melee3AB2.Name = "label_Melee3AB2";
+            this.label_Melee3AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee3AB2.TabIndex = 224;
+            this.label_Melee3AB2.Text = "Str";
+            // 
+            // textBox_Melee3Dice
+            // 
+            this.textBox_Melee3Dice.Location = new System.Drawing.Point(61, 1005);
+            this.textBox_Melee3Dice.Name = "textBox_Melee3Dice";
+            this.textBox_Melee3Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee3Dice.TabIndex = 223;
+            // 
+            // textBox_Melee3Item
+            // 
+            this.textBox_Melee3Item.Location = new System.Drawing.Point(568, 945);
+            this.textBox_Melee3Item.Name = "textBox_Melee3Item";
+            this.textBox_Melee3Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee3Item.TabIndex = 222;
+            // 
+            // textBox_Melee3Prof
+            // 
+            this.textBox_Melee3Prof.Location = new System.Drawing.Point(452, 945);
+            this.textBox_Melee3Prof.Name = "textBox_Melee3Prof";
+            this.textBox_Melee3Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Melee3Prof.TabIndex = 221;
+            // 
+            // label_Melee3AB1
+            // 
+            this.label_Melee3AB1.AutoSize = true;
+            this.label_Melee3AB1.Location = new System.Drawing.Point(407, 950);
+            this.label_Melee3AB1.Name = "label_Melee3AB1";
+            this.label_Melee3AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee3AB1.TabIndex = 220;
+            this.label_Melee3AB1.Text = "Str";
+            // 
+            // label_Melee3Accuracy
+            // 
+            this.label_Melee3Accuracy.AutoSize = true;
+            this.label_Melee3Accuracy.Location = new System.Drawing.Point(316, 940);
+            this.label_Melee3Accuracy.Name = "label_Melee3Accuracy";
+            this.label_Melee3Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee3Accuracy.TabIndex = 219;
+            this.label_Melee3Accuracy.Text = "Accuracy";
+            // 
+            // label_Ranged1Accuracy
+            // 
+            this.label_Ranged1Accuracy.AutoSize = true;
+            this.label_Ranged1Accuracy.Location = new System.Drawing.Point(314, 1089);
+            this.label_Ranged1Accuracy.Name = "label_Ranged1Accuracy";
+            this.label_Ranged1Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged1Accuracy.TabIndex = 228;
+            this.label_Ranged1Accuracy.Text = "Accuracy";
+            // 
+            // textBox_Ranged1Traits
+            // 
+            this.textBox_Ranged1Traits.Location = new System.Drawing.Point(399, 1145);
+            this.textBox_Ranged1Traits.Name = "textBox_Ranged1Traits";
+            this.textBox_Ranged1Traits.Size = new System.Drawing.Size(205, 20);
+            this.textBox_Ranged1Traits.TabIndex = 236;
+            // 
+            // textBox_Ranged1Other
+            // 
+            this.textBox_Ranged1Other.Location = new System.Drawing.Point(266, 1145);
+            this.textBox_Ranged1Other.Name = "textBox_Ranged1Other";
+            this.textBox_Ranged1Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Ranged1Other.TabIndex = 235;
+            // 
+            // textBox_Ranged1WSpec
+            // 
+            this.textBox_Ranged1WSpec.Location = new System.Drawing.Point(215, 1145);
+            this.textBox_Ranged1WSpec.Name = "textBox_Ranged1WSpec";
+            this.textBox_Ranged1WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged1WSpec.TabIndex = 234;
+            // 
+            // textBox_Ranged1Dice
+            // 
+            this.textBox_Ranged1Dice.Location = new System.Drawing.Point(61, 1145);
+            this.textBox_Ranged1Dice.Name = "textBox_Ranged1Dice";
+            this.textBox_Ranged1Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged1Dice.TabIndex = 232;
+            // 
+            // textBox_Ranged1Item
+            // 
+            this.textBox_Ranged1Item.Location = new System.Drawing.Point(568, 1085);
+            this.textBox_Ranged1Item.Name = "textBox_Ranged1Item";
+            this.textBox_Ranged1Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged1Item.TabIndex = 231;
+            // 
+            // textBox_Ranged1Prof
+            // 
+            this.textBox_Ranged1Prof.Location = new System.Drawing.Point(452, 1085);
+            this.textBox_Ranged1Prof.Name = "textBox_Ranged1Prof";
+            this.textBox_Ranged1Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged1Prof.TabIndex = 230;
+            // 
+            // label_Ranged1AB
+            // 
+            this.label_Ranged1AB.AutoSize = true;
+            this.label_Ranged1AB.Location = new System.Drawing.Point(407, 1090);
+            this.label_Ranged1AB.Name = "label_Ranged1AB";
+            this.label_Ranged1AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged1AB.TabIndex = 229;
+            this.label_Ranged1AB.Text = "Dex";
+            // 
+            // textBox_Ranged1Special
+            // 
+            this.textBox_Ranged1Special.Location = new System.Drawing.Point(119, 1145);
+            this.textBox_Ranged1Special.Name = "textBox_Ranged1Special";
+            this.textBox_Ranged1Special.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged1Special.TabIndex = 237;
+            // 
+            // textBox_Ranged2Special
+            // 
+            this.textBox_Ranged2Special.Location = new System.Drawing.Point(119, 1254);
+            this.textBox_Ranged2Special.Name = "textBox_Ranged2Special";
+            this.textBox_Ranged2Special.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged2Special.TabIndex = 246;
+            // 
+            // textBox_Ranged2Traits
+            // 
+            this.textBox_Ranged2Traits.Location = new System.Drawing.Point(399, 1254);
+            this.textBox_Ranged2Traits.Name = "textBox_Ranged2Traits";
+            this.textBox_Ranged2Traits.Size = new System.Drawing.Size(205, 20);
+            this.textBox_Ranged2Traits.TabIndex = 245;
+            // 
+            // textBox_Ranged2Other
+            // 
+            this.textBox_Ranged2Other.Location = new System.Drawing.Point(266, 1254);
+            this.textBox_Ranged2Other.Name = "textBox_Ranged2Other";
+            this.textBox_Ranged2Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Ranged2Other.TabIndex = 244;
+            // 
+            // textBox_Ranged2WSpec
+            // 
+            this.textBox_Ranged2WSpec.Location = new System.Drawing.Point(215, 1254);
+            this.textBox_Ranged2WSpec.Name = "textBox_Ranged2WSpec";
+            this.textBox_Ranged2WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged2WSpec.TabIndex = 243;
+            // 
+            // textBox_Ranged2Dice
+            // 
+            this.textBox_Ranged2Dice.Location = new System.Drawing.Point(61, 1254);
+            this.textBox_Ranged2Dice.Name = "textBox_Ranged2Dice";
+            this.textBox_Ranged2Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged2Dice.TabIndex = 242;
+            // 
+            // textBox_Ranged2Item
+            // 
+            this.textBox_Ranged2Item.Location = new System.Drawing.Point(568, 1194);
+            this.textBox_Ranged2Item.Name = "textBox_Ranged2Item";
+            this.textBox_Ranged2Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged2Item.TabIndex = 241;
+            // 
+            // textBox_Ranged2Prof
+            // 
+            this.textBox_Ranged2Prof.Location = new System.Drawing.Point(452, 1194);
+            this.textBox_Ranged2Prof.Name = "textBox_Ranged2Prof";
+            this.textBox_Ranged2Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged2Prof.TabIndex = 240;
+            // 
+            // label_Ranged2AB
+            // 
+            this.label_Ranged2AB.AutoSize = true;
+            this.label_Ranged2AB.Location = new System.Drawing.Point(407, 1199);
+            this.label_Ranged2AB.Name = "label_Ranged2AB";
+            this.label_Ranged2AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged2AB.TabIndex = 239;
+            this.label_Ranged2AB.Text = "Dex";
+            // 
+            // label_Ranged2Accuracy
+            // 
+            this.label_Ranged2Accuracy.AutoSize = true;
+            this.label_Ranged2Accuracy.Location = new System.Drawing.Point(314, 1198);
+            this.label_Ranged2Accuracy.Name = "label_Ranged2Accuracy";
+            this.label_Ranged2Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged2Accuracy.TabIndex = 238;
+            this.label_Ranged2Accuracy.Text = "Accuracy";
+            // 
+            // textBox_Ranged3Special
+            // 
+            this.textBox_Ranged3Special.Location = new System.Drawing.Point(119, 1362);
+            this.textBox_Ranged3Special.Name = "textBox_Ranged3Special";
+            this.textBox_Ranged3Special.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged3Special.TabIndex = 255;
+            // 
+            // textBox_Ranged3Traits
+            // 
+            this.textBox_Ranged3Traits.Location = new System.Drawing.Point(399, 1362);
+            this.textBox_Ranged3Traits.Name = "textBox_Ranged3Traits";
+            this.textBox_Ranged3Traits.Size = new System.Drawing.Size(205, 20);
+            this.textBox_Ranged3Traits.TabIndex = 254;
+            // 
+            // textBox_Ranged3Other
+            // 
+            this.textBox_Ranged3Other.Location = new System.Drawing.Point(266, 1362);
+            this.textBox_Ranged3Other.Name = "textBox_Ranged3Other";
+            this.textBox_Ranged3Other.Size = new System.Drawing.Size(124, 20);
+            this.textBox_Ranged3Other.TabIndex = 253;
+            // 
+            // textBox_Ranged3WSpec
+            // 
+            this.textBox_Ranged3WSpec.Location = new System.Drawing.Point(215, 1362);
+            this.textBox_Ranged3WSpec.Name = "textBox_Ranged3WSpec";
+            this.textBox_Ranged3WSpec.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged3WSpec.TabIndex = 252;
+            // 
+            // textBox_Ranged3Dice
+            // 
+            this.textBox_Ranged3Dice.Location = new System.Drawing.Point(61, 1362);
+            this.textBox_Ranged3Dice.Name = "textBox_Ranged3Dice";
+            this.textBox_Ranged3Dice.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged3Dice.TabIndex = 251;
+            // 
+            // textBox_Ranged3Item
+            // 
+            this.textBox_Ranged3Item.Location = new System.Drawing.Point(568, 1302);
+            this.textBox_Ranged3Item.Name = "textBox_Ranged3Item";
+            this.textBox_Ranged3Item.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged3Item.TabIndex = 250;
+            // 
+            // textBox_Ranged3Prof
+            // 
+            this.textBox_Ranged3Prof.Location = new System.Drawing.Point(452, 1302);
+            this.textBox_Ranged3Prof.Name = "textBox_Ranged3Prof";
+            this.textBox_Ranged3Prof.Size = new System.Drawing.Size(33, 20);
+            this.textBox_Ranged3Prof.TabIndex = 249;
+            // 
+            // label_Ranged3AB
+            // 
+            this.label_Ranged3AB.AutoSize = true;
+            this.label_Ranged3AB.Location = new System.Drawing.Point(407, 1307);
+            this.label_Ranged3AB.Name = "label_Ranged3AB";
+            this.label_Ranged3AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged3AB.TabIndex = 248;
+            this.label_Ranged3AB.Text = "Dex";
+            // 
+            // label_Ranged3Accuracy
+            // 
+            this.label_Ranged3Accuracy.AutoSize = true;
+            this.label_Ranged3Accuracy.Location = new System.Drawing.Point(314, 1306);
+            this.label_Ranged3Accuracy.Name = "label_Ranged3Accuracy";
+            this.label_Ranged3Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged3Accuracy.TabIndex = 247;
+            this.label_Ranged3Accuracy.Text = "Accuracy";
+            // 
+            // textBox46
+            // 
+            this.textBox46.Location = new System.Drawing.Point(278, 1434);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(117, 20);
+            this.textBox46.TabIndex = 256;
+            // 
+            // textBox47
+            // 
+            this.textBox47.Location = new System.Drawing.Point(487, 1434);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(117, 20);
+            this.textBox47.TabIndex = 257;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1765,9 +2597,77 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.textBox47);
+            this.Controls.Add(this.textBox46);
+            this.Controls.Add(this.textBox_Ranged3Special);
+            this.Controls.Add(this.textBox_Ranged3Traits);
+            this.Controls.Add(this.textBox_Ranged3Other);
+            this.Controls.Add(this.textBox_Ranged3WSpec);
+            this.Controls.Add(this.textBox_Ranged3Dice);
+            this.Controls.Add(this.textBox_Ranged3Item);
+            this.Controls.Add(this.textBox_Ranged3Prof);
+            this.Controls.Add(this.label_Ranged3AB);
+            this.Controls.Add(this.label_Ranged3Accuracy);
+            this.Controls.Add(this.textBox_Ranged2Special);
+            this.Controls.Add(this.textBox_Ranged2Traits);
+            this.Controls.Add(this.textBox_Ranged2Other);
+            this.Controls.Add(this.textBox_Ranged2WSpec);
+            this.Controls.Add(this.textBox_Ranged2Dice);
+            this.Controls.Add(this.textBox_Ranged2Item);
+            this.Controls.Add(this.textBox_Ranged2Prof);
+            this.Controls.Add(this.label_Ranged2AB);
+            this.Controls.Add(this.label_Ranged2Accuracy);
+            this.Controls.Add(this.textBox_Ranged1Special);
+            this.Controls.Add(this.textBox_Ranged1Traits);
+            this.Controls.Add(this.textBox_Ranged1Other);
+            this.Controls.Add(this.textBox_Ranged1WSpec);
+            this.Controls.Add(this.textBox_Ranged1Dice);
+            this.Controls.Add(this.textBox_Ranged1Item);
+            this.Controls.Add(this.textBox_Ranged1Prof);
+            this.Controls.Add(this.label_Ranged1AB);
+            this.Controls.Add(this.label_Ranged1Accuracy);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.textBox_Melee3Other);
+            this.Controls.Add(this.textBox_Melee3WSpec);
+            this.Controls.Add(this.label_Melee3AB2);
+            this.Controls.Add(this.textBox_Melee3Dice);
+            this.Controls.Add(this.textBox_Melee3Item);
+            this.Controls.Add(this.textBox_Melee3Prof);
+            this.Controls.Add(this.label_Melee3AB1);
+            this.Controls.Add(this.label_Melee3Accuracy);
+            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.textBox_Melee2Other);
+            this.Controls.Add(this.textBox_Melee2WSpec);
+            this.Controls.Add(this.label_Melee2AB2);
+            this.Controls.Add(this.textBox_Melee2Dice);
+            this.Controls.Add(this.textBox_Melee2Item);
+            this.Controls.Add(this.textBox_Melee2Prof);
+            this.Controls.Add(this.label_Melee2AB1);
+            this.Controls.Add(this.label_Melee2Accuracy);
+            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.textBox_Melee1Other);
+            this.Controls.Add(this.textBox_Melee1WSpec);
+            this.Controls.Add(this.label_Melee1AB2);
+            this.Controls.Add(this.textBox_Melee1Dice);
+            this.Controls.Add(this.textBox_Melee1Item);
+            this.Controls.Add(this.textBox_Melee1Prof);
+            this.Controls.Add(this.label_Melee1AB1);
+            this.Controls.Add(this.label_Melee1Accuracy);
+            this.Controls.Add(this.textBox_Ranged3Name);
+            this.Controls.Add(this.textBox_Ranged2Name);
+            this.Controls.Add(this.textBox_Ranged1Name);
+            this.Controls.Add(this.textBox_Melee3Name);
+            this.Controls.Add(this.textBox_Melee2Name);
+            this.Controls.Add(this.textBox_Melee1Name);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox41);
+            this.Controls.Add(this.textBox_Lore2SubType);
+            this.Controls.Add(this.textBox_Lore1SubType);
             this.Controls.Add(this.textBox_PerformanceItemMod);
             this.Controls.Add(this.textBox_PerformanceProfMod);
             this.Controls.Add(this.label_PerformancyASMod);
@@ -1951,6 +2851,18 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2134,9 +3046,95 @@
         private System.Windows.Forms.TextBox textBox_PerformanceProfMod;
         private System.Windows.Forms.Label label_PerformancyASMod;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox textBox_Lore1SubType;
+        private System.Windows.Forms.TextBox textBox_Lore2SubType;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton radioButton15;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.RadioButton radioButton17;
+        private System.Windows.Forms.RadioButton radioButton18;
+        private System.Windows.Forms.TextBox textBox_Melee1Name;
+        private System.Windows.Forms.TextBox textBox_Melee2Name;
+        private System.Windows.Forms.TextBox textBox_Melee3Name;
+        private System.Windows.Forms.TextBox textBox_Ranged1Name;
+        private System.Windows.Forms.TextBox textBox_Ranged2Name;
+        private System.Windows.Forms.TextBox textBox_Ranged3Name;
+        private System.Windows.Forms.Label label_Melee1Accuracy;
+        private System.Windows.Forms.Label label_Melee1AB1;
+        private System.Windows.Forms.TextBox textBox_Melee1Prof;
+        private System.Windows.Forms.TextBox textBox_Melee1Item;
+        private System.Windows.Forms.TextBox textBox_Melee1Dice;
+        private System.Windows.Forms.Label label_Melee1AB2;
+        private System.Windows.Forms.TextBox textBox_Melee1WSpec;
+        private System.Windows.Forms.TextBox textBox_Melee1Other;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox_Melee2Other;
+        private System.Windows.Forms.TextBox textBox_Melee2WSpec;
+        private System.Windows.Forms.Label label_Melee2AB2;
+        private System.Windows.Forms.TextBox textBox_Melee2Dice;
+        private System.Windows.Forms.TextBox textBox_Melee2Item;
+        private System.Windows.Forms.TextBox textBox_Melee2Prof;
+        private System.Windows.Forms.Label label_Melee2AB1;
+        private System.Windows.Forms.Label label_Melee2Accuracy;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox_Melee3Other;
+        private System.Windows.Forms.TextBox textBox_Melee3WSpec;
+        private System.Windows.Forms.Label label_Melee3AB2;
+        private System.Windows.Forms.TextBox textBox_Melee3Dice;
+        private System.Windows.Forms.TextBox textBox_Melee3Item;
+        private System.Windows.Forms.TextBox textBox_Melee3Prof;
+        private System.Windows.Forms.Label label_Melee3AB1;
+        private System.Windows.Forms.Label label_Melee3Accuracy;
+        private System.Windows.Forms.Label label_Ranged1Accuracy;
+        private System.Windows.Forms.TextBox textBox_Ranged1Traits;
+        private System.Windows.Forms.TextBox textBox_Ranged1Other;
+        private System.Windows.Forms.TextBox textBox_Ranged1WSpec;
+        private System.Windows.Forms.TextBox textBox_Ranged1Dice;
+        private System.Windows.Forms.TextBox textBox_Ranged1Item;
+        private System.Windows.Forms.TextBox textBox_Ranged1Prof;
+        private System.Windows.Forms.Label label_Ranged1AB;
+        private System.Windows.Forms.TextBox textBox_Ranged1Special;
+        private System.Windows.Forms.TextBox textBox_Ranged2Special;
+        private System.Windows.Forms.TextBox textBox_Ranged2Traits;
+        private System.Windows.Forms.TextBox textBox_Ranged2Other;
+        private System.Windows.Forms.TextBox textBox_Ranged2WSpec;
+        private System.Windows.Forms.TextBox textBox_Ranged2Dice;
+        private System.Windows.Forms.TextBox textBox_Ranged2Item;
+        private System.Windows.Forms.TextBox textBox_Ranged2Prof;
+        private System.Windows.Forms.Label label_Ranged2AB;
+        private System.Windows.Forms.Label label_Ranged2Accuracy;
+        private System.Windows.Forms.TextBox textBox_Ranged3Special;
+        private System.Windows.Forms.TextBox textBox_Ranged3Traits;
+        private System.Windows.Forms.TextBox textBox_Ranged3Other;
+        private System.Windows.Forms.TextBox textBox_Ranged3WSpec;
+        private System.Windows.Forms.TextBox textBox_Ranged3Dice;
+        private System.Windows.Forms.TextBox textBox_Ranged3Item;
+        private System.Windows.Forms.TextBox textBox_Ranged3Prof;
+        private System.Windows.Forms.Label label_Ranged3AB;
+        private System.Windows.Forms.Label label_Ranged3Accuracy;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBox47;
     }
 }
 
