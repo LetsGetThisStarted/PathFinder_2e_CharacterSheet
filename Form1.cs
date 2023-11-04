@@ -15,8 +15,10 @@ namespace PathFinder_2e_CharacterSheet
 {
     public partial class Form1 : Form
     {
+        public Character currentChar = new Character();
+
         // Default values for character
-        private int STR;
+        /* private int STR;
         private int DEX;
         private int CON;
         private int INT;
@@ -55,7 +57,7 @@ namespace PathFinder_2e_CharacterSheet
             expert = 4,
             master = 6,
             legendary = 8
-        }
+        } */
 
 
         public Form1()
@@ -112,19 +114,39 @@ namespace PathFinder_2e_CharacterSheet
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void textBox_CharacterName_TextChanged(object sender, EventArgs e)
         {
-
+            currentChar.CharacterName = textBox_CharacterName.Text;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void textBox_PlayerName_TextChanged(object sender, EventArgs e)
         {
-
+            currentChar.PlayerName = textBox_PlayerName.Text;
         }
 
-        private void label22_Click(object sender, EventArgs e)
+        private void textBox_XPCurrent_TextChanged(object sender, EventArgs e)
         {
+            currentChar.XpCurrent = (int)numericUpDown_xpCurrent.Value;
+        }
 
+        private void comboBox_Background_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentChar.Background = comboBox_Background.Text;
+        }
+
+        private void comboBox_Alignment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentChar.Alignment = comboBox_Alignment.Text;
+        }
+
+        private void comboBox_Deity_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            currentChar.Deity = comboBox_Deity.Text;
+        }
+
+        private void numericUpDown_level_ValueChanged(object sender, EventArgs e)
+        {
+            currentChar.Level = (int)numericUpDown_level.Value;
         }
     }
 }

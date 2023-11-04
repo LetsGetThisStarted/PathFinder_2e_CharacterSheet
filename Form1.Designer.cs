@@ -30,11 +30,8 @@
         {
             this.comboBox_Deity = new System.Windows.Forms.ComboBox();
             this.comboBox_Alignment = new System.Windows.Forms.ComboBox();
-            this.textBox_Size = new System.Windows.Forms.TextBox();
-            this.textBox_XPCurrent = new System.Windows.Forms.TextBox();
             this.textBox_PlayerName = new System.Windows.Forms.TextBox();
             this.textBox_CharacterName = new System.Windows.Forms.TextBox();
-            this.textBox_Level = new System.Windows.Forms.TextBox();
             this.textBox_HeroPoints = new System.Windows.Forms.TextBox();
             this.comboBox_Background = new System.Windows.Forms.ComboBox();
             this.textBox_ChaScore = new System.Windows.Forms.TextBox();
@@ -50,7 +47,6 @@
             this.label_IntMod = new System.Windows.Forms.Label();
             this.label_WisMod = new System.Windows.Forms.Label();
             this.label_ChaMod = new System.Windows.Forms.Label();
-            this.textBox_XPNeeded = new System.Windows.Forms.TextBox();
             this.label_XPDivider = new System.Windows.Forms.Label();
             this.label_AC = new System.Windows.Forms.Label();
             this.label_DC = new System.Windows.Forms.Label();
@@ -210,8 +206,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -294,6 +290,10 @@
             this.label_Ranged3Accuracy = new System.Windows.Forms.Label();
             this.textBox46 = new System.Windows.Forms.TextBox();
             this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBox_Size = new System.Windows.Forms.TextBox();
+            this.numericUpDown_xpCurrent = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_xpMax = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_level = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -301,6 +301,9 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpCurrent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_level)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_Deity
@@ -310,6 +313,7 @@
             this.comboBox_Deity.Name = "comboBox_Deity";
             this.comboBox_Deity.Size = new System.Drawing.Size(311, 21);
             this.comboBox_Deity.TabIndex = 1;
+            this.comboBox_Deity.SelectionChangeCommitted += new System.EventHandler(this.comboBox_Deity_SelectionChangeCommitted);
             // 
             // comboBox_Alignment
             // 
@@ -318,20 +322,7 @@
             this.comboBox_Alignment.Name = "comboBox_Alignment";
             this.comboBox_Alignment.Size = new System.Drawing.Size(88, 21);
             this.comboBox_Alignment.TabIndex = 2;
-            // 
-            // textBox_Size
-            // 
-            this.textBox_Size.Location = new System.Drawing.Point(699, 146);
-            this.textBox_Size.Name = "textBox_Size";
-            this.textBox_Size.Size = new System.Drawing.Size(28, 20);
-            this.textBox_Size.TabIndex = 3;
-            // 
-            // textBox_XPCurrent
-            // 
-            this.textBox_XPCurrent.Location = new System.Drawing.Point(357, 169);
-            this.textBox_XPCurrent.Name = "textBox_XPCurrent";
-            this.textBox_XPCurrent.Size = new System.Drawing.Size(114, 20);
-            this.textBox_XPCurrent.TabIndex = 4;
+            this.comboBox_Alignment.SelectedIndexChanged += new System.EventHandler(this.comboBox_Alignment_SelectedIndexChanged);
             // 
             // textBox_PlayerName
             // 
@@ -339,6 +330,7 @@
             this.textBox_PlayerName.Name = "textBox_PlayerName";
             this.textBox_PlayerName.Size = new System.Drawing.Size(256, 20);
             this.textBox_PlayerName.TabIndex = 5;
+            this.textBox_PlayerName.TextChanged += new System.EventHandler(this.textBox_PlayerName_TextChanged);
             // 
             // textBox_CharacterName
             // 
@@ -346,13 +338,7 @@
             this.textBox_CharacterName.Name = "textBox_CharacterName";
             this.textBox_CharacterName.Size = new System.Drawing.Size(257, 20);
             this.textBox_CharacterName.TabIndex = 6;
-            // 
-            // textBox_Level
-            // 
-            this.textBox_Level.Location = new System.Drawing.Point(1047, 65);
-            this.textBox_Level.Name = "textBox_Level";
-            this.textBox_Level.Size = new System.Drawing.Size(74, 20);
-            this.textBox_Level.TabIndex = 7;
+            this.textBox_CharacterName.TextChanged += new System.EventHandler(this.textBox_CharacterName_TextChanged);
             // 
             // textBox_HeroPoints
             // 
@@ -368,6 +354,7 @@
             this.comboBox_Background.Name = "comboBox_Background";
             this.comboBox_Background.Size = new System.Drawing.Size(259, 21);
             this.comboBox_Background.TabIndex = 9;
+            this.comboBox_Background.SelectedIndexChanged += new System.EventHandler(this.comboBox_Background_SelectedIndexChanged);
             // 
             // textBox_ChaScore
             // 
@@ -477,17 +464,10 @@
             this.label_ChaMod.TabIndex = 27;
             this.label_ChaMod.Text = "ChaMod";
             // 
-            // textBox_XPNeeded
-            // 
-            this.textBox_XPNeeded.Location = new System.Drawing.Point(490, 169);
-            this.textBox_XPNeeded.Name = "textBox_XPNeeded";
-            this.textBox_XPNeeded.Size = new System.Drawing.Size(123, 20);
-            this.textBox_XPNeeded.TabIndex = 28;
-            // 
             // label_XPDivider
             // 
             this.label_XPDivider.AutoSize = true;
-            this.label_XPDivider.Location = new System.Drawing.Point(475, 172);
+            this.label_XPDivider.Location = new System.Drawing.Point(477, 172);
             this.label_XPDivider.Name = "label_XPDivider";
             this.label_XPDivider.Size = new System.Drawing.Size(12, 13);
             this.label_XPDivider.TabIndex = 29;
@@ -1224,7 +1204,6 @@
             this.label_Acrobatics.Size = new System.Drawing.Size(57, 13);
             this.label_Acrobatics.TabIndex = 106;
             this.label_Acrobatics.Text = "Acrobatics";
-            this.label_Acrobatics.Click += new System.EventHandler(this.label1_Click);
             // 
             // label_AcrobaticsASMod
             // 
@@ -1234,7 +1213,6 @@
             this.label_AcrobaticsASMod.Size = new System.Drawing.Size(26, 13);
             this.label_AcrobaticsASMod.TabIndex = 110;
             this.label_AcrobaticsASMod.Text = "Dex";
-            this.label_AcrobaticsASMod.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox_AcrobaticsProfMod
             // 
@@ -1597,7 +1575,6 @@
             this.label22.Size = new System.Drawing.Size(45, 13);
             this.label22.TabIndex = 153;
             this.label22.Text = "Survival";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // textBox_ReligionItemMod
             // 
@@ -1873,17 +1850,6 @@
             this.groupBox1.TabIndex = 189;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Sienna;
-            this.radioButton2.Location = new System.Drawing.Point(4, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 189;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = false;
-            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -1894,6 +1860,17 @@
             this.radioButton4.TabIndex = 190;
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Sienna;
+            this.radioButton2.Location = new System.Drawing.Point(4, 21);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 189;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -2589,6 +2566,37 @@
             this.textBox47.Size = new System.Drawing.Size(117, 20);
             this.textBox47.TabIndex = 257;
             // 
+            // textBox_Size
+            // 
+            this.textBox_Size.Location = new System.Drawing.Point(699, 146);
+            this.textBox_Size.Name = "textBox_Size";
+            this.textBox_Size.Size = new System.Drawing.Size(28, 20);
+            this.textBox_Size.TabIndex = 3;
+            // 
+            // numericUpDown_xpCurrent
+            // 
+            this.numericUpDown_xpCurrent.Location = new System.Drawing.Point(356, 168);
+            this.numericUpDown_xpCurrent.Name = "numericUpDown_xpCurrent";
+            this.numericUpDown_xpCurrent.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown_xpCurrent.TabIndex = 258;
+            // 
+            // numericUpDown_xpMax
+            // 
+            this.numericUpDown_xpMax.Cursor = System.Windows.Forms.Cursors.No;
+            this.numericUpDown_xpMax.Location = new System.Drawing.Point(493, 168);
+            this.numericUpDown_xpMax.Name = "numericUpDown_xpMax";
+            this.numericUpDown_xpMax.ReadOnly = true;
+            this.numericUpDown_xpMax.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown_xpMax.TabIndex = 259;
+            // 
+            // numericUpDown_level
+            // 
+            this.numericUpDown_level.Location = new System.Drawing.Point(1051, 80);
+            this.numericUpDown_level.Name = "numericUpDown_level";
+            this.numericUpDown_level.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDown_level.TabIndex = 260;
+            this.numericUpDown_level.ValueChanged += new System.EventHandler(this.numericUpDown_level_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2597,6 +2605,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.numericUpDown_level);
+            this.Controls.Add(this.numericUpDown_xpMax);
+            this.Controls.Add(this.numericUpDown_xpCurrent);
             this.Controls.Add(this.textBox47);
             this.Controls.Add(this.textBox46);
             this.Controls.Add(this.textBox_Ranged3Special);
@@ -2822,7 +2833,6 @@
             this.Controls.Add(this.label_DC);
             this.Controls.Add(this.label_AC);
             this.Controls.Add(this.label_XPDivider);
-            this.Controls.Add(this.textBox_XPNeeded);
             this.Controls.Add(this.label_ChaMod);
             this.Controls.Add(this.label_WisMod);
             this.Controls.Add(this.label_IntMod);
@@ -2837,10 +2847,8 @@
             this.Controls.Add(this.textBox_StrScore);
             this.Controls.Add(this.comboBox_Background);
             this.Controls.Add(this.textBox_HeroPoints);
-            this.Controls.Add(this.textBox_Level);
             this.Controls.Add(this.textBox_CharacterName);
             this.Controls.Add(this.textBox_PlayerName);
-            this.Controls.Add(this.textBox_XPCurrent);
             this.Controls.Add(this.textBox_Size);
             this.Controls.Add(this.comboBox_Alignment);
             this.Controls.Add(this.comboBox_Deity);
@@ -2863,6 +2871,9 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpCurrent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_level)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2871,11 +2882,8 @@
         #endregion
         private System.Windows.Forms.ComboBox comboBox_Deity;
         private System.Windows.Forms.ComboBox comboBox_Alignment;
-        private System.Windows.Forms.TextBox textBox_Size;
-        private System.Windows.Forms.TextBox textBox_XPCurrent;
         private System.Windows.Forms.TextBox textBox_PlayerName;
         private System.Windows.Forms.TextBox textBox_CharacterName;
-        private System.Windows.Forms.TextBox textBox_Level;
         private System.Windows.Forms.TextBox textBox_HeroPoints;
         private System.Windows.Forms.ComboBox comboBox_Background;
         private System.Windows.Forms.TextBox textBox_ChaScore;
@@ -2891,7 +2899,6 @@
         private System.Windows.Forms.Label label_IntMod;
         private System.Windows.Forms.Label label_WisMod;
         private System.Windows.Forms.Label label_ChaMod;
-        private System.Windows.Forms.TextBox textBox_XPNeeded;
         private System.Windows.Forms.Label label_XPDivider;
         private System.Windows.Forms.Label label_AC;
         private System.Windows.Forms.Label label_DC;
@@ -3135,6 +3142,10 @@
         private System.Windows.Forms.Label label_Ranged3Accuracy;
         private System.Windows.Forms.TextBox textBox46;
         private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBox_Size;
+        private System.Windows.Forms.NumericUpDown numericUpDown_xpCurrent;
+        private System.Windows.Forms.NumericUpDown numericUpDown_xpMax;
+        private System.Windows.Forms.NumericUpDown numericUpDown_level;
     }
 }
 
