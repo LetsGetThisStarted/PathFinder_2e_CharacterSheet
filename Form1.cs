@@ -148,5 +148,10 @@ namespace PathFinder_2e_CharacterSheet
         {
             currentChar.Level = (int)numericUpDown_level.Value;
         }
+
+        private void numericUpDown_heroPoints_ValueChanged(object sender, EventArgs e)
+        {
+            currentChar.HeroPoints = (int)numericUpDown_heroPoints.Value;
+        }
     }
 }

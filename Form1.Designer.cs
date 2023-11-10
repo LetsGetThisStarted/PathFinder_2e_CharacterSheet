@@ -32,14 +32,7 @@
             this.comboBox_Alignment = new System.Windows.Forms.ComboBox();
             this.textBox_PlayerName = new System.Windows.Forms.TextBox();
             this.textBox_CharacterName = new System.Windows.Forms.TextBox();
-            this.textBox_HeroPoints = new System.Windows.Forms.TextBox();
             this.comboBox_Background = new System.Windows.Forms.ComboBox();
-            this.textBox_ChaScore = new System.Windows.Forms.TextBox();
-            this.textBox_WisScore = new System.Windows.Forms.TextBox();
-            this.textBox_IntScore = new System.Windows.Forms.TextBox();
-            this.textBox_ConScore = new System.Windows.Forms.TextBox();
-            this.textBox_DexScore = new System.Windows.Forms.TextBox();
-            this.textBox_StrScore = new System.Windows.Forms.TextBox();
             this.label_StrMod = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_DexMod = new System.Windows.Forms.Label();
@@ -294,6 +287,13 @@
             this.numericUpDown_xpCurrent = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_xpMax = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_level = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_heroPoints = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_strScore = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_dexScore = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_conScore = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_intScore = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_wisScore = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_chaScore = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -304,6 +304,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpCurrent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_level)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_heroPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_strScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_dexScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_conScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_intScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_wisScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_chaScore)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_Deity
@@ -340,13 +347,6 @@
             this.textBox_CharacterName.TabIndex = 6;
             this.textBox_CharacterName.TextChanged += new System.EventHandler(this.textBox_CharacterName_TextChanged);
             // 
-            // textBox_HeroPoints
-            // 
-            this.textBox_HeroPoints.Location = new System.Drawing.Point(1057, 151);
-            this.textBox_HeroPoints.Name = "textBox_HeroPoints";
-            this.textBox_HeroPoints.Size = new System.Drawing.Size(58, 20);
-            this.textBox_HeroPoints.TabIndex = 8;
-            // 
             // comboBox_Background
             // 
             this.comboBox_Background.FormattingEnabled = true;
@@ -355,48 +355,6 @@
             this.comboBox_Background.Size = new System.Drawing.Size(259, 21);
             this.comboBox_Background.TabIndex = 9;
             this.comboBox_Background.SelectedIndexChanged += new System.EventHandler(this.comboBox_Background_SelectedIndexChanged);
-            // 
-            // textBox_ChaScore
-            // 
-            this.textBox_ChaScore.Location = new System.Drawing.Point(342, 510);
-            this.textBox_ChaScore.Name = "textBox_ChaScore";
-            this.textBox_ChaScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_ChaScore.TabIndex = 21;
-            // 
-            // textBox_WisScore
-            // 
-            this.textBox_WisScore.Location = new System.Drawing.Point(342, 455);
-            this.textBox_WisScore.Name = "textBox_WisScore";
-            this.textBox_WisScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_WisScore.TabIndex = 20;
-            // 
-            // textBox_IntScore
-            // 
-            this.textBox_IntScore.Location = new System.Drawing.Point(342, 404);
-            this.textBox_IntScore.Name = "textBox_IntScore";
-            this.textBox_IntScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_IntScore.TabIndex = 19;
-            // 
-            // textBox_ConScore
-            // 
-            this.textBox_ConScore.Location = new System.Drawing.Point(342, 350);
-            this.textBox_ConScore.Name = "textBox_ConScore";
-            this.textBox_ConScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_ConScore.TabIndex = 18;
-            // 
-            // textBox_DexScore
-            // 
-            this.textBox_DexScore.Location = new System.Drawing.Point(342, 298);
-            this.textBox_DexScore.Name = "textBox_DexScore";
-            this.textBox_DexScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_DexScore.TabIndex = 17;
-            // 
-            // textBox_StrScore
-            // 
-            this.textBox_StrScore.Location = new System.Drawing.Point(342, 239);
-            this.textBox_StrScore.Name = "textBox_StrScore";
-            this.textBox_StrScore.Size = new System.Drawing.Size(33, 20);
-            this.textBox_StrScore.TabIndex = 16;
             // 
             // label_StrMod
             // 
@@ -476,7 +434,7 @@
             // label_AC
             // 
             this.label_AC.AutoSize = true;
-            this.label_AC.Location = new System.Drawing.Point(474, 263);
+            this.label_AC.Location = new System.Drawing.Point(487, 270);
             this.label_AC.Name = "label_AC";
             this.label_AC.Size = new System.Drawing.Size(21, 13);
             this.label_AC.TabIndex = 30;
@@ -2597,6 +2555,56 @@
             this.numericUpDown_level.TabIndex = 260;
             this.numericUpDown_level.ValueChanged += new System.EventHandler(this.numericUpDown_level_ValueChanged);
             // 
+            // numericUpDown_heroPoints
+            // 
+            this.numericUpDown_heroPoints.Location = new System.Drawing.Point(1052, 152);
+            this.numericUpDown_heroPoints.Name = "numericUpDown_heroPoints";
+            this.numericUpDown_heroPoints.Size = new System.Drawing.Size(71, 20);
+            this.numericUpDown_heroPoints.TabIndex = 261;
+            this.numericUpDown_heroPoints.ValueChanged += new System.EventHandler(this.numericUpDown_heroPoints_ValueChanged);
+            // 
+            // numericUpDown_strScore
+            // 
+            this.numericUpDown_strScore.Location = new System.Drawing.Point(332, 241);
+            this.numericUpDown_strScore.Name = "numericUpDown_strScore";
+            this.numericUpDown_strScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_strScore.TabIndex = 262;
+            // 
+            // numericUpDown_dexScore
+            // 
+            this.numericUpDown_dexScore.Location = new System.Drawing.Point(332, 294);
+            this.numericUpDown_dexScore.Name = "numericUpDown_dexScore";
+            this.numericUpDown_dexScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_dexScore.TabIndex = 263;
+            // 
+            // numericUpDown_conScore
+            // 
+            this.numericUpDown_conScore.Location = new System.Drawing.Point(332, 350);
+            this.numericUpDown_conScore.Name = "numericUpDown_conScore";
+            this.numericUpDown_conScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_conScore.TabIndex = 264;
+            // 
+            // numericUpDown_intScore
+            // 
+            this.numericUpDown_intScore.Location = new System.Drawing.Point(332, 403);
+            this.numericUpDown_intScore.Name = "numericUpDown_intScore";
+            this.numericUpDown_intScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_intScore.TabIndex = 265;
+            // 
+            // numericUpDown_wisScore
+            // 
+            this.numericUpDown_wisScore.Location = new System.Drawing.Point(332, 456);
+            this.numericUpDown_wisScore.Name = "numericUpDown_wisScore";
+            this.numericUpDown_wisScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_wisScore.TabIndex = 266;
+            // 
+            // numericUpDown_chaScore
+            // 
+            this.numericUpDown_chaScore.Location = new System.Drawing.Point(332, 508);
+            this.numericUpDown_chaScore.Name = "numericUpDown_chaScore";
+            this.numericUpDown_chaScore.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown_chaScore.TabIndex = 267;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2605,6 +2613,13 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.numericUpDown_chaScore);
+            this.Controls.Add(this.numericUpDown_wisScore);
+            this.Controls.Add(this.numericUpDown_intScore);
+            this.Controls.Add(this.numericUpDown_conScore);
+            this.Controls.Add(this.numericUpDown_dexScore);
+            this.Controls.Add(this.numericUpDown_strScore);
+            this.Controls.Add(this.numericUpDown_heroPoints);
             this.Controls.Add(this.numericUpDown_level);
             this.Controls.Add(this.numericUpDown_xpMax);
             this.Controls.Add(this.numericUpDown_xpCurrent);
@@ -2839,14 +2854,7 @@
             this.Controls.Add(this.label_ConMod);
             this.Controls.Add(this.label_DexMod);
             this.Controls.Add(this.label_StrMod);
-            this.Controls.Add(this.textBox_ChaScore);
-            this.Controls.Add(this.textBox_WisScore);
-            this.Controls.Add(this.textBox_IntScore);
-            this.Controls.Add(this.textBox_ConScore);
-            this.Controls.Add(this.textBox_DexScore);
-            this.Controls.Add(this.textBox_StrScore);
             this.Controls.Add(this.comboBox_Background);
-            this.Controls.Add(this.textBox_HeroPoints);
             this.Controls.Add(this.textBox_CharacterName);
             this.Controls.Add(this.textBox_PlayerName);
             this.Controls.Add(this.textBox_Size);
@@ -2874,6 +2882,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpCurrent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_xpMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_level)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_heroPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_strScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_dexScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_conScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_intScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_wisScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_chaScore)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2884,14 +2899,7 @@
         private System.Windows.Forms.ComboBox comboBox_Alignment;
         private System.Windows.Forms.TextBox textBox_PlayerName;
         private System.Windows.Forms.TextBox textBox_CharacterName;
-        private System.Windows.Forms.TextBox textBox_HeroPoints;
         private System.Windows.Forms.ComboBox comboBox_Background;
-        private System.Windows.Forms.TextBox textBox_ChaScore;
-        private System.Windows.Forms.TextBox textBox_WisScore;
-        private System.Windows.Forms.TextBox textBox_IntScore;
-        private System.Windows.Forms.TextBox textBox_ConScore;
-        private System.Windows.Forms.TextBox textBox_DexScore;
-        private System.Windows.Forms.TextBox textBox_StrScore;
         private System.Windows.Forms.Label label_StrMod;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_DexMod;
@@ -3146,6 +3154,13 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_xpCurrent;
         private System.Windows.Forms.NumericUpDown numericUpDown_xpMax;
         private System.Windows.Forms.NumericUpDown numericUpDown_level;
+        private System.Windows.Forms.NumericUpDown numericUpDown_heroPoints;
+        private System.Windows.Forms.NumericUpDown numericUpDown_strScore;
+        private System.Windows.Forms.NumericUpDown numericUpDown_dexScore;
+        private System.Windows.Forms.NumericUpDown numericUpDown_conScore;
+        private System.Windows.Forms.NumericUpDown numericUpDown_intScore;
+        private System.Windows.Forms.NumericUpDown numericUpDown_wisScore;
+        private System.Windows.Forms.NumericUpDown numericUpDown_chaScore;
     }
 }
 

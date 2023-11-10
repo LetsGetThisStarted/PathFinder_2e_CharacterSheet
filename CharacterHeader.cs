@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PathFinder_2e_CharacterSheet
+ namespace PathFinder_2e_CharacterSheet
 {
     public class Character
     {
@@ -48,6 +48,7 @@ namespace PathFinder_2e_CharacterSheet
         private int acKey;
         private Proficiency acProf;
         private int acItem;
+        private int activeACArmor;
         private Proficiency unarmoredProf;
         private Proficiency lightProf;
         private Proficiency mediumProf;
@@ -192,6 +193,13 @@ namespace PathFinder_2e_CharacterSheet
         // Languages
         private object languages;
 
+        // Converts ability scores to ability modifier
+        private int ScoreToMod(int score)
+        {
+            int mod = (int)Math.Floor(((double)score - 10.0)/2.0);
+            return mod;
+        }
+
         // Getters and Setters - Auto Generated
         public string CharacterName { get => characterName; set => characterName = value; }
         public string PlayerName { get => playerName; set => playerName = value; }
@@ -224,6 +232,7 @@ namespace PathFinder_2e_CharacterSheet
         public int Ac { get => ac; set => ac = value; }
         public int AcKey { get => acKey; set => acKey = value; }
         public int AcItem { get => acItem; set => acItem = value; }
+        public int ActiveACArmor { get => activeACArmor; set => activeACArmor = value; }
         public int ShieldBonus { get => shieldBonus; set => shieldBonus = value; }
         public int ShieldHardness { get => shieldHardness; set => shieldHardness = value; }
         public int ShieldMaxHP { get => shieldMaxHP; set => shieldMaxHP = value; }
@@ -346,13 +355,200 @@ namespace PathFinder_2e_CharacterSheet
         internal Proficiency MartialWeaponProf { get => martialWeaponProf; set => martialWeaponProf = value; }
         internal Proficiency OtherWeaponProf1 { get => otherWeaponProf1; set => otherWeaponProf1 = value; }
         internal Proficiency OtherWeaponProf2 { get => otherWeaponProf2; set => otherWeaponProf2 = value; }
+
+        public Character()
+        {
+            // Main Character Values
+            characterName = "FirstName LastName";
+            playerName = "FirstName LastName";
+            xpCurrent = 0;
+            xpMax = 1000;
+            ancestry = "";
+            background = "";
+            cClass = new CharacterClass();
+            size = "M";
+            alignment = "N";
+            traits = "object";
+            deity = "God";
+            level = 1;
+            heroPoints = 0;
+
+            // Ability Scores
+            strScore = 10;
+            strMod = ScoreToMod(strScore);
+            dexScore = 10;
+            dexMod = ScoreToMod(dexScore);
+            conScore = 10;
+            conMod = ScoreToMod(conScore);
+            intScore = 10;
+            intMod = ScoreToMod(intScore);
+            wisScore = 10;
+            wisMod = ScoreToMod(wisScore);
+            chaScore = 10;
+            chaMod = ScoreToMod(chaScore);
+
+            // Class DC
+            dcKey = 0;
+            dcProf = 0;
+            dcItem = 0;
+            dc = 10 + DcKey + (int)DcProf + DcItem;
+
+            // Armor Class
+            acKey = 0;
+            acProf = 0;
+            acItem = 0;
+            unarmoredProf = 0;
+            lightProf = 0;
+            mediumProf = 0;
+            heavyProf = 0;
+            activeACArmor = (int)UnarmoredProf;
+            shieldBonus = 0;
+            shieldHardness = 0;
+            shieldMaxHP = 0;
+            shieldBT = 0;
+            shieldCurrentHP = 0;
+            ac = AcKey + (int)AcProf + AcItem + ActiveACArmor;
+
+
+            // Saving Throws
+            fortitudeItem = 0;
+            fortitudeProf = 0;
+            fortitude = 10 + FortitudeItem + (int) FortitudeProf;
+            reflexItem = 0;
+            reflexProf = 0;
+            reflex = 10 + reflexItem + (int)reflexProf;
+            willItem = 0;
+            willProf = 0;
+            will = 10 + willItem + (int)willProf;
+            notesSavingThrows = "";
+
+            // Hit Points
+            maxHP = 1;
+            currentHP = 0;
+            temporaryHP = 0;
+            dying = true;           //object
+            wounded = true;         //object
+            resistAndImmune = "";   //list OR dictionary
+            conditions = "";        //list OR dictionary
+
+            // Perception
+            perceptionItem = 0;
+            perceptionProf = 0;
+            perception = 10 + perceptionItem + (int)perceptionProf;
+            senses = "";  //list OR dictionary
+
+            // Speed
+            speed = 30;
+            movementTypes = "";     //list OR dictionary
+            notesSpeed = "";
+
+            // Melee Strikes
+            melee1Name = "";
+            melee1Prof = 0;
+            melee1Item = 0;
+            melee1Dice = "";        //dice object
+            melee1Type = 0;         
+            melee1WSpec = 0;
+            melee1Other = "";
+            melee1Traits = "";      //list or dictionary
+            melee1Notes = "";
+            melee1Aim = (int)melee1Prof + melee1Item;
+
+            melee2Name = "";
+            melee2Prof = 0;
+            melee2Item = 0;
+            melee2Dice = "";
+            melee2Type = 0;
+            melee2WSpec = 0;
+            melee2Other = "";
+            melee2Traits = "";
+            melee2Notes = "";
+            melee2Aim = (int)melee2Prof + melee2Item;
+
+            melee3Name = "";
+            melee3Prof = 0;
+            melee3Item = 0;
+            melee3Dice = "";
+            melee3Type = 0;
+            melee3WSpec = 0;
+            melee3Other = "";
+            melee3Traits = "";
+            melee3Notes = "";
+            melee3Aim = (int)melee3Prof + melee3Item;
+
+            // Ranged Strikes
+            ranged1Name = "";
+            ranged1Prof = 0;
+            ranged1Item = 0;
+            ranged1Dice = "";
+            ranged1Special = "";
+            ranged1Type = 0;
+            ranged1WSpec = 0;
+            ranged1Other = "";
+            ranged1Traits = "";
+            ranged1Notes = "";
+            ranged1Aim = (int)ranged1Prof + ranged1Item;
+
+            ranged2Name = "";
+            ranged2Prof = 0;
+            ranged2Item = 0;
+            ranged2Dice = "";
+            ranged2Special = "";
+            ranged2Type = 0;
+            ranged2WSpec = 0;
+            ranged2Other = "";
+            ranged2Traits = "";
+            ranged2Notes = "";
+            ranged2Aim = (int)ranged2Prof + ranged2Item;
+
+            ranged3Name = "";
+            ranged3Prof = 0;
+            ranged3Item = 0;
+            ranged3Dice = "";
+            ranged3Special = "";
+            ranged3Type = 0;
+            ranged3WSpec = 0;
+            ranged3Other = "";
+            ranged3Traits = "";
+            ranged3Notes = "";
+            ranged3Aim = (int)ranged3Prof + ranged3Item;
+
+            // Weapon Proficiencies
+            simpleWeaponProf = 0;
+            martialWeaponProf = 0;
+            otherWeaponName1 = "";
+            otherWeaponProf1 = 0;
+            otherWeaponName2 = "";
+            otherWeaponProf2 = 0;
+
+            // Skills
+            acrobatics = new Skill();
+            arcana = new Skill();
+            athletics = new Skill();
+            crafting = new Skill();
+            deception = new Skill();
+            diplomacy = new Skill();
+            intimidation = new Skill();
+            lore1 = new Skill();
+            lore2 = new Skill();
+            medicine = new Skill();
+            nature = new Skill();
+            occultism = new Skill();
+            performance = new Skill();
+            religion = new Skill();
+            society = new Skill();
+            stealth = new Skill();
+            survival = new Skill();
+            thievery = new Skill();
+
+            // Languages
+            languages = "Common";
+
     }
 
-    public class CharacterClass
-    {
-        private string name;
+    
 
-    }
+}
 
     public class Skill
     {
