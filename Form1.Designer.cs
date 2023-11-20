@@ -127,73 +127,73 @@
             this.textBox_AthleticsItemMod = new System.Windows.Forms.TextBox();
             this.textBox_AthleticsProfMod = new System.Windows.Forms.TextBox();
             this.label_AthleticsASMod = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_Athletics = new System.Windows.Forms.Label();
             this.textBox_StealthItemMod = new System.Windows.Forms.TextBox();
             this.textBox_StealthProfMod = new System.Windows.Forms.TextBox();
             this.label_StealthASMod = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label_Stealth = new System.Windows.Forms.Label();
             this.textBox_ThieveryItemMod = new System.Windows.Forms.TextBox();
-            this.textBox_Thievery = new System.Windows.Forms.TextBox();
+            this.textBox_ThieveryProfMod = new System.Windows.Forms.TextBox();
             this.label_ThieveryASMod = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label_Thievery = new System.Windows.Forms.Label();
             this.textBox_StealthArmorMod = new System.Windows.Forms.TextBox();
             this.textBox_ThieveryArmorMod = new System.Windows.Forms.TextBox();
             this.textBox_ArcanaItemMod = new System.Windows.Forms.TextBox();
             this.textBox_ArcanaProfMod = new System.Windows.Forms.TextBox();
             this.label_ArcanaASMod = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label_Arcana = new System.Windows.Forms.Label();
             this.textBox_CraftingItemMod = new System.Windows.Forms.TextBox();
             this.textBox_CraftingProfMod = new System.Windows.Forms.TextBox();
             this.label_CraftingASMod = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label_Crafting = new System.Windows.Forms.Label();
             this.textBox_Lore1ItemMod = new System.Windows.Forms.TextBox();
             this.textBox_Lore1ProfMod = new System.Windows.Forms.TextBox();
             this.label_Lore1ASMod = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label_Lore1 = new System.Windows.Forms.Label();
             this.textBox_Lore2ItemMod = new System.Windows.Forms.TextBox();
             this.textBox_Lore2ProfMod = new System.Windows.Forms.TextBox();
             this.label_Lore2ASMod = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label_Lore2 = new System.Windows.Forms.Label();
             this.textBox_OccultismItemMod = new System.Windows.Forms.TextBox();
             this.textBox_OccultismProfMod = new System.Windows.Forms.TextBox();
             this.label_OccultismASMod = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.label_Occultism = new System.Windows.Forms.Label();
             this.textBox_SocietyItemMod = new System.Windows.Forms.TextBox();
             this.textBox_SocietyProfMod = new System.Windows.Forms.TextBox();
             this.label_SocietyASMod = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label_Society = new System.Windows.Forms.Label();
             this.textBox_SurvivalItemMod = new System.Windows.Forms.TextBox();
             this.textBox_SurvivalProfMod = new System.Windows.Forms.TextBox();
             this.label_SurvivalASMod = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.label_Survival = new System.Windows.Forms.Label();
             this.textBox_ReligionItemMod = new System.Windows.Forms.TextBox();
             this.textBox_ReligionProfMod = new System.Windows.Forms.TextBox();
             this.label_ReligionASMod = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.label_Religion = new System.Windows.Forms.Label();
             this.textBox_NatureItemMod = new System.Windows.Forms.TextBox();
             this.textBox_NatureProfMod = new System.Windows.Forms.TextBox();
             this.label_NatureASMod = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.label_Nature = new System.Windows.Forms.Label();
             this.textBox_MedicineItemMod = new System.Windows.Forms.TextBox();
             this.textBox_MedicineProfMod = new System.Windows.Forms.TextBox();
             this.label_MedicineASMod = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.label_Medicine = new System.Windows.Forms.Label();
             this.textBox_IntimidationItemMod = new System.Windows.Forms.TextBox();
             this.textBox_IntimidationProfMod = new System.Windows.Forms.TextBox();
             this.label_IntimidationASMod = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox_Deception = new System.Windows.Forms.TextBox();
+            this.label_Intimidation = new System.Windows.Forms.Label();
+            this.textBox_DeceptionItemMod = new System.Windows.Forms.TextBox();
             this.textBox_DeceptionProfMod = new System.Windows.Forms.TextBox();
             this.label_DeceptionASMod = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.label_Deception = new System.Windows.Forms.Label();
             this.textBox_DiplomacyItemMod = new System.Windows.Forms.TextBox();
             this.textBox_DiplomacyProfMod = new System.Windows.Forms.TextBox();
             this.label_DiplomacyASMod = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.label_Diplomacy = new System.Windows.Forms.Label();
             this.textBox_PerformanceItemMod = new System.Windows.Forms.TextBox();
             this.textBox_PerformanceProfMod = new System.Windows.Forms.TextBox();
-            this.label_PerformancyASMod = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label_PerformanceASMod = new System.Windows.Forms.Label();
+            this.label_Performance = new System.Windows.Forms.Label();
             this.textBox_Lore1SubType = new System.Windows.Forms.TextBox();
             this.textBox_Lore2SubType = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -294,6 +294,12 @@
             this.numericUpDown_intScore = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_wisScore = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_chaScore = new System.Windows.Forms.NumericUpDown();
+            this.listBox_ResistAndImmune = new System.Windows.Forms.ListBox();
+            this.listBox_Conditions = new System.Windows.Forms.ListBox();
+            this.listBox_Senses = new System.Windows.Forms.ListBox();
+            this.listBox_Movement = new System.Windows.Forms.ListBox();
+            this.textBox_NotesMovement = new System.Windows.Forms.TextBox();
+            this.button_NewCharacter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -885,7 +891,7 @@
             // 
             this.button_AddResistanceImmunity.FlatAppearance.BorderSize = 0;
             this.button_AddResistanceImmunity.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_AddResistanceImmunity.Location = new System.Drawing.Point(1070, 340);
+            this.button_AddResistanceImmunity.Location = new System.Drawing.Point(1072, 340);
             this.button_AddResistanceImmunity.Margin = new System.Windows.Forms.Padding(0);
             this.button_AddResistanceImmunity.Name = "button_AddResistanceImmunity";
             this.button_AddResistanceImmunity.Size = new System.Drawing.Size(52, 18);
@@ -1223,14 +1229,14 @@
             this.label_AthleticsASMod.TabIndex = 115;
             this.label_AthleticsASMod.Text = "Str";
             // 
-            // label3
+            // label_Athletics
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(798, 754);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 114;
-            this.label3.Text = "Athletics";
+            this.label_Athletics.AutoSize = true;
+            this.label_Athletics.Location = new System.Drawing.Point(798, 754);
+            this.label_Athletics.Name = "label_Athletics";
+            this.label_Athletics.Size = new System.Drawing.Size(47, 13);
+            this.label_Athletics.TabIndex = 114;
+            this.label_Athletics.Text = "Athletics";
             // 
             // textBox_StealthItemMod
             // 
@@ -1255,14 +1261,14 @@
             this.label_StealthASMod.TabIndex = 120;
             this.label_StealthASMod.Text = "Dex";
             // 
-            // label6
+            // label_Stealth
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(798, 1298);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 119;
-            this.label6.Text = "Stealth";
+            this.label_Stealth.AutoSize = true;
+            this.label_Stealth.Location = new System.Drawing.Point(798, 1298);
+            this.label_Stealth.Name = "label_Stealth";
+            this.label_Stealth.Size = new System.Drawing.Size(40, 13);
+            this.label_Stealth.TabIndex = 119;
+            this.label_Stealth.Text = "Stealth";
             // 
             // textBox_ThieveryItemMod
             // 
@@ -1271,12 +1277,12 @@
             this.textBox_ThieveryItemMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_ThieveryItemMod.TabIndex = 126;
             // 
-            // textBox_Thievery
+            // textBox_ThieveryProfMod
             // 
-            this.textBox_Thievery.Location = new System.Drawing.Point(922, 1379);
-            this.textBox_Thievery.Name = "textBox_Thievery";
-            this.textBox_Thievery.Size = new System.Drawing.Size(33, 20);
-            this.textBox_Thievery.TabIndex = 125;
+            this.textBox_ThieveryProfMod.Location = new System.Drawing.Point(922, 1379);
+            this.textBox_ThieveryProfMod.Name = "textBox_ThieveryProfMod";
+            this.textBox_ThieveryProfMod.Size = new System.Drawing.Size(33, 20);
+            this.textBox_ThieveryProfMod.TabIndex = 125;
             // 
             // label_ThieveryASMod
             // 
@@ -1287,14 +1293,14 @@
             this.label_ThieveryASMod.TabIndex = 124;
             this.label_ThieveryASMod.Text = "Dex";
             // 
-            // label8
+            // label_Thievery
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(798, 1382);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
-            this.label8.TabIndex = 123;
-            this.label8.Text = "Thievery";
+            this.label_Thievery.AutoSize = true;
+            this.label_Thievery.Location = new System.Drawing.Point(798, 1382);
+            this.label_Thievery.Name = "label_Thievery";
+            this.label_Thievery.Size = new System.Drawing.Size(48, 13);
+            this.label_Thievery.TabIndex = 123;
+            this.label_Thievery.Text = "Thievery";
             // 
             // textBox_StealthArmorMod
             // 
@@ -1333,14 +1339,14 @@
             this.label_ArcanaASMod.TabIndex = 130;
             this.label_ArcanaASMod.Text = "Int";
             // 
-            // label10
+            // label_Arcana
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(798, 712);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 129;
-            this.label10.Text = "Arcana";
+            this.label_Arcana.AutoSize = true;
+            this.label_Arcana.Location = new System.Drawing.Point(798, 712);
+            this.label_Arcana.Name = "label_Arcana";
+            this.label_Arcana.Size = new System.Drawing.Size(41, 13);
+            this.label_Arcana.TabIndex = 129;
+            this.label_Arcana.Text = "Arcana";
             // 
             // textBox_CraftingItemMod
             // 
@@ -1365,14 +1371,14 @@
             this.label_CraftingASMod.TabIndex = 134;
             this.label_CraftingASMod.Text = "Int";
             // 
-            // label12
+            // label_Crafting
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(798, 796);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 13);
-            this.label12.TabIndex = 133;
-            this.label12.Text = "Crafting";
+            this.label_Crafting.AutoSize = true;
+            this.label_Crafting.Location = new System.Drawing.Point(798, 796);
+            this.label_Crafting.Name = "label_Crafting";
+            this.label_Crafting.Size = new System.Drawing.Size(43, 13);
+            this.label_Crafting.TabIndex = 133;
+            this.label_Crafting.Text = "Crafting";
             // 
             // textBox_Lore1ItemMod
             // 
@@ -1397,14 +1403,14 @@
             this.label_Lore1ASMod.TabIndex = 138;
             this.label_Lore1ASMod.Text = "Int";
             // 
-            // label14
+            // label_Lore1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(798, 963);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 13);
-            this.label14.TabIndex = 137;
-            this.label14.Text = "Lore";
+            this.label_Lore1.AutoSize = true;
+            this.label_Lore1.Location = new System.Drawing.Point(798, 963);
+            this.label_Lore1.Name = "label_Lore1";
+            this.label_Lore1.Size = new System.Drawing.Size(28, 13);
+            this.label_Lore1.TabIndex = 137;
+            this.label_Lore1.Text = "Lore";
             // 
             // textBox_Lore2ItemMod
             // 
@@ -1429,14 +1435,14 @@
             this.label_Lore2ASMod.TabIndex = 142;
             this.label_Lore2ASMod.Text = "Int";
             // 
-            // label16
+            // label_Lore2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(798, 1005);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 13);
-            this.label16.TabIndex = 141;
-            this.label16.Text = "Lore";
+            this.label_Lore2.AutoSize = true;
+            this.label_Lore2.Location = new System.Drawing.Point(798, 1005);
+            this.label_Lore2.Name = "label_Lore2";
+            this.label_Lore2.Size = new System.Drawing.Size(28, 13);
+            this.label_Lore2.TabIndex = 141;
+            this.label_Lore2.Text = "Lore";
             // 
             // textBox_OccultismItemMod
             // 
@@ -1461,14 +1467,14 @@
             this.label_OccultismASMod.TabIndex = 146;
             this.label_OccultismASMod.Text = "Int";
             // 
-            // label18
+            // label_Occultism
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(798, 1131);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 13);
-            this.label18.TabIndex = 145;
-            this.label18.Text = "Occultism";
+            this.label_Occultism.AutoSize = true;
+            this.label_Occultism.Location = new System.Drawing.Point(798, 1131);
+            this.label_Occultism.Name = "label_Occultism";
+            this.label_Occultism.Size = new System.Drawing.Size(53, 13);
+            this.label_Occultism.TabIndex = 145;
+            this.label_Occultism.Text = "Occultism";
             // 
             // textBox_SocietyItemMod
             // 
@@ -1493,14 +1499,14 @@
             this.label_SocietyASMod.TabIndex = 150;
             this.label_SocietyASMod.Text = "Int";
             // 
-            // label20
+            // label_Society
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(798, 1256);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 13);
-            this.label20.TabIndex = 149;
-            this.label20.Text = "Society";
+            this.label_Society.AutoSize = true;
+            this.label_Society.Location = new System.Drawing.Point(798, 1256);
+            this.label_Society.Name = "label_Society";
+            this.label_Society.Size = new System.Drawing.Size(42, 13);
+            this.label_Society.TabIndex = 149;
+            this.label_Society.Text = "Society";
             // 
             // textBox_SurvivalItemMod
             // 
@@ -1525,14 +1531,14 @@
             this.label_SurvivalASMod.TabIndex = 154;
             this.label_SurvivalASMod.Text = "Wis";
             // 
-            // label22
+            // label_Survival
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(798, 1340);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(45, 13);
-            this.label22.TabIndex = 153;
-            this.label22.Text = "Survival";
+            this.label_Survival.AutoSize = true;
+            this.label_Survival.Location = new System.Drawing.Point(798, 1340);
+            this.label_Survival.Name = "label_Survival";
+            this.label_Survival.Size = new System.Drawing.Size(45, 13);
+            this.label_Survival.TabIndex = 153;
+            this.label_Survival.Text = "Survival";
             // 
             // textBox_ReligionItemMod
             // 
@@ -1557,14 +1563,14 @@
             this.label_ReligionASMod.TabIndex = 158;
             this.label_ReligionASMod.Text = "Wis";
             // 
-            // label24
+            // label_Religion
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(798, 1214);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(45, 13);
-            this.label24.TabIndex = 157;
-            this.label24.Text = "Religion";
+            this.label_Religion.AutoSize = true;
+            this.label_Religion.Location = new System.Drawing.Point(798, 1214);
+            this.label_Religion.Name = "label_Religion";
+            this.label_Religion.Size = new System.Drawing.Size(45, 13);
+            this.label_Religion.TabIndex = 157;
+            this.label_Religion.Text = "Religion";
             // 
             // textBox_NatureItemMod
             // 
@@ -1589,14 +1595,14 @@
             this.label_NatureASMod.TabIndex = 162;
             this.label_NatureASMod.Text = "Wis";
             // 
-            // label26
+            // label_Nature
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(798, 1088);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(39, 13);
-            this.label26.TabIndex = 161;
-            this.label26.Text = "Nature";
+            this.label_Nature.AutoSize = true;
+            this.label_Nature.Location = new System.Drawing.Point(798, 1088);
+            this.label_Nature.Name = "label_Nature";
+            this.label_Nature.Size = new System.Drawing.Size(39, 13);
+            this.label_Nature.TabIndex = 161;
+            this.label_Nature.Text = "Nature";
             // 
             // textBox_MedicineItemMod
             // 
@@ -1621,14 +1627,14 @@
             this.label_MedicineASMod.TabIndex = 166;
             this.label_MedicineASMod.Text = "Wis";
             // 
-            // label28
+            // label_Medicine
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(798, 1047);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(50, 13);
-            this.label28.TabIndex = 165;
-            this.label28.Text = "Medicine";
+            this.label_Medicine.AutoSize = true;
+            this.label_Medicine.Location = new System.Drawing.Point(798, 1047);
+            this.label_Medicine.Name = "label_Medicine";
+            this.label_Medicine.Size = new System.Drawing.Size(50, 13);
+            this.label_Medicine.TabIndex = 165;
+            this.label_Medicine.Text = "Medicine";
             // 
             // textBox_IntimidationItemMod
             // 
@@ -1653,21 +1659,21 @@
             this.label_IntimidationASMod.TabIndex = 170;
             this.label_IntimidationASMod.Text = "Cha";
             // 
-            // label30
+            // label_Intimidation
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(798, 921);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 13);
-            this.label30.TabIndex = 169;
-            this.label30.Text = "Intimidation";
+            this.label_Intimidation.AutoSize = true;
+            this.label_Intimidation.Location = new System.Drawing.Point(798, 921);
+            this.label_Intimidation.Name = "label_Intimidation";
+            this.label_Intimidation.Size = new System.Drawing.Size(60, 13);
+            this.label_Intimidation.TabIndex = 169;
+            this.label_Intimidation.Text = "Intimidation";
             // 
-            // textBox_Deception
+            // textBox_DeceptionItemMod
             // 
-            this.textBox_Deception.Location = new System.Drawing.Point(1036, 833);
-            this.textBox_Deception.Name = "textBox_Deception";
-            this.textBox_Deception.Size = new System.Drawing.Size(33, 20);
-            this.textBox_Deception.TabIndex = 176;
+            this.textBox_DeceptionItemMod.Location = new System.Drawing.Point(1036, 833);
+            this.textBox_DeceptionItemMod.Name = "textBox_DeceptionItemMod";
+            this.textBox_DeceptionItemMod.Size = new System.Drawing.Size(33, 20);
+            this.textBox_DeceptionItemMod.TabIndex = 176;
             // 
             // textBox_DeceptionProfMod
             // 
@@ -1685,14 +1691,14 @@
             this.label_DeceptionASMod.TabIndex = 174;
             this.label_DeceptionASMod.Text = "Cha";
             // 
-            // label32
+            // label_Deception
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(798, 836);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(56, 13);
-            this.label32.TabIndex = 173;
-            this.label32.Text = "Deception";
+            this.label_Deception.AutoSize = true;
+            this.label_Deception.Location = new System.Drawing.Point(798, 836);
+            this.label_Deception.Name = "label_Deception";
+            this.label_Deception.Size = new System.Drawing.Size(56, 13);
+            this.label_Deception.TabIndex = 173;
+            this.label_Deception.Text = "Deception";
             // 
             // textBox_DiplomacyItemMod
             // 
@@ -1717,14 +1723,15 @@
             this.label_DiplomacyASMod.TabIndex = 178;
             this.label_DiplomacyASMod.Text = "Cha";
             // 
-            // label34
+            // label_Diplomacy
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(798, 879);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(60, 13);
-            this.label34.TabIndex = 177;
-            this.label34.Text = "Deplomacy";
+            this.label_Diplomacy.AutoSize = true;
+            this.label_Diplomacy.Location = new System.Drawing.Point(798, 879);
+            this.label_Diplomacy.Name = "label_Diplomacy";
+            this.label_Diplomacy.Size = new System.Drawing.Size(56, 13);
+            this.label_Diplomacy.TabIndex = 177;
+            this.label_Diplomacy.Text = "Diplomacy";
+            this.label_Diplomacy.Click += new System.EventHandler(this.label_Diplomacy_Click);
             // 
             // textBox_PerformanceItemMod
             // 
@@ -1740,23 +1747,23 @@
             this.textBox_PerformanceProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_PerformanceProfMod.TabIndex = 183;
             // 
-            // label_PerformancyASMod
+            // label_PerformanceASMod
             // 
-            this.label_PerformancyASMod.AutoSize = true;
-            this.label_PerformancyASMod.Location = new System.Drawing.Point(874, 1173);
-            this.label_PerformancyASMod.Name = "label_PerformancyASMod";
-            this.label_PerformancyASMod.Size = new System.Drawing.Size(26, 13);
-            this.label_PerformancyASMod.TabIndex = 182;
-            this.label_PerformancyASMod.Text = "Cha";
+            this.label_PerformanceASMod.AutoSize = true;
+            this.label_PerformanceASMod.Location = new System.Drawing.Point(874, 1173);
+            this.label_PerformanceASMod.Name = "label_PerformanceASMod";
+            this.label_PerformanceASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_PerformanceASMod.TabIndex = 182;
+            this.label_PerformanceASMod.Text = "Cha";
             // 
-            // label36
+            // label_Performance
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(798, 1173);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(67, 13);
-            this.label36.TabIndex = 181;
-            this.label36.Text = "Performance";
+            this.label_Performance.AutoSize = true;
+            this.label_Performance.Location = new System.Drawing.Point(798, 1173);
+            this.label_Performance.Name = "label_Performance";
+            this.label_Performance.Size = new System.Drawing.Size(67, 13);
+            this.label_Performance.TabIndex = 181;
+            this.label_Performance.Text = "Performance";
             // 
             // textBox_Lore1SubType
             // 
@@ -2605,6 +2612,80 @@
             this.numericUpDown_chaScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_chaScore.TabIndex = 267;
             // 
+            // listBox_ResistAndImmune
+            // 
+            this.listBox_ResistAndImmune.AllowDrop = true;
+            this.listBox_ResistAndImmune.FormattingEnabled = true;
+            this.listBox_ResistAndImmune.Items.AddRange(new object[] {
+            "Immune 1",
+            "Immune 2",
+            "Resist 1",
+            "Resist 2"});
+            this.listBox_ResistAndImmune.Location = new System.Drawing.Point(907, 354);
+            this.listBox_ResistAndImmune.Name = "listBox_ResistAndImmune";
+            this.listBox_ResistAndImmune.Size = new System.Drawing.Size(162, 43);
+            this.listBox_ResistAndImmune.Sorted = true;
+            this.listBox_ResistAndImmune.TabIndex = 268;
+            this.listBox_ResistAndImmune.SelectedIndexChanged += new System.EventHandler(this.listBox_ResistAndImmune_SelectedIndexChanged);
+            // 
+            // listBox_Conditions
+            // 
+            this.listBox_Conditions.AllowDrop = true;
+            this.listBox_Conditions.FormattingEnabled = true;
+            this.listBox_Conditions.Items.AddRange(new object[] {
+            "Condition 1",
+            "Condition 2",
+            "Condition 3"});
+            this.listBox_Conditions.Location = new System.Drawing.Point(905, 419);
+            this.listBox_Conditions.Name = "listBox_Conditions";
+            this.listBox_Conditions.Size = new System.Drawing.Size(162, 43);
+            this.listBox_Conditions.Sorted = true;
+            this.listBox_Conditions.TabIndex = 269;
+            // 
+            // listBox_Senses
+            // 
+            this.listBox_Senses.AllowDrop = true;
+            this.listBox_Senses.FormattingEnabled = true;
+            this.listBox_Senses.Items.AddRange(new object[] {
+            "Sense 1",
+            "Sense 2",
+            "Sense 3"});
+            this.listBox_Senses.Location = new System.Drawing.Point(924, 576);
+            this.listBox_Senses.Name = "listBox_Senses";
+            this.listBox_Senses.Size = new System.Drawing.Size(143, 30);
+            this.listBox_Senses.Sorted = true;
+            this.listBox_Senses.TabIndex = 270;
+            // 
+            // listBox_Movement
+            // 
+            this.listBox_Movement.AllowDrop = true;
+            this.listBox_Movement.FormattingEnabled = true;
+            this.listBox_Movement.Items.AddRange(new object[] {
+            "Movement 1",
+            "Movement 2",
+            "Movement 3"});
+            this.listBox_Movement.Location = new System.Drawing.Point(314, 640);
+            this.listBox_Movement.Name = "listBox_Movement";
+            this.listBox_Movement.Size = new System.Drawing.Size(113, 30);
+            this.listBox_Movement.Sorted = true;
+            this.listBox_Movement.TabIndex = 271;
+            // 
+            // textBox_NotesMovement
+            // 
+            this.textBox_NotesMovement.Location = new System.Drawing.Point(433, 643);
+            this.textBox_NotesMovement.Name = "textBox_NotesMovement";
+            this.textBox_NotesMovement.Size = new System.Drawing.Size(171, 20);
+            this.textBox_NotesMovement.TabIndex = 272;
+            // 
+            // button_NewCharacter
+            // 
+            this.button_NewCharacter.Location = new System.Drawing.Point(177, 109);
+            this.button_NewCharacter.Name = "button_NewCharacter";
+            this.button_NewCharacter.Size = new System.Drawing.Size(90, 24);
+            this.button_NewCharacter.TabIndex = 273;
+            this.button_NewCharacter.Text = "New Character";
+            this.button_NewCharacter.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2613,6 +2694,12 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.button_NewCharacter);
+            this.Controls.Add(this.textBox_NotesMovement);
+            this.Controls.Add(this.listBox_Movement);
+            this.Controls.Add(this.listBox_Senses);
+            this.Controls.Add(this.listBox_Conditions);
+            this.Controls.Add(this.listBox_ResistAndImmune);
             this.Controls.Add(this.numericUpDown_chaScore);
             this.Controls.Add(this.numericUpDown_wisScore);
             this.Controls.Add(this.numericUpDown_intScore);
@@ -2696,75 +2783,75 @@
             this.Controls.Add(this.textBox_Lore1SubType);
             this.Controls.Add(this.textBox_PerformanceItemMod);
             this.Controls.Add(this.textBox_PerformanceProfMod);
-            this.Controls.Add(this.label_PerformancyASMod);
-            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label_PerformanceASMod);
+            this.Controls.Add(this.label_Performance);
             this.Controls.Add(this.textBox_DiplomacyItemMod);
             this.Controls.Add(this.textBox_DiplomacyProfMod);
             this.Controls.Add(this.label_DiplomacyASMod);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.textBox_Deception);
+            this.Controls.Add(this.label_Diplomacy);
+            this.Controls.Add(this.textBox_DeceptionItemMod);
             this.Controls.Add(this.textBox_DeceptionProfMod);
             this.Controls.Add(this.label_DeceptionASMod);
-            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label_Deception);
             this.Controls.Add(this.textBox_IntimidationItemMod);
             this.Controls.Add(this.textBox_IntimidationProfMod);
             this.Controls.Add(this.label_IntimidationASMod);
-            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label_Intimidation);
             this.Controls.Add(this.textBox_MedicineItemMod);
             this.Controls.Add(this.textBox_MedicineProfMod);
             this.Controls.Add(this.label_MedicineASMod);
-            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label_Medicine);
             this.Controls.Add(this.textBox_NatureItemMod);
             this.Controls.Add(this.textBox_NatureProfMod);
             this.Controls.Add(this.label_NatureASMod);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label_Nature);
             this.Controls.Add(this.textBox_ReligionItemMod);
             this.Controls.Add(this.textBox_ReligionProfMod);
             this.Controls.Add(this.label_ReligionASMod);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label_Religion);
             this.Controls.Add(this.textBox_SurvivalItemMod);
             this.Controls.Add(this.textBox_SurvivalProfMod);
             this.Controls.Add(this.label_SurvivalASMod);
-            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label_Survival);
             this.Controls.Add(this.textBox_SocietyItemMod);
             this.Controls.Add(this.textBox_SocietyProfMod);
             this.Controls.Add(this.label_SocietyASMod);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label_Society);
             this.Controls.Add(this.textBox_OccultismItemMod);
             this.Controls.Add(this.textBox_OccultismProfMod);
             this.Controls.Add(this.label_OccultismASMod);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label_Occultism);
             this.Controls.Add(this.textBox_Lore2ItemMod);
             this.Controls.Add(this.textBox_Lore2ProfMod);
             this.Controls.Add(this.label_Lore2ASMod);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label_Lore2);
             this.Controls.Add(this.textBox_Lore1ItemMod);
             this.Controls.Add(this.textBox_Lore1ProfMod);
             this.Controls.Add(this.label_Lore1ASMod);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label_Lore1);
             this.Controls.Add(this.textBox_CraftingItemMod);
             this.Controls.Add(this.textBox_CraftingProfMod);
             this.Controls.Add(this.label_CraftingASMod);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label_Crafting);
             this.Controls.Add(this.textBox_ArcanaItemMod);
             this.Controls.Add(this.textBox_ArcanaProfMod);
             this.Controls.Add(this.label_ArcanaASMod);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label_Arcana);
             this.Controls.Add(this.textBox_ThieveryArmorMod);
             this.Controls.Add(this.textBox_StealthArmorMod);
             this.Controls.Add(this.textBox_ThieveryItemMod);
-            this.Controls.Add(this.textBox_Thievery);
+            this.Controls.Add(this.textBox_ThieveryProfMod);
             this.Controls.Add(this.label_ThieveryASMod);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label_Thievery);
             this.Controls.Add(this.textBox_StealthItemMod);
             this.Controls.Add(this.textBox_StealthProfMod);
             this.Controls.Add(this.label_StealthASMod);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label_Stealth);
             this.Controls.Add(this.textBox_AthleticsArmorMod);
             this.Controls.Add(this.textBox_AthleticsItemMod);
             this.Controls.Add(this.textBox_AthleticsProfMod);
             this.Controls.Add(this.label_AthleticsASMod);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_Athletics);
             this.Controls.Add(this.textBox_AcrobaticsArmorMod);
             this.Controls.Add(this.textBox_AcrobaticsItemMod);
             this.Controls.Add(this.textBox_AcrobaticsProfMod);
@@ -2994,73 +3081,73 @@
         private System.Windows.Forms.TextBox textBox_AthleticsItemMod;
         private System.Windows.Forms.TextBox textBox_AthleticsProfMod;
         private System.Windows.Forms.Label label_AthleticsASMod;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_Athletics;
         private System.Windows.Forms.TextBox textBox_StealthItemMod;
         private System.Windows.Forms.TextBox textBox_StealthProfMod;
         private System.Windows.Forms.Label label_StealthASMod;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label_Stealth;
         private System.Windows.Forms.TextBox textBox_ThieveryItemMod;
-        private System.Windows.Forms.TextBox textBox_Thievery;
+        private System.Windows.Forms.TextBox textBox_ThieveryProfMod;
         private System.Windows.Forms.Label label_ThieveryASMod;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_Thievery;
         private System.Windows.Forms.TextBox textBox_StealthArmorMod;
         private System.Windows.Forms.TextBox textBox_ThieveryArmorMod;
         private System.Windows.Forms.TextBox textBox_ArcanaItemMod;
         private System.Windows.Forms.TextBox textBox_ArcanaProfMod;
         private System.Windows.Forms.Label label_ArcanaASMod;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label_Arcana;
         private System.Windows.Forms.TextBox textBox_CraftingItemMod;
         private System.Windows.Forms.TextBox textBox_CraftingProfMod;
         private System.Windows.Forms.Label label_CraftingASMod;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label_Crafting;
         private System.Windows.Forms.TextBox textBox_Lore1ItemMod;
         private System.Windows.Forms.TextBox textBox_Lore1ProfMod;
         private System.Windows.Forms.Label label_Lore1ASMod;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label_Lore1;
         private System.Windows.Forms.TextBox textBox_Lore2ItemMod;
         private System.Windows.Forms.TextBox textBox_Lore2ProfMod;
         private System.Windows.Forms.Label label_Lore2ASMod;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label_Lore2;
         private System.Windows.Forms.TextBox textBox_OccultismItemMod;
         private System.Windows.Forms.TextBox textBox_OccultismProfMod;
         private System.Windows.Forms.Label label_OccultismASMod;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label_Occultism;
         private System.Windows.Forms.TextBox textBox_SocietyItemMod;
         private System.Windows.Forms.TextBox textBox_SocietyProfMod;
         private System.Windows.Forms.Label label_SocietyASMod;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label_Society;
         private System.Windows.Forms.TextBox textBox_SurvivalItemMod;
         private System.Windows.Forms.TextBox textBox_SurvivalProfMod;
         private System.Windows.Forms.Label label_SurvivalASMod;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label_Survival;
         private System.Windows.Forms.TextBox textBox_ReligionItemMod;
         private System.Windows.Forms.TextBox textBox_ReligionProfMod;
         private System.Windows.Forms.Label label_ReligionASMod;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label_Religion;
         private System.Windows.Forms.TextBox textBox_NatureItemMod;
         private System.Windows.Forms.TextBox textBox_NatureProfMod;
         private System.Windows.Forms.Label label_NatureASMod;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label_Nature;
         private System.Windows.Forms.TextBox textBox_MedicineItemMod;
         private System.Windows.Forms.TextBox textBox_MedicineProfMod;
         private System.Windows.Forms.Label label_MedicineASMod;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label_Medicine;
         private System.Windows.Forms.TextBox textBox_IntimidationItemMod;
         private System.Windows.Forms.TextBox textBox_IntimidationProfMod;
         private System.Windows.Forms.Label label_IntimidationASMod;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox_Deception;
+        private System.Windows.Forms.Label label_Intimidation;
+        private System.Windows.Forms.TextBox textBox_DeceptionItemMod;
         private System.Windows.Forms.TextBox textBox_DeceptionProfMod;
         private System.Windows.Forms.Label label_DeceptionASMod;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label_Deception;
         private System.Windows.Forms.TextBox textBox_DiplomacyItemMod;
         private System.Windows.Forms.TextBox textBox_DiplomacyProfMod;
         private System.Windows.Forms.Label label_DiplomacyASMod;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label_Diplomacy;
         private System.Windows.Forms.TextBox textBox_PerformanceItemMod;
         private System.Windows.Forms.TextBox textBox_PerformanceProfMod;
-        private System.Windows.Forms.Label label_PerformancyASMod;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label_PerformanceASMod;
+        private System.Windows.Forms.Label label_Performance;
         private System.Windows.Forms.TextBox textBox_Lore1SubType;
         private System.Windows.Forms.TextBox textBox_Lore2SubType;
         private System.Windows.Forms.Button button1;
@@ -3161,6 +3248,12 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_intScore;
         private System.Windows.Forms.NumericUpDown numericUpDown_wisScore;
         private System.Windows.Forms.NumericUpDown numericUpDown_chaScore;
+        private System.Windows.Forms.ListBox listBox_ResistAndImmune;
+        private System.Windows.Forms.ListBox listBox_Conditions;
+        private System.Windows.Forms.ListBox listBox_Senses;
+        private System.Windows.Forms.ListBox listBox_Movement;
+        private System.Windows.Forms.TextBox textBox_NotesMovement;
+        private System.Windows.Forms.Button button_NewCharacter;
     }
 }
 

@@ -545,9 +545,6 @@ using System.Threading.Tasks;
             languages = "Common";
 
     }
-
-    
-
 }
 
     public class Skill
@@ -560,7 +557,18 @@ using System.Threading.Tasks;
         private Proficiency prof;
         private int item;
         private int armorMod;
+
+        public string Name { get => name; set => name = value; }
+        public string SubType { get => subType; set => subType = value; }
+        public int Value { get => value; set => this.value = value; }
+        public string AbilityScoreName { get => abilityScoreName; set => abilityScoreName = value; }
+        public int AbilityScoreValue { get => abilityScoreValue; set => abilityScoreValue = value; }
+        public int Item { get => item; set => item = value; }
+        public int ArmorMod { get => armorMod; set => armorMod = value; }
+        internal Proficiency Prof { get => prof; set => prof = value; }
     }
+
+    // TODO - Add new classes: Item, Sheild, Weapon
 
     // Enumerations
     enum WeaponType
