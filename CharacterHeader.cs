@@ -522,30 +522,32 @@ using System.Threading.Tasks;
             otherWeaponProf2 = 0;
 
             // Skills
-            acrobatics = new Skill();
-            arcana = new Skill();
-            athletics = new Skill();
-            crafting = new Skill();
-            deception = new Skill();
-            diplomacy = new Skill();
-            intimidation = new Skill();
-            lore1 = new Skill();
-            lore2 = new Skill();
-            medicine = new Skill();
-            nature = new Skill();
-            occultism = new Skill();
-            performance = new Skill();
-            religion = new Skill();
-            society = new Skill();
-            stealth = new Skill();
-            survival = new Skill();
-            thievery = new Skill();
+            acrobatics = new Skill("Acrobatics", "DEX");
+            arcana = new Skill("Arcana", "INT");
+            athletics = new Skill("Athletics", "STR");
+            crafting = new Skill("Crafting", "INT");
+            deception = new Skill("Deception", "CHA");
+            diplomacy = new Skill("Diplomacy", "CHA");
+            intimidation = new Skill("Intimidation", "CHA");
+            lore1 = new Skill("Lore1", "INT", "Select");
+            lore2 = new Skill("Lore2", "INT", "Select");
+            medicine = new Skill("Medicine", "WIS");
+            nature = new Skill("Nature", "WIS");
+            occultism = new Skill("Occultism", "INT");
+            performance = new Skill("Performance", "CHA");
+            religion = new Skill("Religion", "WIS");
+            society = new Skill("Society", "INT");
+            stealth = new Skill("Stealth", "DEX");
+            survival = new Skill("Survival", "WIS");
+            thievery = new Skill("Thievery", "DEX");
 
             // Languages
             languages = "Common";
 
+        }
+
+
     }
-}
 
     public class Skill
     {
@@ -566,6 +568,21 @@ using System.Threading.Tasks;
         public int Item { get => item; set => item = value; }
         public int ArmorMod { get => armorMod; set => armorMod = value; }
         internal Proficiency Prof { get => prof; set => prof = value; }
+
+        public Skill(string skillName, string ASName, string sType = "", int ASValue = 0, int profBonus = 0, int itemBonus = 0, int armorM = 0)
+        {
+            name = skillName;
+            abilityScoreName = ASName;
+            subType = sType;
+            abilityScoreValue = ASValue;
+            prof = (Proficiency)profBonus;
+            item = itemBonus;
+            armorMod = armorM;
+
+            UpdateValue();
+        }
+
+        public void UpdateValue() { value = abilityScoreValue + (int)prof + item + armorMod;}
     }
 
     // TODO - Add new classes: Item, Sheild, Weapon

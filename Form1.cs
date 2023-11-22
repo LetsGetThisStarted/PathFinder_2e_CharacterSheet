@@ -418,6 +418,12 @@ namespace PathFinder_2e_CharacterSheet
             UpdateSkillThievery(thisChar);
         }
 
+        // TODO - Complete update language section
+        private void UpdateSheetLanguages(Character thisChar)
+        {
+
+        }
+
         private void UpdateSheetAllValues(Character thisChar)
         {
             //TODO - Copy all values in thisChar to the corrisponding values in the Character Sheet
@@ -434,8 +440,7 @@ namespace PathFinder_2e_CharacterSheet
             UpdateSheetRangedStrikes(thisChar);
             UpdateSheetWeaponProf(thisChar);
             UpdateSheetSkills(thisChar);
-
-            // Languages
+            UpdateSheetLanguages(thisChar);
 
             // Unassigned
             /*
