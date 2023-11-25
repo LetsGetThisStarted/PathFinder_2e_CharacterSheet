@@ -1,15 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net.Security;
-using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PathFinder_2e_CharacterSheet
@@ -228,7 +217,7 @@ namespace PathFinder_2e_CharacterSheet
             progressBar_WeaponOther2.Value = (int)thisChar.OtherWeaponProf2;
         }
 
-        private void UpdateSkillAcrobatics(Character thisChar)
+        private void UpdateSheetAcrobatics(Character thisChar)
         {
             progressBar_Acrobatics.Value = (int)thisChar.Acrobatics.Prof;
             label_Acrobatics.Text = thisChar.Acrobatics.Value.ToString();
@@ -238,7 +227,7 @@ namespace PathFinder_2e_CharacterSheet
             textBox_AcrobaticsArmorMod.Text = thisChar.Acrobatics.ArmorMod.ToString();
         }
 
-        private void UpdateSkillArcana(Character thisChar)
+        private void UpdateSheetArcana(Character thisChar)
         {
             progressBar_Arcana.Value = (int)thisChar.Arcana.Prof;
             textBox_ArcanaItemMod.Text = thisChar.Arcana.Item.ToString();
@@ -247,7 +236,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Arcana.Text = thisChar.Arcana.Value.ToString();
         }
 
-        private void UpdateSkillAthletics(Character thisChar)
+        private void UpdateSheetAthletics(Character thisChar)
         {
             progressBar_Athletics.Value = (int)thisChar.Athletics.Prof;
             textBox_AthleticsArmorMod.Text = thisChar.Athletics.ArmorMod.ToString();
@@ -257,7 +246,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Athletics.Text = thisChar.Athletics.Value.ToString();
         }
 
-        private void UpdateSkillCrafting(Character thisChar)
+        private void UpdateSheetCrafting(Character thisChar)
         {
             progressBar_Crafting.Value = (int)thisChar.Crafting.Prof;
             textBox_CraftingItemMod.Text = thisChar.Crafting.Item.ToString();
@@ -266,7 +255,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Crafting.Text = thisChar.Crafting.Value.ToString();
         }
 
-        private void UpdateSkillDeception(Character thisChar) 
+        private void UpdateSheetDeception(Character thisChar) 
         {
             label_Deception.Text = thisChar.Deception.Value.ToString();
             progressBar_Deception.Value = (int)thisChar.Deception.Prof;
@@ -275,7 +264,7 @@ namespace PathFinder_2e_CharacterSheet
             label_DeceptionASMod.Text = thisChar.Deception.AbilityScoreValue.ToString();
         }
 
-        private void UpdateSkillDiplomacy(Character thisChar)
+        private void UpdateSheetDiplomacy(Character thisChar)
         {
             progressBar_Diplomacy.Value = (int)thisChar.Diplomacy.Prof;
             textBox_DiplomacyItemMod.Text = thisChar.Diplomacy.Item.ToString();
@@ -284,7 +273,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Diplomacy.Text = thisChar.Diplomacy.Value.ToString();
         }
 
-        private void UpdateSkillIntimidation(Character thisChar)
+        private void UpdateSheetIntimidation(Character thisChar)
         {
             progressBar_Intimidation.Value = (int)thisChar.Intimidation.Prof;
             textBox_IntimidationItemMod.Text = thisChar.Intimidation.Item.ToString();
@@ -293,7 +282,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Intimidation.Text = thisChar.Intimidation.Value.ToString();
         }
 
-        private void UpdateSkillLore1(Character thisChar)
+        private void UpdateSheetLore1(Character thisChar)
         {
             progressBar_Lore1.Value = (int)thisChar.Lore1.Prof;
             textBox_Lore1ItemMod.Text = thisChar.Lore1.Item.ToString();
@@ -303,7 +292,7 @@ namespace PathFinder_2e_CharacterSheet
             textBox_Lore1SubType.Text = thisChar.Lore1.SubType.ToString();
         }
 
-        private void UpdateSkillLore2(Character thisChar)
+        private void UpdateSheetLore2(Character thisChar)
         {
             progressBar_Lore2.Value = (int)thisChar.Lore2.Prof;
             textBox_Lore2ItemMod.Text = thisChar.Lore2.Item.ToString();
@@ -313,7 +302,7 @@ namespace PathFinder_2e_CharacterSheet
             textBox_Lore2SubType.Text = thisChar.Lore2.SubType.ToString();
         }
 
-        private void UpdateSkillMedicine(Character thisChar)
+        private void UpdateSheetMedicine(Character thisChar)
         {
             progressBar_Medicine.Value = (int)thisChar.Medicine.Prof;
             textBox_MedicineItemMod.Text = thisChar.Medicine.Item.ToString();
@@ -322,7 +311,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Medicine.Text = thisChar.Medicine.Value.ToString();
         }
 
-        private void UpdateSkillNature(Character thisChar)
+        private void UpdateSheetNature(Character thisChar)
         {
             progressBar_Nature.Value = (int)thisChar.Nature.Prof;
             textBox_NatureItemMod.Text = thisChar.Nature.Item.ToString();
@@ -331,7 +320,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Nature.Text = thisChar.Nature.Value.ToString();
         }
 
-        private void UpdateSkillOccultism(Character thisChar)
+        private void UpdateSheetOccultism(Character thisChar)
         {
             progressBar_Occultism.Value = (int)thisChar.Occultism.Prof;
             textBox_OccultismItemMod.Text = thisChar.Occultism.Item.ToString();
@@ -340,7 +329,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Occultism.Text = thisChar.Occultism.Value.ToString();
         }
 
-        private void UpdateSkillPerformance(Character thisChar)
+        private void UpdateSheetPerformance(Character thisChar)
         {
             progressBar_Performance.Value = (int)thisChar.Performance.Prof;
             textBox_PerformanceItemMod.Text = thisChar.Performance.Item.ToString();
@@ -349,7 +338,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Performance.Text = thisChar.Performance.Value.ToString();
         }
 
-        private void UpdateSkillReligion(Character thisChar)
+        private void UpdateSheetReligion(Character thisChar)
         {
             progressBar_Religion.Value = (int)thisChar.Religion.Prof;
             textBox_ReligionItemMod.Text = thisChar.Religion.Item.ToString();
@@ -358,7 +347,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Religion.Text = thisChar.Religion.Value.ToString();
         }
 
-        private void UpdateSkillSociety(Character thisChar)
+        private void UpdateSheetSociety(Character thisChar)
         {
             progressBar_Society.Value = (int)thisChar.Society.Prof;
             textBox_SocietyItemMod.Text = thisChar.Society.Item.ToString();
@@ -367,7 +356,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Society.Text = thisChar.Society.Value.ToString();
         }
 
-        private void UpdateSkillStealth(Character thisChar)
+        private void UpdateSheetStealth(Character thisChar)
         {
             progressBar_Stealth.Value = (int)thisChar.Stealth.Prof;
             textBox_StealthItemMod.Text = thisChar.Stealth.Item.ToString();
@@ -377,7 +366,7 @@ namespace PathFinder_2e_CharacterSheet
             textBox_StealthArmorMod.Text = thisChar.Stealth.ArmorMod.ToString();
         }
 
-        private void UpdateSkillSurvival(Character thisChar)
+        private void UpdateSheetSurvival(Character thisChar)
         {
             progressBar_Survival.Value = (int)thisChar.Survival.Prof;
             textBox_SurvivalItemMod.Text = thisChar.Survival.Item.ToString();
@@ -386,7 +375,7 @@ namespace PathFinder_2e_CharacterSheet
             label_Survival.Text = thisChar.Survival.Value.ToString();
         }
 
-        private void UpdateSkillThievery(Character thisChar)
+        private void UpdateSheetThievery(Character thisChar)
         {
             progressBar_Thievery.Value = (int)thisChar.Thievery.Prof;
             textBox_ThieveryItemMod.Text = thisChar.Thievery.Item.ToString();
@@ -398,24 +387,24 @@ namespace PathFinder_2e_CharacterSheet
 
         private void UpdateSheetSkills(Character thisChar)
         {
-            UpdateSkillAcrobatics(thisChar);
-            UpdateSkillArcana(thisChar);
-            UpdateSkillAthletics(thisChar);
-            UpdateSkillCrafting(thisChar);
-            UpdateSkillDeception(thisChar);
-            UpdateSkillDiplomacy(thisChar);
-            UpdateSkillIntimidation(thisChar);
-            UpdateSkillLore1(thisChar);
-            UpdateSkillLore2(thisChar);
-            UpdateSkillMedicine(thisChar);
-            UpdateSkillNature(thisChar);
-            UpdateSkillOccultism(thisChar);
-            UpdateSkillPerformance(thisChar);
-            UpdateSkillReligion(thisChar);
-            UpdateSkillSociety(thisChar);
-            UpdateSkillStealth(thisChar);
-            UpdateSkillSurvival(thisChar);
-            UpdateSkillThievery(thisChar);
+            UpdateSheetAcrobatics(thisChar);
+            UpdateSheetArcana(thisChar);
+            UpdateSheetAthletics(thisChar);
+            UpdateSheetCrafting(thisChar);
+            UpdateSheetDeception(thisChar);
+            UpdateSheetDiplomacy(thisChar);
+            UpdateSheetIntimidation(thisChar);
+            UpdateSheetLore1(thisChar);
+            UpdateSheetLore2(thisChar);
+            UpdateSheetMedicine(thisChar);
+            UpdateSheetNature(thisChar);
+            UpdateSheetOccultism(thisChar);
+            UpdateSheetPerformance(thisChar);
+            UpdateSheetReligion(thisChar);
+            UpdateSheetSociety(thisChar);
+            UpdateSheetStealth(thisChar);
+            UpdateSheetSurvival(thisChar);
+            UpdateSheetThievery(thisChar);
         }
 
         // TODO - Complete update language section
@@ -567,6 +556,294 @@ namespace PathFinder_2e_CharacterSheet
 
             // Create a new character object
             currentChar = new Character();
+        }
+
+        private void UpdateCharacterFromSheet(Character thisChar)
+        {
+            // Assuming 'textBox_PlayerName', 'textBox_CharacterName', etc., are your input controls
+            thisChar.PlayerName = textBox_PlayerName.Text;
+            thisChar.CharacterName = textBox_CharacterName.Text;
+            thisChar.Deity = comboBox_Deity.Text;
+            thisChar.Alignment = comboBox_Alignment.Text;
+            thisChar.Background = comboBox_Background.Text;
+
+            // Abilities
+            thisChar.DexMod = Convert.ToInt32(label_DexMod.Text);
+            thisChar.ConMod = Convert.ToInt32(label_ConMod.Text);
+            thisChar.IntMod = Convert.ToInt32(label_IntMod.Text);
+            thisChar.WisMod = Convert.ToInt32(label_WisMod.Text);
+            thisChar.ChaMod = Convert.ToInt32(label_ChaMod.Text);
+            thisChar.StrMod = Convert.ToInt32(label_StrMod.Text);
+
+            // Class DC
+            thisChar.Dc = Convert.ToInt32(label_DC.Text);
+            thisChar.DcProf = (Proficiency)progressBar_ClassDC.Value;
+            thisChar.DcKey = Convert.ToInt32(textBox_DCKey.Text);
+            thisChar.DcItem = Convert.ToInt32(textBox_DCItem.Text);
+
+            // AC
+            thisChar.Ac = Convert.ToInt32(label_AC.Text);
+            thisChar.UnarmoredProf = (Proficiency)progressBar_Unarmored.Value;
+            thisChar.LightProf = (Proficiency)progressBar_Light.Value;
+            thisChar.MediumProf = (Proficiency)progressBar_Medium.Value;
+            thisChar.HeavyProf = (Proficiency)progressBar_Heavy.Value;
+            thisChar.AcProf = (Proficiency)progressBar_ArmorClass.Value;
+            thisChar.DexMod = Convert.ToInt32(textBox_ACDex.Text);
+            thisChar.AcItem = Convert.ToInt32(textBox_ACItem.Text);
+
+            // Saving Throws
+                // Fortitude
+            thisChar.FortitudeProf = (Proficiency)progressBar_Fortitude.Value;
+            thisChar.Fortitude = Convert.ToInt32(label_Fortitude.Text);
+            thisChar.FortitudeItem = Convert.ToInt32(textBox_FortitudeItem.Text);
+                // Reflex
+            thisChar.ReflexProf = (Proficiency)progressBar_Reflex.Value;
+            thisChar.Reflex = Convert.ToInt32(label_Reflex.Text);
+            thisChar.ReflexItem = Convert.ToInt32(textBox_ReflexItem.Text);
+                // Will
+            thisChar.WillProf = (Proficiency)progressBar_Will.Value;
+            thisChar.Will = Convert.ToInt32(label_Will.Text);
+            thisChar.WillItem = Convert.ToInt32(textBox_WillItem.Text);
+
+            // HP
+            thisChar.MaxHP = Convert.ToInt32(textBox_HitPointsMax.Text);
+            thisChar.CurrentHP = Convert.ToInt32(textBox_HitPointsCurrent.Text);
+            thisChar.TemporaryHP = Convert.ToInt32(textBox_HitPointsTemp.Text);
+
+            // Perception
+            thisChar.PerceptionProf = (Proficiency)progressBar_Perception.Value;
+            thisChar.Perception = Convert.ToInt32(label_Perception.Text);
+            thisChar.PerceptionItem = Convert.ToInt32(textBox_PerceptionItem.Text);
+
+            // Speed
+            thisChar.Speed = Convert.ToInt32(textBox_Speed.Text);
+
+            // Melee
+            thisChar.Melee1Prof = (Proficiency)progressBar_Melee1.Value;
+            thisChar.Melee2Prof = (Proficiency)progressBar_Melee2.Value;
+            thisChar.Melee3Prof = (Proficiency)progressBar_Melee3.Value;
+
+            // Ranged
+            thisChar.Ranged1Prof = (Proficiency)progressBar_Ranged1.Value;
+            thisChar.Ranged2Prof = (Proficiency)progressBar_Ranged2.Value;
+            thisChar.Ranged3Prof = (Proficiency)progressBar_Ranged3.Value;
+
+            // Weapon Prof
+            thisChar.SimpleWeaponProf = (Proficiency)progressBar_WeaponSimple.Value;
+            thisChar.MartialWeaponProf = (Proficiency)progressBar_WeaponMartial.Value;
+            thisChar.OtherWeaponProf1 = (Proficiency)progressBar_WeaponOther1.Value;
+            thisChar.OtherWeaponProf2 = (Proficiency)progressBar_WeaponOther2.Value;
+
+            // Skills
+            UpdateCharacterSkillsFromSheet(thisChar);
+        }
+
+        private void UpdateCharacterSkillsFromSheet(Character thisChar)
+        {
+            // Update skills individually, similar to the update methods
+            UpdateCharacterAcrobaticsFromSheet(thisChar);
+            UpdateCharacterArcanaFromSheet(thisChar);
+            UpdateCharacterAthleticsFromSheet(thisChar);
+            UpdateCharacterCraftingFromSheet(thisChar);
+            UpdateCharacterDeceptionFromSheet(thisChar);
+            UpdateCharacterDiplomacyFromSheet(thisChar);
+            UpdateCharacterIntimidationFromSheet(thisChar);
+            UpdateCharacterLore1FromSheet(thisChar);
+            UpdateCharacterLore2FromSheet(thisChar);
+            UpdateCharacterMedicineFromSheet(thisChar);
+            UpdateCharacterNatureFromSheet(thisChar);
+            UpdateCharacterOccultismFromSheet(thisChar);
+            UpdateCharacterPerformanceFromSheet(thisChar);
+            UpdateCharacterReligionFromSheet(thisChar);
+            UpdateCharacterSocietyFromSheet(thisChar);
+            UpdateCharacterStealthFromSheet(thisChar);
+            UpdateCharacterSurvivalFromSheet(thisChar);
+            UpdateCharacterThieveryFromSheet(thisChar);
+        }
+
+        private void UpdateCharacterAcrobaticsFromSheet(Character thisChar)
+        {
+            thisChar.Acrobatics.Prof = (Proficiency)progressBar_Acrobatics.Value;
+            thisChar.Acrobatics.Value = Convert.ToInt32(label_Acrobatics.Text);
+            thisChar.Acrobatics.AbilityScoreValue = Convert.ToInt32(label_AcrobaticsASMod.Text);
+            thisChar.Acrobatics.Prof = (Proficiency)Convert.ToInt32(textBox_AcrobaticsProfMod.Text);
+            thisChar.Acrobatics.Item = Convert.ToInt32(textBox_AcrobaticsItemMod.Text);
+            thisChar.Acrobatics.ArmorMod = Convert.ToInt32(textBox_AcrobaticsArmorMod.Text);
+        }
+
+        // Arcana
+        private void UpdateCharacterArcanaFromSheet(Character thisChar)
+        {
+            thisChar.Arcana.Prof = (Proficiency)progressBar_Arcana.Value;
+            thisChar.Arcana.Value = Convert.ToInt32(label_Arcana.Text);
+            thisChar.Arcana.AbilityScoreValue = Convert.ToInt32(label_ArcanaASMod.Text);
+            thisChar.Arcana.Prof = (Proficiency)Convert.ToInt32(textBox_ArcanaProfMod.Text);
+            thisChar.Arcana.Item = Convert.ToInt32(textBox_ArcanaItemMod.Text);
+        }
+
+        // Athletics
+        private void UpdateCharacterAthleticsFromSheet(Character thisChar)
+        {
+            thisChar.Athletics.Prof = (Proficiency)progressBar_Athletics.Value;
+            thisChar.Athletics.Value = Convert.ToInt32(label_Athletics.Text);
+            thisChar.Athletics.AbilityScoreValue = Convert.ToInt32(label_AthleticsASMod.Text);
+            thisChar.Athletics.Prof = (Proficiency)Convert.ToInt32(textBox_AthleticsProfMod.Text);
+            thisChar.Athletics.Item = Convert.ToInt32(textBox_AthleticsItemMod.Text);
+            thisChar.Athletics.ArmorMod = Convert.ToInt32(textBox_AthleticsArmorMod.Text);
+        }
+
+        // Crafting
+        private void UpdateCharacterCraftingFromSheet(Character thisChar)
+        {
+            thisChar.Crafting.Prof = (Proficiency)progressBar_Crafting.Value;
+            thisChar.Crafting.Value = Convert.ToInt32(label_Crafting.Text);
+            thisChar.Crafting.AbilityScoreValue = Convert.ToInt32(label_CraftingASMod.Text);
+            thisChar.Crafting.Prof = (Proficiency)Convert.ToInt32(textBox_CraftingProfMod.Text);
+            thisChar.Crafting.Item = Convert.ToInt32(textBox_CraftingItemMod.Text);
+        }
+
+        // Deception
+        private void UpdateCharacterDeceptionFromSheet(Character thisChar)
+        {
+            thisChar.Deception.Value = Convert.ToInt32(label_Deception.Text);
+            thisChar.Deception.Prof = (Proficiency)progressBar_Deception.Value;
+            thisChar.Deception.Item = Convert.ToInt32(textBox_DeceptionItemMod.Text);
+            thisChar.Deception.Prof = (Proficiency)Convert.ToInt32(textBox_DeceptionProfMod.Text);
+            thisChar.Deception.AbilityScoreValue = Convert.ToInt32(label_DeceptionASMod.Text);
+        }
+
+        // Diplomacy
+        private void UpdateCharacterDiplomacyFromSheet(Character thisChar)
+        {
+            thisChar.Diplomacy.Prof = (Proficiency)progressBar_Diplomacy.Value;
+            thisChar.Diplomacy.Item = Convert.ToInt32(textBox_DiplomacyItemMod.Text);
+            thisChar.Diplomacy.Prof = (Proficiency)Convert.ToInt32(textBox_DiplomacyProfMod.Text);
+            thisChar.Diplomacy.AbilityScoreValue = Convert.ToInt32(label_DiplomacyASMod.Text);
+            thisChar.Diplomacy.Value = Convert.ToInt32(label_Diplomacy.Text);
+        }
+
+        // Intimidation
+        private void UpdateCharacterIntimidationFromSheet(Character thisChar)
+        {
+            thisChar.Intimidation.Prof = (Proficiency)progressBar_Intimidation.Value;
+            thisChar.Intimidation.Item = Convert.ToInt32(textBox_IntimidationItemMod.Text);
+            thisChar.Intimidation.Prof = (Proficiency)Convert.ToInt32(textBox_IntimidationProfMod.Text);
+            thisChar.Intimidation.AbilityScoreValue = Convert.ToInt32(label_IntimidationASMod.Text);
+            thisChar.Intimidation.Value = Convert.ToInt32(label_Intimidation.Text);
+        }
+
+        // Lore1
+        private void UpdateCharacterLore1FromSheet(Character thisChar)
+        {
+            thisChar.Lore1.Prof = (Proficiency)progressBar_Lore1.Value;
+            thisChar.Lore1.Item = Convert.ToInt32(textBox_Lore1ItemMod.Text);
+            thisChar.Lore1.Prof = (Proficiency)Convert.ToInt32(textBox_Lore1ProfMod.Text);
+            thisChar.Lore1.AbilityScoreValue = Convert.ToInt32(label_Lore1ASMod.Text);
+            thisChar.Lore1.Value = Convert.ToInt32(label_Lore1.Text);
+            thisChar.Lore1.SubType = textBox_Lore1SubType.Text;
+        }
+
+        // Lore2
+        private void UpdateCharacterLore2FromSheet(Character thisChar)
+        {
+            thisChar.Lore2.Prof = (Proficiency)progressBar_Lore2.Value;
+            thisChar.Lore2.Item = Convert.ToInt32(textBox_Lore2ItemMod.Text);
+            thisChar.Lore2.Prof = (Proficiency)Convert.ToInt32(textBox_Lore2ProfMod.Text);
+            thisChar.Lore2.AbilityScoreValue = Convert.ToInt32(label_Lore2ASMod.Text);
+            thisChar.Lore2.Value = Convert.ToInt32(label_Lore2.Text);
+            thisChar.Lore2.SubType = textBox_Lore2SubType.Text;
+        }
+
+        // Medicine
+        private void UpdateCharacterMedicineFromSheet(Character thisChar)
+        {
+            thisChar.Medicine.Prof = (Proficiency)progressBar_Medicine.Value;
+            thisChar.Medicine.Item = Convert.ToInt32(textBox_MedicineItemMod.Text);
+            thisChar.Medicine.Prof = (Proficiency)Convert.ToInt32(textBox_MedicineProfMod.Text);
+            thisChar.Medicine.AbilityScoreValue = Convert.ToInt32(label_MedicineASMod.Text);
+            thisChar.Medicine.Value = Convert.ToInt32(label_Medicine.Text);
+        }
+
+        // Nature
+        private void UpdateCharacterNatureFromSheet(Character thisChar)
+        {
+            thisChar.Nature.Prof = (Proficiency)progressBar_Nature.Value;
+            thisChar.Nature.Item = Convert.ToInt32(textBox_NatureItemMod.Text);
+            thisChar.Nature.Prof = (Proficiency)Convert.ToInt32(textBox_NatureProfMod.Text);
+            thisChar.Nature.AbilityScoreValue = Convert.ToInt32(label_NatureASMod.Text);
+            thisChar.Nature.Value = Convert.ToInt32(label_Nature.Text);
+        }
+
+        // Occultism
+        private void UpdateCharacterOccultismFromSheet(Character thisChar)
+        {
+            thisChar.Occultism.Prof = (Proficiency)progressBar_Occultism.Value;
+            thisChar.Occultism.Item = Convert.ToInt32(textBox_OccultismItemMod.Text);
+            thisChar.Occultism.Prof = (Proficiency)Convert.ToInt32(textBox_OccultismProfMod.Text);
+            thisChar.Occultism.AbilityScoreValue = Convert.ToInt32(label_OccultismASMod.Text);
+            thisChar.Occultism.Value = Convert.ToInt32(label_Occultism.Text);
+        }
+
+        // Performance
+        private void UpdateCharacterPerformanceFromSheet(Character thisChar)
+        {
+            thisChar.Performance.Prof = (Proficiency)progressBar_Performance.Value;
+            thisChar.Performance.Item = Convert.ToInt32(textBox_PerformanceItemMod.Text);
+            thisChar.Performance.Prof = (Proficiency)Convert.ToInt32(textBox_PerformanceProfMod.Text);
+            thisChar.Performance.AbilityScoreValue = Convert.ToInt32(label_PerformanceASMod.Text);
+            thisChar.Performance.Value = Convert.ToInt32(label_Performance.Text);
+        }
+
+        // Religion
+        private void UpdateCharacterReligionFromSheet(Character thisChar)
+        {
+            thisChar.Religion.Prof = (Proficiency)progressBar_Religion.Value;
+            thisChar.Religion.Item = Convert.ToInt32(textBox_ReligionItemMod.Text);
+            thisChar.Religion.Prof = (Proficiency)Convert.ToInt32(textBox_ReligionProfMod.Text);
+            thisChar.Religion.AbilityScoreValue = Convert.ToInt32(label_ReligionASMod.Text);
+            thisChar.Religion.Value = Convert.ToInt32(label_Religion.Text);
+        }
+
+        // Society
+        private void UpdateCharacterSocietyFromSheet(Character thisChar)
+        {
+            thisChar.Society.Prof = (Proficiency)progressBar_Society.Value;
+            thisChar.Society.Item = Convert.ToInt32(textBox_SocietyItemMod.Text);
+            thisChar.Society.Prof = (Proficiency)Convert.ToInt32(textBox_SocietyProfMod.Text);
+            thisChar.Society.AbilityScoreValue = Convert.ToInt32(label_SocietyASMod.Text);
+            thisChar.Society.Value = Convert.ToInt32(label_Society.Text);
+        }
+
+        // Stealth
+        private void UpdateCharacterStealthFromSheet(Character thisChar)
+        {
+            thisChar.Stealth.Prof = (Proficiency)progressBar_Stealth.Value;
+            thisChar.Stealth.Item = Convert.ToInt32(textBox_StealthItemMod.Text);
+            thisChar.Stealth.Prof = (Proficiency)Convert.ToInt32(textBox_StealthProfMod.Text);
+            thisChar.Stealth.AbilityScoreValue = Convert.ToInt32(label_StealthASMod.Text);
+            thisChar.Stealth.Value = Convert.ToInt32(label_Stealth.Text);
+            thisChar.Stealth.ArmorMod = Convert.ToInt32(textBox_StealthArmorMod.Text);
+        }
+
+        // Survival
+        private void UpdateCharacterSurvivalFromSheet(Character thisChar)
+        {
+            thisChar.Survival.Prof = (Proficiency)progressBar_Survival.Value;
+            thisChar.Survival.Item = Convert.ToInt32(textBox_SurvivalItemMod.Text);
+            thisChar.Survival.Prof = (Proficiency)Convert.ToInt32(textBox_SurvivalProfMod.Text);
+            thisChar.Survival.AbilityScoreValue = Convert.ToInt32(label_SurvivalASMod.Text);
+            thisChar.Survival.Value = Convert.ToInt32(label_Survival.Text);
+        }
+
+        // Thievery
+        private void UpdateCharacterThieveryFromSheet(Character thisChar)
+        {
+            thisChar.Thievery.Prof = (Proficiency)progressBar_Thievery.Value;
+            thisChar.Thievery.Item = Convert.ToInt32(textBox_ThieveryItemMod.Text);
+            thisChar.Thievery.Prof = (Proficiency)Convert.ToInt32(textBox_ThieveryProfMod.Text);
+            thisChar.Thievery.AbilityScoreValue = Convert.ToInt32(label_ThieveryASMod.Text);
+            thisChar.Thievery.Value = Convert.ToInt32(label_Thievery.Text);
+            thisChar.Thievery.ArmorMod = Convert.ToInt32(textBox_ThieveryArmorMod.Text);
         }
 
         private void label_Diplomacy_Click(object sender, EventArgs e)
