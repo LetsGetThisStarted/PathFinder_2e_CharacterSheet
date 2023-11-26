@@ -300,6 +300,8 @@
             this.listBox_Movement = new System.Windows.Forms.ListBox();
             this.textBox_NotesMovement = new System.Windows.Forms.TextBox();
             this.button_NewCharacter = new System.Windows.Forms.Button();
+            this.button_SaveCharacter = new System.Windows.Forms.Button();
+            this.button_LoadCharacter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -2686,6 +2688,25 @@
             this.button_NewCharacter.Text = "New Character";
             this.button_NewCharacter.UseVisualStyleBackColor = true;
             // 
+            // button_SaveCharacter
+            // 
+            this.button_SaveCharacter.Location = new System.Drawing.Point(177, 139);
+            this.button_SaveCharacter.Name = "button_SaveCharacter";
+            this.button_SaveCharacter.Size = new System.Drawing.Size(90, 24);
+            this.button_SaveCharacter.TabIndex = 274;
+            this.button_SaveCharacter.Text = "Save Character";
+            this.button_SaveCharacter.UseVisualStyleBackColor = true;
+            this.button_SaveCharacter.Click += new System.EventHandler(this.button_SaveCharacter_Click);
+            // 
+            // button_LoadCharacter
+            // 
+            this.button_LoadCharacter.Location = new System.Drawing.Point(177, 170);
+            this.button_LoadCharacter.Name = "button_LoadCharacter";
+            this.button_LoadCharacter.Size = new System.Drawing.Size(90, 24);
+            this.button_LoadCharacter.TabIndex = 275;
+            this.button_LoadCharacter.Text = "Load Character";
+            this.button_LoadCharacter.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2694,6 +2715,8 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.Controls.Add(this.button_LoadCharacter);
+            this.Controls.Add(this.button_SaveCharacter);
             this.Controls.Add(this.button_NewCharacter);
             this.Controls.Add(this.textBox_NotesMovement);
             this.Controls.Add(this.listBox_Movement);
@@ -3254,6 +3277,8 @@
         private System.Windows.Forms.ListBox listBox_Movement;
         private System.Windows.Forms.TextBox textBox_NotesMovement;
         private System.Windows.Forms.Button button_NewCharacter;
+        private System.Windows.Forms.Button button_SaveCharacter;
+        private System.Windows.Forms.Button button_LoadCharacter;
     }
 }
 

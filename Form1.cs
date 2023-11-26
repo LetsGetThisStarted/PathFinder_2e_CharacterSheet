@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -849,6 +851,28 @@ namespace PathFinder_2e_CharacterSheet
         private void label_Diplomacy_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void SaveCharacterAsJson(Character thisChar)
+        {
+            string jsonString = JsonSerializer.Serialize(thisChar);
+            string jsonFileLocation = ""; // Saves to the 'Bin/Debug folder     TODO - Find out if a file location needs to be specified
+            string jsonFileName = thisChar.CharacterName + "_" + thisChar.PlayerName + ".json";
+            
+            if (jsonString != null && jsonFileName.Length > 0)
+            {
+                File.WriteAllText(jsonFileLocation + jsonFileName, jsonString);
+            }
+        }
+
+        public void LoadCharacterFromJson(object jsonFile)
+        {
+
+        }
+
+        private void button_SaveCharacter_Click(object sender, EventArgs e)
+        {
+            SaveCharacterAsJson(currentChar);
         }
     }
 }
