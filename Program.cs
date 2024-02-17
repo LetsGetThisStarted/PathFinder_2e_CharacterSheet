@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.Common;
+using System.Configuration;
+
 namespace PathFinder_2e_CharacterSheet
 {
     internal static class Program
@@ -14,6 +17,9 @@ namespace PathFinder_2e_CharacterSheet
         [STAThread]
         static void Main()
         {
+
+            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

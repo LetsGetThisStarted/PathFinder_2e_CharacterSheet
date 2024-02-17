@@ -2706,6 +2706,7 @@
             this.button_LoadCharacter.TabIndex = 275;
             this.button_LoadCharacter.Text = "Load Character";
             this.button_LoadCharacter.UseVisualStyleBackColor = true;
+            this.button_LoadCharacter.Click += new System.EventHandler(this.button_LoadCharacter_Click);
             // 
             // Form1
             // 

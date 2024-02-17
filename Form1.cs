@@ -2,6 +2,8 @@
 using System.IO;
 using System.Windows.Forms;
 using System.Text.Json;
+using System.Configuration;
+using System.Data.Common;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -9,9 +11,37 @@ namespace PathFinder_2e_CharacterSheet
     {
         public Character currentChar = new Character();
 
+        // Database variables
+        public string provider;
+        public string connectionString;
+        public DbProviderFactory factory;
+
         public Form1()
         {
+            SetupDatabase();
             InitializeComponent();
+        }
+
+        public void SetupDatabase()
+        {
+            // Grabs settings that were manually inputted to App.config
+            provider = ConfigurationManager.AppSettings["provider"];
+            connectionString = ConfigurationManager.AppSettings["connection"];
+
+            // Tool that allows us to pass queries to the database
+            factory = DbProviderFactories.GetFactory(provider);
+
+            using (DbConnection connection = factory.CreateConnection())
+            {
+                if (connection == null)
+                {
+                    Console.WriteLine("Connection Failed");
+                }
+                else
+                {
+                    Console.WriteLine("Connection Successful");
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -855,7 +885,8 @@ namespace PathFinder_2e_CharacterSheet
 
         public void SaveCharacterAsJson(Character thisChar)
         {
-            string jsonString = JsonSerializer.Serialize(thisChar);
+            var options = new JsonSerializerOptions { IncludeFields = true };
+            string jsonString = JsonSerializer.Serialize(thisChar, options);
             string jsonFileLocation = ""; // Saves to the 'Bin/Debug folder     TODO - Find out if a file location needs to be specified
             string jsonFileName = thisChar.CharacterName + "_" + thisChar.PlayerName + ".json";
             
@@ -865,14 +896,90 @@ namespace PathFinder_2e_CharacterSheet
             }
         }
 
-        public void LoadCharacterFromJson(object jsonFile)
+        public void LoadCharacterFromJson(string jsonFile)
         {
-
+            var options = new JsonSerializerOptions { IncludeFields = true };
+            string loadedJson = File.ReadAllText(jsonFile);
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.ShowDialog();
+            MessageBox.Show(loadedJson);
+            currentChar = JsonSerializer.Deserialize<Character>(loadedJson, options);
+            UpdateSheetAllValues(currentChar);
         }
 
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
-            SaveCharacterAsJson(currentChar);
+            // SaveCharacterAsJson(currentChar); // Removed due to error
+
+        }
+
+        private void button_LoadCharacter_Click(object sender, EventArgs e)
+        {
+            /*
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.ShowDialog();
+            string fileName = fileDialog.SafeFileName;
+            LoadCharacterFromJson(fileName);
+            */
+
+            // Connect to database
+            using (DbConnection connection = factory.CreateConnection())
+            {
+                // Check if database connection was successful
+                if (connection == null)
+                {
+                    Console.WriteLine("Connection Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Connection Successful");
+                }
+
+                // Create pathway for sending queries to database
+                connectionString = ConfigurationManager.AppSettings["connectionString"];
+                connection.ConnectionString = connectionString;
+                connection.Open();
+                // Check that command pathway has been created
+                if (connection == null)
+                {
+                    Console.WriteLine("Connection Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Connection Successful");
+                }
+                DbCommand command = factory.CreateCommand();
+
+                // Check that command pathway has been created
+                if (command == null)
+                {
+                    Console.WriteLine("Command Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Command Successful");
+                }
+
+                command.Connection = connection;
+                command.CommandText = "Select * From Characters";
+
+                using (DbDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        currentChar.PlayerName = $"{dataReader["CharacterName"]}";
+                        Console.WriteLine(currentChar.PlayerName);
+                        Console.WriteLine(currentChar.CharacterName);
+                        Console.WriteLine(currentChar.ChaScore);
+                    }
+                }
+
+                    
+
+            }
         }
     }
 }
