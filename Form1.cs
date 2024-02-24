@@ -910,7 +910,53 @@ namespace PathFinder_2e_CharacterSheet
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
             // SaveCharacterAsJson(currentChar); // Removed due to error
+            // Connect to database
+            using (DbConnection connection = factory.CreateConnection())
+            {
+                // Check if database connection was successful
+                if (connection == null)
+                {
+                    Console.WriteLine("Database Connection Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Database Connection Successful");
+                }
 
+                // Create pathway for sending queries to database
+                connectionString = ConfigurationManager.AppSettings["connectionString"];
+                connection.ConnectionString = connectionString;
+                connection.Open();
+
+                // Check that command pathway has been created
+                if (connection == null)
+                {
+                    Console.WriteLine("Connection Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Connection Successful");
+                }
+                DbCommand command = factory.CreateCommand();
+
+                // Check that command pathway has been created
+                if (command == null)
+                {
+                    Console.WriteLine("Command Failed");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Command Successful");
+                }
+
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO dbo.Characters (CharacterName, PlayerName) " //, XPCurrent, XPMax, Ancestry, Background, Class, Size, Alignment, Traits, Deity, [Level], HeroPoints, STR, DEX, CON, INT, WIS, CHA)" +
+                    + "VALUES ('cName','pName')"; //+ currentChar.CharacterName + "','" + currentChar.PlayerName + "'," + currentChar.XpCurrent + "," + currentChar.XpMax + ",'" + currentChar.Ancestry + "','" + currentChar.Background + ", 'TODO' ," + "','" + currentChar.Size + "','" + currentChar.Alignment + "','TODO','" + currentChar.Deity + "'," + currentChar.Level + "," + currentChar.HeroPoints + "," + currentChar.StrScore + "," + currentChar.DexScore + "," + currentChar.ConScore + "," + currentChar.IntScore + "," + currentChar.WisScore + "," + currentChar.ChaScore + ")";
+                command.ExecuteNonQuery();
+            }
         }
 
         private void button_LoadCharacter_Click(object sender, EventArgs e)
@@ -928,18 +974,19 @@ namespace PathFinder_2e_CharacterSheet
                 // Check if database connection was successful
                 if (connection == null)
                 {
-                    Console.WriteLine("Connection Failed");
+                    Console.WriteLine("Database Connection Failed");
                     return;
                 }
                 else
                 {
-                    Console.WriteLine("Connection Successful");
+                    Console.WriteLine("Database Connection Successful");
                 }
 
                 // Create pathway for sending queries to database
                 connectionString = ConfigurationManager.AppSettings["connectionString"];
                 connection.ConnectionString = connectionString;
                 connection.Open();
+
                 // Check that command pathway has been created
                 if (connection == null)
                 {
