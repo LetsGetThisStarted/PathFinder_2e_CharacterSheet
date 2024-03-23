@@ -9,6 +9,7 @@ using System.Threading.Tasks;
     public class Character
     {
         // Main Character Values
+        private int id;
         private string characterName;
         private string playerName;
         private int xpCurrent;
@@ -201,6 +202,7 @@ using System.Threading.Tasks;
         }
 
         // Getters and Setters - Auto Generated
+        public int Id { get => id; set => id = value; }
         public string CharacterName { get => characterName; set => characterName = value; }
         public string PlayerName { get => playerName; set => playerName = value; }
         public int XpCurrent { get => xpCurrent; set => xpCurrent = value; }

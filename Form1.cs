@@ -4,6 +4,10 @@ using System.Windows.Forms;
 using System.Text.Json;
 using System.Configuration;
 using System.Data.Common;
+using System.Data;
+using System.Data.SQLite;
+using Dapper;
+using System.Collections.Generic;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -17,13 +21,13 @@ namespace PathFinder_2e_CharacterSheet
         
         public Form1()
         {
-            SetupDatabase();
             InitializeComponent();
         }
 
-        public void SetupDatabase()
+        public string LoadConnectionString(string id = "Default")
         {
-            
+            connectionString = ConfigurationManager.ConnectionStrings[id].ConnectionString;
+            return connectionString;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -891,12 +895,30 @@ namespace PathFinder_2e_CharacterSheet
 
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
-            
+            // Open connection, then close when finished
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var sql = "Insert into Character (PlayerName, CharacterName) values (\"Drew Franklin\",\"Test Case\")";
+                var executeSQL = cnn.Execute(sql);
+            }
         }
 
         private void button_LoadCharacter_Click(object sender, EventArgs e)
         {
-            
+            // Open connection, then close when finished
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var reader = cnn.ExecuteReader("select * from Character;");
+
+                while (reader.Read()) 
+                {
+                    Console.WriteLine(reader.GetInt32(0));
+                    Console.WriteLine(reader.GetValue(1).ToString());
+                    Console.WriteLine(LoadConnectionString().ToString());
+                }
+
+                reader.Close();
+            }
         }
     }
 }
