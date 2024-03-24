@@ -2687,6 +2687,7 @@
             this.button_NewCharacter.TabIndex = 273;
             this.button_NewCharacter.Text = "New Character";
             this.button_NewCharacter.UseVisualStyleBackColor = true;
+            this.button_NewCharacter.Click += new System.EventHandler(this.button_NewCharacter_Click);
             // 
             // button_SaveCharacter
             // 
@@ -2715,7 +2716,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1204, 1061);
+            this.ClientSize = new System.Drawing.Size(1221, 1061);
             this.Controls.Add(this.button_LoadCharacter);
             this.Controls.Add(this.button_SaveCharacter);
             this.Controls.Add(this.button_NewCharacter);

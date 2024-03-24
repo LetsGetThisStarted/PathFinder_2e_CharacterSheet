@@ -871,34 +871,25 @@ namespace PathFinder_2e_CharacterSheet
 
         public void SaveCharacterAsJson(Character thisChar)
         {
-            var options = new JsonSerializerOptions { IncludeFields = true };
-            string jsonString = JsonSerializer.Serialize(thisChar, options);
-            string jsonFileLocation = ""; // Saves to the 'Bin/Debug folder     TODO - Find out if a file location needs to be specified
-            string jsonFileName = thisChar.CharacterName + "_" + thisChar.PlayerName + ".json";
-            
-            if (jsonString != null && jsonFileName.Length > 0)
-            {
-                File.WriteAllText(jsonFileLocation + jsonFileName, jsonString);
-            }
+            string test = JsonSerializer.Serialize(thisChar);
+            Console.WriteLine(test);
+            Character character = JsonSerializer.Deserialize<Character>(test);
+            Console.WriteLine(character.PlayerName);
         }
 
         public void LoadCharacterFromJson(string jsonFile)
         {
-            var options = new JsonSerializerOptions { IncludeFields = true };
-            string loadedJson = File.ReadAllText(jsonFile);
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
-            MessageBox.Show(loadedJson);
-            currentChar = JsonSerializer.Deserialize<Character>(loadedJson, options);
-            UpdateSheetAllValues(currentChar);
+            
         }
 
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
+            UpdateSheetAllValues(currentChar);
+
             // Open connection, then close when finished
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var sql = "Insert into Character (PlayerName, CharacterName) values (\"Drew Franklin\",\"Test Case\")";
+                var sql = String.Format("Insert into Character (PlayerName, CharacterName) values (\"{0}\",\"{1}\")", currentChar.PlayerName, currentChar.CharacterName);
                 var executeSQL = cnn.Execute(sql);
             }
         }
@@ -919,6 +910,11 @@ namespace PathFinder_2e_CharacterSheet
 
                 reader.Close();
             }
+        }
+
+        private void button_NewCharacter_Click(object sender, EventArgs e)
+        {
+            SaveCharacterAsJson(currentChar);
         }
     }
 }

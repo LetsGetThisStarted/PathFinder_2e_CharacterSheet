@@ -571,6 +571,11 @@ using System.Threading.Tasks;
         public int ArmorMod { get => armorMod; set => armorMod = value; }
         internal Proficiency Prof { get => prof; set => prof = value; }
 
+        public Skill()
+        {
+
+        }
+
         public Skill(string skillName, string ASName, string sType = "", int ASValue = 0, int profBonus = 0, int itemBonus = 0, int armorM = 0)
         {
             name = skillName;
