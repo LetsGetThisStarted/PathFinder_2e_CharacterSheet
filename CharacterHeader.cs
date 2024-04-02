@@ -9,7 +9,7 @@ using System.Threading.Tasks;
     public class Character
     {
         // Main Character Values
-        private int id;
+        private int charId;
         private string characterName;
         private string playerName;
         private int xpCurrent;
@@ -202,7 +202,8 @@ using System.Threading.Tasks;
         }
 
         // Getters and Setters - Auto Generated
-        public int Id { get => id; set => id = value; }
+        
+        public int CharId { get => charId; set => charId = value; }
         public string CharacterName { get => characterName; set => characterName = value; }
         public string PlayerName { get => playerName; set => playerName = value; }
         public int XpCurrent { get => xpCurrent; set => xpCurrent = value; }
@@ -357,7 +358,7 @@ using System.Threading.Tasks;
         internal Proficiency MartialWeaponProf { get => martialWeaponProf; set => martialWeaponProf = value; }
         internal Proficiency OtherWeaponProf1 { get => otherWeaponProf1; set => otherWeaponProf1 = value; }
         internal Proficiency OtherWeaponProf2 { get => otherWeaponProf2; set => otherWeaponProf2 = value; }
-
+        
         public Character()
         {
             // Main Character Values
@@ -389,6 +390,7 @@ using System.Threading.Tasks;
             chaScore = 10;
             chaMod = ScoreToMod(chaScore);
 
+            /*
             // Class DC
             dcKey = 0;
             dcProf = 0;
@@ -411,7 +413,6 @@ using System.Threading.Tasks;
             shieldCurrentHP = 0;
             ac = AcKey + (int)AcProf + AcItem + ActiveACArmor;
 
-
             // Saving Throws
             fortitudeItem = 0;
             fortitudeProf = 0;
@@ -423,6 +424,7 @@ using System.Threading.Tasks;
             willProf = 0;
             will = 10 + willItem + (int)willProf;
             notesSavingThrows = "";
+            */
 
             // Hit Points
             maxHP = 1;

@@ -8,6 +8,9 @@ using System.Data;
 using System.Data.SQLite;
 using Dapper;
 using System.Collections.Generic;
+using System.Xml.Serialization;
+using System.Globalization;
+using System.Xml;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -869,28 +872,48 @@ namespace PathFinder_2e_CharacterSheet
 
         }
 
-        public void SaveCharacterAsJson(Character thisChar)
+        public string SaveCharacterAsJson(Character thisChar)
         {
-            string test = JsonSerializer.Serialize(thisChar);
-            Console.WriteLine(test);
-            Character character = JsonSerializer.Deserialize<Character>(test);
-            Console.WriteLine(character.PlayerName);
+            StringWriter writer = new StringWriter(CultureInfo.InvariantCulture);
+            XmlSerializer serializer = new XmlSerializer(typeof(Character));
+            serializer.Serialize(writer, thisChar);
+            string jsonCharacter = writer.ToString();
+            Console.WriteLine(jsonCharacter);
+            return jsonCharacter;
         }
 
-        public void LoadCharacterFromJson(string jsonFile)
+        public void LoadCharacterFromJson(string jsonFile) 
         {
             
         }
 
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
+            // Update character class values
             UpdateSheetAllValues(currentChar);
 
+            string jsonCharObj = SaveCharacterAsJson(currentChar);
+            Console.WriteLine($"{jsonCharObj}");
+
             // Open connection, then close when finished
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            using (SQLiteConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var sql = String.Format("Insert into Character (PlayerName, CharacterName) values (\"{0}\",\"{1}\")", currentChar.PlayerName, currentChar.CharacterName);
-                var executeSQL = cnn.Execute(sql);
+                cnn.Open();
+                Console.WriteLine(cnn.State);
+                string query = "Insert into Pathfinder_Character (PlayerName, CharacterName, CharacterObject) values (@playerN, @characterN, @xml)";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, cnn))
+                {
+
+                    Console.WriteLine(cnn.State);
+
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@playerN", currentChar.PlayerName);
+                    cmd.Parameters.AddWithValue("@characterN", currentChar.CharacterName);
+                    cmd.Parameters.AddWithValue("@xml", jsonCharObj);
+                    var executeSQL = cmd.ExecuteNonQuery();
+                    Console.WriteLine(executeSQL.ToString());
+                }
+                cnn.Close();
             }
         }
 
@@ -899,22 +922,58 @@ namespace PathFinder_2e_CharacterSheet
             // Open connection, then close when finished
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var reader = cnn.ExecuteReader("select * from Character;");
+                var reader = cnn.ExecuteReader("select * from Pathfinder_Character;");
 
+                XmlSerializer serializer = new XmlSerializer(typeof(Character));
+                StringWriter writer = new StringWriter(CultureInfo.InvariantCulture);
                 while (reader.Read()) 
                 {
                     Console.WriteLine(reader.GetInt32(0));
                     Console.WriteLine(reader.GetValue(1).ToString());
-                    Console.WriteLine(LoadConnectionString().ToString());
+                    Console.WriteLine(reader.GetValue(2).ToString());
+                    var charStr = reader.GetValue(3).ToString();
+                    Console.WriteLine(charStr);
+                    
+                    try
+                    {
+                        currentChar = Deserialize<Character>(charStr);
+                        UpdateSheetAllValues(currentChar);
+                    }
+                    catch (Exception exception) 
+                    { 
+                        Console.WriteLine(exception.Message);
+                    }
+                    
                 }
 
                 reader.Close();
             }
+
+
         }
 
         private void button_NewCharacter_Click(object sender, EventArgs e)
         {
             SaveCharacterAsJson(currentChar);
+        }
+
+        public static T Deserialize<T>(string xml)
+        {
+            if (String.IsNullOrEmpty(xml)) throw new NotSupportedException("Empty string!!");
+
+            try
+            {
+                var xmlserializer = new XmlSerializer(typeof(T));
+                var stringReader = new StringReader(xml);
+                using (var reader = XmlReader.Create(stringReader))
+                {
+                    return (T)xmlserializer.Deserialize(reader);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
