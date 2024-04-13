@@ -596,67 +596,91 @@ namespace PathFinder_2e_CharacterSheet
             thisChar.ChaMod = Convert.ToInt32(label_ChaMod.Text);
             thisChar.StrMod = Convert.ToInt32(label_StrMod.Text);
 
-            // Class DC
-            thisChar.Dc = Convert.ToInt32(label_DC.Text);
-            thisChar.DcProf = (Proficiency)progressBar_ClassDC.Value;
-            thisChar.DcKey = Convert.ToInt32(textBox_DCKey.Text);
-            thisChar.DcItem = Convert.ToInt32(textBox_DCItem.Text);
+            try
+            {
+                // Class DC
+                thisChar.Dc = Convert.ToInt32(label_DC.Text);
+                thisChar.DcProf = (Proficiency)progressBar_ClassDC.Value;
+                thisChar.DcKey = Convert.ToInt32(textBox_DCKey.Text);
+                thisChar.DcItem = Convert.ToInt32(textBox_DCItem.Text);
+            }
+            catch { }
 
-            // AC
-            thisChar.Ac = Convert.ToInt32(label_AC.Text);
-            thisChar.UnarmoredProf = (Proficiency)progressBar_Unarmored.Value;
-            thisChar.LightProf = (Proficiency)progressBar_Light.Value;
-            thisChar.MediumProf = (Proficiency)progressBar_Medium.Value;
-            thisChar.HeavyProf = (Proficiency)progressBar_Heavy.Value;
-            thisChar.AcProf = (Proficiency)progressBar_ArmorClass.Value;
-            thisChar.DexMod = Convert.ToInt32(textBox_ACDex.Text);
-            thisChar.AcItem = Convert.ToInt32(textBox_ACItem.Text);
+            try
+            {
+                // AC
+                thisChar.Ac = Convert.ToInt32(label_AC.Text);
+                thisChar.UnarmoredProf = (Proficiency)progressBar_Unarmored.Value;
+                thisChar.LightProf = (Proficiency)progressBar_Light.Value;
+                thisChar.MediumProf = (Proficiency)progressBar_Medium.Value;
+                thisChar.HeavyProf = (Proficiency)progressBar_Heavy.Value;
+                thisChar.AcProf = (Proficiency)progressBar_ArmorClass.Value;
+                thisChar.DexMod = Convert.ToInt32(textBox_ACDex.Text);
+                thisChar.AcItem = Convert.ToInt32(textBox_ACItem.Text);
+            }
+            catch { }
 
-            // Saving Throws
+            try
+            {
+                // Saving Throws
                 // Fortitude
-            thisChar.FortitudeProf = (Proficiency)progressBar_Fortitude.Value;
-            thisChar.Fortitude = Convert.ToInt32(label_Fortitude.Text);
-            thisChar.FortitudeItem = Convert.ToInt32(textBox_FortitudeItem.Text);
+                thisChar.FortitudeProf = (Proficiency)progressBar_Fortitude.Value;
+                thisChar.Fortitude = Convert.ToInt32(label_Fortitude.Text);
+                thisChar.FortitudeItem = Convert.ToInt32(textBox_FortitudeItem.Text);
                 // Reflex
-            thisChar.ReflexProf = (Proficiency)progressBar_Reflex.Value;
-            thisChar.Reflex = Convert.ToInt32(label_Reflex.Text);
-            thisChar.ReflexItem = Convert.ToInt32(textBox_ReflexItem.Text);
+                thisChar.ReflexProf = (Proficiency)progressBar_Reflex.Value;
+                thisChar.Reflex = Convert.ToInt32(label_Reflex.Text);
+                thisChar.ReflexItem = Convert.ToInt32(textBox_ReflexItem.Text);
                 // Will
-            thisChar.WillProf = (Proficiency)progressBar_Will.Value;
-            thisChar.Will = Convert.ToInt32(label_Will.Text);
-            thisChar.WillItem = Convert.ToInt32(textBox_WillItem.Text);
+                thisChar.WillProf = (Proficiency)progressBar_Will.Value;
+                thisChar.Will = Convert.ToInt32(label_Will.Text);
+                thisChar.WillItem = Convert.ToInt32(textBox_WillItem.Text);
+            }
+            catch { }
 
-            // HP
-            thisChar.MaxHP = Convert.ToInt32(textBox_HitPointsMax.Text);
-            thisChar.CurrentHP = Convert.ToInt32(textBox_HitPointsCurrent.Text);
-            thisChar.TemporaryHP = Convert.ToInt32(textBox_HitPointsTemp.Text);
+            try
+            {
+                // HP
+                thisChar.MaxHP = Convert.ToInt32(textBox_HitPointsMax.Text);
+                thisChar.CurrentHP = Convert.ToInt32(textBox_HitPointsCurrent.Text);
+                thisChar.TemporaryHP = Convert.ToInt32(textBox_HitPointsTemp.Text);
 
-            // Perception
-            thisChar.PerceptionProf = (Proficiency)progressBar_Perception.Value;
-            thisChar.Perception = Convert.ToInt32(label_Perception.Text);
-            thisChar.PerceptionItem = Convert.ToInt32(textBox_PerceptionItem.Text);
+                // Perception
+                thisChar.PerceptionProf = (Proficiency)progressBar_Perception.Value;
+                thisChar.Perception = Convert.ToInt32(label_Perception.Text);
+                thisChar.PerceptionItem = Convert.ToInt32(textBox_PerceptionItem.Text);
 
-            // Speed
-            thisChar.Speed = Convert.ToInt32(textBox_Speed.Text);
+                // Speed
+                thisChar.Speed = Convert.ToInt32(textBox_Speed.Text);
+            }
+            catch { }
 
-            // Melee
-            thisChar.Melee1Prof = (Proficiency)progressBar_Melee1.Value;
-            thisChar.Melee2Prof = (Proficiency)progressBar_Melee2.Value;
-            thisChar.Melee3Prof = (Proficiency)progressBar_Melee3.Value;
+            try
+            {
+                // Melee
+                thisChar.Melee1Prof = (Proficiency)progressBar_Melee1.Value;
+                thisChar.Melee2Prof = (Proficiency)progressBar_Melee2.Value;
+                thisChar.Melee3Prof = (Proficiency)progressBar_Melee3.Value;
 
-            // Ranged
-            thisChar.Ranged1Prof = (Proficiency)progressBar_Ranged1.Value;
-            thisChar.Ranged2Prof = (Proficiency)progressBar_Ranged2.Value;
-            thisChar.Ranged3Prof = (Proficiency)progressBar_Ranged3.Value;
+                // Ranged
+                thisChar.Ranged1Prof = (Proficiency)progressBar_Ranged1.Value;
+                thisChar.Ranged2Prof = (Proficiency)progressBar_Ranged2.Value;
+                thisChar.Ranged3Prof = (Proficiency)progressBar_Ranged3.Value;
 
-            // Weapon Prof
-            thisChar.SimpleWeaponProf = (Proficiency)progressBar_WeaponSimple.Value;
-            thisChar.MartialWeaponProf = (Proficiency)progressBar_WeaponMartial.Value;
-            thisChar.OtherWeaponProf1 = (Proficiency)progressBar_WeaponOther1.Value;
-            thisChar.OtherWeaponProf2 = (Proficiency)progressBar_WeaponOther2.Value;
+                // Weapon Prof
+                thisChar.SimpleWeaponProf = (Proficiency)progressBar_WeaponSimple.Value;
+                thisChar.MartialWeaponProf = (Proficiency)progressBar_WeaponMartial.Value;
+                thisChar.OtherWeaponProf1 = (Proficiency)progressBar_WeaponOther1.Value;
+                thisChar.OtherWeaponProf2 = (Proficiency)progressBar_WeaponOther2.Value;
+            }
+            catch { }
 
-            // Skills
-            UpdateCharacterSkillsFromSheet(thisChar);
+            try
+            {
+                // Skills
+                UpdateCharacterSkillsFromSheet(thisChar);
+            }
+            catch { }
         }
 
         private void UpdateCharacterSkillsFromSheet(Character thisChar)
@@ -890,7 +914,7 @@ namespace PathFinder_2e_CharacterSheet
         private void button_SaveCharacter_Click(object sender, EventArgs e)
         {
             // Update character class values
-            UpdateSheetAllValues(currentChar);
+            UpdateCharacterFromSheet(currentChar);
 
             string jsonCharObj = SaveCharacterAsJson(currentChar);
             Console.WriteLine($"{jsonCharObj}");
@@ -939,7 +963,7 @@ namespace PathFinder_2e_CharacterSheet
                         currentChar = Deserialize<Character>(charStr);
                         UpdateSheetAllValues(currentChar);
                     }
-                    catch (Exception exception) 
+                    catch (Exception exception)
                     { 
                         Console.WriteLine(exception.Message);
                     }

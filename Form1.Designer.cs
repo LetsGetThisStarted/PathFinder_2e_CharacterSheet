@@ -369,9 +369,9 @@
             this.label_StrMod.AutoSize = true;
             this.label_StrMod.Location = new System.Drawing.Point(70, 248);
             this.label_StrMod.Name = "label_StrMod";
-            this.label_StrMod.Size = new System.Drawing.Size(41, 13);
+            this.label_StrMod.Size = new System.Drawing.Size(13, 13);
             this.label_StrMod.TabIndex = 22;
-            this.label_StrMod.Text = "StrMod";
+            this.label_StrMod.Text = "0";
             // 
             // pictureBox1
             // 
@@ -390,45 +390,45 @@
             this.label_DexMod.AutoSize = true;
             this.label_DexMod.Location = new System.Drawing.Point(70, 301);
             this.label_DexMod.Name = "label_DexMod";
-            this.label_DexMod.Size = new System.Drawing.Size(47, 13);
+            this.label_DexMod.Size = new System.Drawing.Size(13, 13);
             this.label_DexMod.TabIndex = 23;
-            this.label_DexMod.Text = "DexMod";
+            this.label_DexMod.Text = "0";
             // 
             // label_ConMod
             // 
             this.label_ConMod.AutoSize = true;
             this.label_ConMod.Location = new System.Drawing.Point(70, 357);
             this.label_ConMod.Name = "label_ConMod";
-            this.label_ConMod.Size = new System.Drawing.Size(47, 13);
+            this.label_ConMod.Size = new System.Drawing.Size(13, 13);
             this.label_ConMod.TabIndex = 24;
-            this.label_ConMod.Text = "ConMod";
+            this.label_ConMod.Text = "0";
             // 
             // label_IntMod
             // 
             this.label_IntMod.AutoSize = true;
             this.label_IntMod.Location = new System.Drawing.Point(70, 407);
             this.label_IntMod.Name = "label_IntMod";
-            this.label_IntMod.Size = new System.Drawing.Size(40, 13);
+            this.label_IntMod.Size = new System.Drawing.Size(13, 13);
             this.label_IntMod.TabIndex = 25;
-            this.label_IntMod.Text = "IntMod";
+            this.label_IntMod.Text = "0";
             // 
             // label_WisMod
             // 
             this.label_WisMod.AutoSize = true;
             this.label_WisMod.Location = new System.Drawing.Point(70, 458);
             this.label_WisMod.Name = "label_WisMod";
-            this.label_WisMod.Size = new System.Drawing.Size(46, 13);
+            this.label_WisMod.Size = new System.Drawing.Size(13, 13);
             this.label_WisMod.TabIndex = 26;
-            this.label_WisMod.Text = "WisMod";
+            this.label_WisMod.Text = "0";
             // 
             // label_ChaMod
             // 
             this.label_ChaMod.AutoSize = true;
             this.label_ChaMod.Location = new System.Drawing.Point(70, 510);
             this.label_ChaMod.Name = "label_ChaMod";
-            this.label_ChaMod.Size = new System.Drawing.Size(47, 13);
+            this.label_ChaMod.Size = new System.Drawing.Size(13, 13);
             this.label_ChaMod.TabIndex = 27;
-            this.label_ChaMod.Text = "ChaMod";
+            this.label_ChaMod.Text = "0";
             // 
             // label_XPDivider
             // 
@@ -453,9 +453,9 @@
             this.label_DC.AutoSize = true;
             this.label_DC.Location = new System.Drawing.Point(70, 590);
             this.label_DC.Name = "label_DC";
-            this.label_DC.Size = new System.Drawing.Size(22, 13);
+            this.label_DC.Size = new System.Drawing.Size(13, 13);
             this.label_DC.TabIndex = 31;
-            this.label_DC.Text = "DC";
+            this.label_DC.Text = "0";
             // 
             // progressBar_Unarmored
             // 
@@ -995,9 +995,9 @@
             this.label_Fortitude.AutoSize = true;
             this.label_Fortitude.Location = new System.Drawing.Point(473, 444);
             this.label_Fortitude.Name = "label_Fortitude";
-            this.label_Fortitude.Size = new System.Drawing.Size(48, 13);
+            this.label_Fortitude.Size = new System.Drawing.Size(13, 13);
             this.label_Fortitude.TabIndex = 83;
-            this.label_Fortitude.Text = "Fortitude";
+            this.label_Fortitude.Text = "0";
             // 
             // textBox_FortitudeCon
             // 
@@ -1046,9 +1046,9 @@
             this.label_Reflex.AutoSize = true;
             this.label_Reflex.Location = new System.Drawing.Point(626, 444);
             this.label_Reflex.Name = "label_Reflex";
-            this.label_Reflex.Size = new System.Drawing.Size(37, 13);
+            this.label_Reflex.Size = new System.Drawing.Size(13, 13);
             this.label_Reflex.TabIndex = 87;
-            this.label_Reflex.Text = "Reflex";
+            this.label_Reflex.Text = "0";
             // 
             // textBox_WillItem
             // 
@@ -1076,9 +1076,9 @@
             this.label_Will.AutoSize = true;
             this.label_Will.Location = new System.Drawing.Point(779, 444);
             this.label_Will.Name = "label_Will";
-            this.label_Will.Size = new System.Drawing.Size(24, 13);
+            this.label_Will.Size = new System.Drawing.Size(13, 13);
             this.label_Will.TabIndex = 91;
-            this.label_Will.Text = "Will";
+            this.label_Will.Text = "0";
             // 
             // textBox_ACDex
             // 
@@ -1167,18 +1167,18 @@
             this.label_Acrobatics.AutoSize = true;
             this.label_Acrobatics.Location = new System.Drawing.Point(798, 670);
             this.label_Acrobatics.Name = "label_Acrobatics";
-            this.label_Acrobatics.Size = new System.Drawing.Size(57, 13);
+            this.label_Acrobatics.Size = new System.Drawing.Size(13, 13);
             this.label_Acrobatics.TabIndex = 106;
-            this.label_Acrobatics.Text = "Acrobatics";
+            this.label_Acrobatics.Text = "0";
             // 
             // label_AcrobaticsASMod
             // 
             this.label_AcrobaticsASMod.AutoSize = true;
             this.label_AcrobaticsASMod.Location = new System.Drawing.Point(874, 670);
             this.label_AcrobaticsASMod.Name = "label_AcrobaticsASMod";
-            this.label_AcrobaticsASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_AcrobaticsASMod.Size = new System.Drawing.Size(13, 13);
             this.label_AcrobaticsASMod.TabIndex = 110;
-            this.label_AcrobaticsASMod.Text = "Dex";
+            this.label_AcrobaticsASMod.Text = "0";
             // 
             // textBox_AcrobaticsProfMod
             // 
@@ -1227,18 +1227,18 @@
             this.label_AthleticsASMod.AutoSize = true;
             this.label_AthleticsASMod.Location = new System.Drawing.Point(874, 754);
             this.label_AthleticsASMod.Name = "label_AthleticsASMod";
-            this.label_AthleticsASMod.Size = new System.Drawing.Size(20, 13);
+            this.label_AthleticsASMod.Size = new System.Drawing.Size(13, 13);
             this.label_AthleticsASMod.TabIndex = 115;
-            this.label_AthleticsASMod.Text = "Str";
+            this.label_AthleticsASMod.Text = "0";
             // 
             // label_Athletics
             // 
             this.label_Athletics.AutoSize = true;
             this.label_Athletics.Location = new System.Drawing.Point(798, 754);
             this.label_Athletics.Name = "label_Athletics";
-            this.label_Athletics.Size = new System.Drawing.Size(47, 13);
+            this.label_Athletics.Size = new System.Drawing.Size(13, 13);
             this.label_Athletics.TabIndex = 114;
-            this.label_Athletics.Text = "Athletics";
+            this.label_Athletics.Text = "0";
             // 
             // textBox_StealthItemMod
             // 
@@ -1259,18 +1259,18 @@
             this.label_StealthASMod.AutoSize = true;
             this.label_StealthASMod.Location = new System.Drawing.Point(874, 1298);
             this.label_StealthASMod.Name = "label_StealthASMod";
-            this.label_StealthASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_StealthASMod.Size = new System.Drawing.Size(13, 13);
             this.label_StealthASMod.TabIndex = 120;
-            this.label_StealthASMod.Text = "Dex";
+            this.label_StealthASMod.Text = "0";
             // 
             // label_Stealth
             // 
             this.label_Stealth.AutoSize = true;
             this.label_Stealth.Location = new System.Drawing.Point(798, 1298);
             this.label_Stealth.Name = "label_Stealth";
-            this.label_Stealth.Size = new System.Drawing.Size(40, 13);
+            this.label_Stealth.Size = new System.Drawing.Size(13, 13);
             this.label_Stealth.TabIndex = 119;
-            this.label_Stealth.Text = "Stealth";
+            this.label_Stealth.Text = "0";
             // 
             // textBox_ThieveryItemMod
             // 
@@ -1291,18 +1291,18 @@
             this.label_ThieveryASMod.AutoSize = true;
             this.label_ThieveryASMod.Location = new System.Drawing.Point(874, 1382);
             this.label_ThieveryASMod.Name = "label_ThieveryASMod";
-            this.label_ThieveryASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_ThieveryASMod.Size = new System.Drawing.Size(13, 13);
             this.label_ThieveryASMod.TabIndex = 124;
-            this.label_ThieveryASMod.Text = "Dex";
+            this.label_ThieveryASMod.Text = "0";
             // 
             // label_Thievery
             // 
             this.label_Thievery.AutoSize = true;
             this.label_Thievery.Location = new System.Drawing.Point(798, 1382);
             this.label_Thievery.Name = "label_Thievery";
-            this.label_Thievery.Size = new System.Drawing.Size(48, 13);
+            this.label_Thievery.Size = new System.Drawing.Size(13, 13);
             this.label_Thievery.TabIndex = 123;
-            this.label_Thievery.Text = "Thievery";
+            this.label_Thievery.Text = "0";
             // 
             // textBox_StealthArmorMod
             // 
@@ -1337,18 +1337,18 @@
             this.label_ArcanaASMod.AutoSize = true;
             this.label_ArcanaASMod.Location = new System.Drawing.Point(874, 712);
             this.label_ArcanaASMod.Name = "label_ArcanaASMod";
-            this.label_ArcanaASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_ArcanaASMod.Size = new System.Drawing.Size(13, 13);
             this.label_ArcanaASMod.TabIndex = 130;
-            this.label_ArcanaASMod.Text = "Int";
+            this.label_ArcanaASMod.Text = "0";
             // 
             // label_Arcana
             // 
             this.label_Arcana.AutoSize = true;
             this.label_Arcana.Location = new System.Drawing.Point(798, 712);
             this.label_Arcana.Name = "label_Arcana";
-            this.label_Arcana.Size = new System.Drawing.Size(41, 13);
+            this.label_Arcana.Size = new System.Drawing.Size(13, 13);
             this.label_Arcana.TabIndex = 129;
-            this.label_Arcana.Text = "Arcana";
+            this.label_Arcana.Text = "0";
             // 
             // textBox_CraftingItemMod
             // 
@@ -1369,18 +1369,18 @@
             this.label_CraftingASMod.AutoSize = true;
             this.label_CraftingASMod.Location = new System.Drawing.Point(874, 796);
             this.label_CraftingASMod.Name = "label_CraftingASMod";
-            this.label_CraftingASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_CraftingASMod.Size = new System.Drawing.Size(13, 13);
             this.label_CraftingASMod.TabIndex = 134;
-            this.label_CraftingASMod.Text = "Int";
+            this.label_CraftingASMod.Text = "0";
             // 
             // label_Crafting
             // 
             this.label_Crafting.AutoSize = true;
             this.label_Crafting.Location = new System.Drawing.Point(798, 796);
             this.label_Crafting.Name = "label_Crafting";
-            this.label_Crafting.Size = new System.Drawing.Size(43, 13);
+            this.label_Crafting.Size = new System.Drawing.Size(13, 13);
             this.label_Crafting.TabIndex = 133;
-            this.label_Crafting.Text = "Crafting";
+            this.label_Crafting.Text = "0";
             // 
             // textBox_Lore1ItemMod
             // 
@@ -1401,18 +1401,18 @@
             this.label_Lore1ASMod.AutoSize = true;
             this.label_Lore1ASMod.Location = new System.Drawing.Point(874, 963);
             this.label_Lore1ASMod.Name = "label_Lore1ASMod";
-            this.label_Lore1ASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_Lore1ASMod.Size = new System.Drawing.Size(13, 13);
             this.label_Lore1ASMod.TabIndex = 138;
-            this.label_Lore1ASMod.Text = "Int";
+            this.label_Lore1ASMod.Text = "0";
             // 
             // label_Lore1
             // 
             this.label_Lore1.AutoSize = true;
             this.label_Lore1.Location = new System.Drawing.Point(798, 963);
             this.label_Lore1.Name = "label_Lore1";
-            this.label_Lore1.Size = new System.Drawing.Size(28, 13);
+            this.label_Lore1.Size = new System.Drawing.Size(13, 13);
             this.label_Lore1.TabIndex = 137;
-            this.label_Lore1.Text = "Lore";
+            this.label_Lore1.Text = "0";
             // 
             // textBox_Lore2ItemMod
             // 
@@ -1433,18 +1433,18 @@
             this.label_Lore2ASMod.AutoSize = true;
             this.label_Lore2ASMod.Location = new System.Drawing.Point(874, 1005);
             this.label_Lore2ASMod.Name = "label_Lore2ASMod";
-            this.label_Lore2ASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_Lore2ASMod.Size = new System.Drawing.Size(13, 13);
             this.label_Lore2ASMod.TabIndex = 142;
-            this.label_Lore2ASMod.Text = "Int";
+            this.label_Lore2ASMod.Text = "0";
             // 
             // label_Lore2
             // 
             this.label_Lore2.AutoSize = true;
             this.label_Lore2.Location = new System.Drawing.Point(798, 1005);
             this.label_Lore2.Name = "label_Lore2";
-            this.label_Lore2.Size = new System.Drawing.Size(28, 13);
+            this.label_Lore2.Size = new System.Drawing.Size(13, 13);
             this.label_Lore2.TabIndex = 141;
-            this.label_Lore2.Text = "Lore";
+            this.label_Lore2.Text = "0";
             // 
             // textBox_OccultismItemMod
             // 
@@ -1465,18 +1465,18 @@
             this.label_OccultismASMod.AutoSize = true;
             this.label_OccultismASMod.Location = new System.Drawing.Point(874, 1131);
             this.label_OccultismASMod.Name = "label_OccultismASMod";
-            this.label_OccultismASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_OccultismASMod.Size = new System.Drawing.Size(13, 13);
             this.label_OccultismASMod.TabIndex = 146;
-            this.label_OccultismASMod.Text = "Int";
+            this.label_OccultismASMod.Text = "0";
             // 
             // label_Occultism
             // 
             this.label_Occultism.AutoSize = true;
             this.label_Occultism.Location = new System.Drawing.Point(798, 1131);
             this.label_Occultism.Name = "label_Occultism";
-            this.label_Occultism.Size = new System.Drawing.Size(53, 13);
+            this.label_Occultism.Size = new System.Drawing.Size(13, 13);
             this.label_Occultism.TabIndex = 145;
-            this.label_Occultism.Text = "Occultism";
+            this.label_Occultism.Text = "0";
             // 
             // textBox_SocietyItemMod
             // 
@@ -1497,18 +1497,18 @@
             this.label_SocietyASMod.AutoSize = true;
             this.label_SocietyASMod.Location = new System.Drawing.Point(874, 1256);
             this.label_SocietyASMod.Name = "label_SocietyASMod";
-            this.label_SocietyASMod.Size = new System.Drawing.Size(19, 13);
+            this.label_SocietyASMod.Size = new System.Drawing.Size(13, 13);
             this.label_SocietyASMod.TabIndex = 150;
-            this.label_SocietyASMod.Text = "Int";
+            this.label_SocietyASMod.Text = "0";
             // 
             // label_Society
             // 
             this.label_Society.AutoSize = true;
             this.label_Society.Location = new System.Drawing.Point(798, 1256);
             this.label_Society.Name = "label_Society";
-            this.label_Society.Size = new System.Drawing.Size(42, 13);
+            this.label_Society.Size = new System.Drawing.Size(13, 13);
             this.label_Society.TabIndex = 149;
-            this.label_Society.Text = "Society";
+            this.label_Society.Text = "0";
             // 
             // textBox_SurvivalItemMod
             // 
@@ -1529,18 +1529,18 @@
             this.label_SurvivalASMod.AutoSize = true;
             this.label_SurvivalASMod.Location = new System.Drawing.Point(874, 1340);
             this.label_SurvivalASMod.Name = "label_SurvivalASMod";
-            this.label_SurvivalASMod.Size = new System.Drawing.Size(25, 13);
+            this.label_SurvivalASMod.Size = new System.Drawing.Size(13, 13);
             this.label_SurvivalASMod.TabIndex = 154;
-            this.label_SurvivalASMod.Text = "Wis";
+            this.label_SurvivalASMod.Text = "0";
             // 
             // label_Survival
             // 
             this.label_Survival.AutoSize = true;
             this.label_Survival.Location = new System.Drawing.Point(798, 1340);
             this.label_Survival.Name = "label_Survival";
-            this.label_Survival.Size = new System.Drawing.Size(45, 13);
+            this.label_Survival.Size = new System.Drawing.Size(13, 13);
             this.label_Survival.TabIndex = 153;
-            this.label_Survival.Text = "Survival";
+            this.label_Survival.Text = "0";
             // 
             // textBox_ReligionItemMod
             // 
@@ -1561,18 +1561,18 @@
             this.label_ReligionASMod.AutoSize = true;
             this.label_ReligionASMod.Location = new System.Drawing.Point(874, 1214);
             this.label_ReligionASMod.Name = "label_ReligionASMod";
-            this.label_ReligionASMod.Size = new System.Drawing.Size(25, 13);
+            this.label_ReligionASMod.Size = new System.Drawing.Size(13, 13);
             this.label_ReligionASMod.TabIndex = 158;
-            this.label_ReligionASMod.Text = "Wis";
+            this.label_ReligionASMod.Text = "0";
             // 
             // label_Religion
             // 
             this.label_Religion.AutoSize = true;
             this.label_Religion.Location = new System.Drawing.Point(798, 1214);
             this.label_Religion.Name = "label_Religion";
-            this.label_Religion.Size = new System.Drawing.Size(45, 13);
+            this.label_Religion.Size = new System.Drawing.Size(13, 13);
             this.label_Religion.TabIndex = 157;
-            this.label_Religion.Text = "Religion";
+            this.label_Religion.Text = "0";
             // 
             // textBox_NatureItemMod
             // 
@@ -1593,18 +1593,18 @@
             this.label_NatureASMod.AutoSize = true;
             this.label_NatureASMod.Location = new System.Drawing.Point(874, 1088);
             this.label_NatureASMod.Name = "label_NatureASMod";
-            this.label_NatureASMod.Size = new System.Drawing.Size(25, 13);
+            this.label_NatureASMod.Size = new System.Drawing.Size(13, 13);
             this.label_NatureASMod.TabIndex = 162;
-            this.label_NatureASMod.Text = "Wis";
+            this.label_NatureASMod.Text = "0";
             // 
             // label_Nature
             // 
             this.label_Nature.AutoSize = true;
             this.label_Nature.Location = new System.Drawing.Point(798, 1088);
             this.label_Nature.Name = "label_Nature";
-            this.label_Nature.Size = new System.Drawing.Size(39, 13);
+            this.label_Nature.Size = new System.Drawing.Size(13, 13);
             this.label_Nature.TabIndex = 161;
-            this.label_Nature.Text = "Nature";
+            this.label_Nature.Text = "0";
             // 
             // textBox_MedicineItemMod
             // 
@@ -1625,18 +1625,18 @@
             this.label_MedicineASMod.AutoSize = true;
             this.label_MedicineASMod.Location = new System.Drawing.Point(874, 1047);
             this.label_MedicineASMod.Name = "label_MedicineASMod";
-            this.label_MedicineASMod.Size = new System.Drawing.Size(25, 13);
+            this.label_MedicineASMod.Size = new System.Drawing.Size(13, 13);
             this.label_MedicineASMod.TabIndex = 166;
-            this.label_MedicineASMod.Text = "Wis";
+            this.label_MedicineASMod.Text = "0";
             // 
             // label_Medicine
             // 
             this.label_Medicine.AutoSize = true;
             this.label_Medicine.Location = new System.Drawing.Point(798, 1047);
             this.label_Medicine.Name = "label_Medicine";
-            this.label_Medicine.Size = new System.Drawing.Size(50, 13);
+            this.label_Medicine.Size = new System.Drawing.Size(13, 13);
             this.label_Medicine.TabIndex = 165;
-            this.label_Medicine.Text = "Medicine";
+            this.label_Medicine.Text = "0";
             // 
             // textBox_IntimidationItemMod
             // 
@@ -1657,18 +1657,18 @@
             this.label_IntimidationASMod.AutoSize = true;
             this.label_IntimidationASMod.Location = new System.Drawing.Point(874, 921);
             this.label_IntimidationASMod.Name = "label_IntimidationASMod";
-            this.label_IntimidationASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_IntimidationASMod.Size = new System.Drawing.Size(13, 13);
             this.label_IntimidationASMod.TabIndex = 170;
-            this.label_IntimidationASMod.Text = "Cha";
+            this.label_IntimidationASMod.Text = "0";
             // 
             // label_Intimidation
             // 
             this.label_Intimidation.AutoSize = true;
             this.label_Intimidation.Location = new System.Drawing.Point(798, 921);
             this.label_Intimidation.Name = "label_Intimidation";
-            this.label_Intimidation.Size = new System.Drawing.Size(60, 13);
+            this.label_Intimidation.Size = new System.Drawing.Size(13, 13);
             this.label_Intimidation.TabIndex = 169;
-            this.label_Intimidation.Text = "Intimidation";
+            this.label_Intimidation.Text = "0";
             // 
             // textBox_DeceptionItemMod
             // 
@@ -1689,18 +1689,18 @@
             this.label_DeceptionASMod.AutoSize = true;
             this.label_DeceptionASMod.Location = new System.Drawing.Point(874, 836);
             this.label_DeceptionASMod.Name = "label_DeceptionASMod";
-            this.label_DeceptionASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_DeceptionASMod.Size = new System.Drawing.Size(13, 13);
             this.label_DeceptionASMod.TabIndex = 174;
-            this.label_DeceptionASMod.Text = "Cha";
+            this.label_DeceptionASMod.Text = "0";
             // 
             // label_Deception
             // 
             this.label_Deception.AutoSize = true;
             this.label_Deception.Location = new System.Drawing.Point(798, 836);
             this.label_Deception.Name = "label_Deception";
-            this.label_Deception.Size = new System.Drawing.Size(56, 13);
+            this.label_Deception.Size = new System.Drawing.Size(13, 13);
             this.label_Deception.TabIndex = 173;
-            this.label_Deception.Text = "Deception";
+            this.label_Deception.Text = "0";
             // 
             // textBox_DiplomacyItemMod
             // 
@@ -1721,18 +1721,18 @@
             this.label_DiplomacyASMod.AutoSize = true;
             this.label_DiplomacyASMod.Location = new System.Drawing.Point(874, 879);
             this.label_DiplomacyASMod.Name = "label_DiplomacyASMod";
-            this.label_DiplomacyASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_DiplomacyASMod.Size = new System.Drawing.Size(13, 13);
             this.label_DiplomacyASMod.TabIndex = 178;
-            this.label_DiplomacyASMod.Text = "Cha";
+            this.label_DiplomacyASMod.Text = "0";
             // 
             // label_Diplomacy
             // 
             this.label_Diplomacy.AutoSize = true;
             this.label_Diplomacy.Location = new System.Drawing.Point(798, 879);
             this.label_Diplomacy.Name = "label_Diplomacy";
-            this.label_Diplomacy.Size = new System.Drawing.Size(56, 13);
+            this.label_Diplomacy.Size = new System.Drawing.Size(13, 13);
             this.label_Diplomacy.TabIndex = 177;
-            this.label_Diplomacy.Text = "Diplomacy";
+            this.label_Diplomacy.Text = "0";
             this.label_Diplomacy.Click += new System.EventHandler(this.label_Diplomacy_Click);
             // 
             // textBox_PerformanceItemMod
@@ -1754,18 +1754,18 @@
             this.label_PerformanceASMod.AutoSize = true;
             this.label_PerformanceASMod.Location = new System.Drawing.Point(874, 1173);
             this.label_PerformanceASMod.Name = "label_PerformanceASMod";
-            this.label_PerformanceASMod.Size = new System.Drawing.Size(26, 13);
+            this.label_PerformanceASMod.Size = new System.Drawing.Size(13, 13);
             this.label_PerformanceASMod.TabIndex = 182;
-            this.label_PerformanceASMod.Text = "Cha";
+            this.label_PerformanceASMod.Text = "0";
             // 
             // label_Performance
             // 
             this.label_Performance.AutoSize = true;
             this.label_Performance.Location = new System.Drawing.Point(798, 1173);
             this.label_Performance.Name = "label_Performance";
-            this.label_Performance.Size = new System.Drawing.Size(67, 13);
+            this.label_Performance.Size = new System.Drawing.Size(13, 13);
             this.label_Performance.TabIndex = 181;
-            this.label_Performance.Text = "Performance";
+            this.label_Performance.Text = "0";
             // 
             // textBox_Lore1SubType
             // 
@@ -2116,18 +2116,18 @@
             this.label_Melee1Accuracy.AutoSize = true;
             this.label_Melee1Accuracy.Location = new System.Drawing.Point(316, 718);
             this.label_Melee1Accuracy.Name = "label_Melee1Accuracy";
-            this.label_Melee1Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee1Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Melee1Accuracy.TabIndex = 201;
-            this.label_Melee1Accuracy.Text = "Accuracy";
+            this.label_Melee1Accuracy.Text = "0";
             // 
             // label_Melee1AB1
             // 
             this.label_Melee1AB1.AutoSize = true;
             this.label_Melee1AB1.Location = new System.Drawing.Point(407, 728);
             this.label_Melee1AB1.Name = "label_Melee1AB1";
-            this.label_Melee1AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee1AB1.Size = new System.Drawing.Size(13, 13);
             this.label_Melee1AB1.TabIndex = 202;
-            this.label_Melee1AB1.Text = "Str";
+            this.label_Melee1AB1.Text = "0";
             // 
             // textBox_Melee1Prof
             // 
@@ -2206,9 +2206,9 @@
             this.label_Melee2AB2.AutoSize = true;
             this.label_Melee2AB2.Location = new System.Drawing.Point(123, 895);
             this.label_Melee2AB2.Name = "label_Melee2AB2";
-            this.label_Melee2AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee2AB2.Size = new System.Drawing.Size(13, 13);
             this.label_Melee2AB2.TabIndex = 215;
-            this.label_Melee2AB2.Text = "Str";
+            this.label_Melee2AB2.Text = "0";
             // 
             // textBox_Melee2Dice
             // 
@@ -2236,18 +2236,18 @@
             this.label_Melee2AB1.AutoSize = true;
             this.label_Melee2AB1.Location = new System.Drawing.Point(407, 838);
             this.label_Melee2AB1.Name = "label_Melee2AB1";
-            this.label_Melee2AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee2AB1.Size = new System.Drawing.Size(13, 13);
             this.label_Melee2AB1.TabIndex = 211;
-            this.label_Melee2AB1.Text = "Str";
+            this.label_Melee2AB1.Text = "0";
             // 
             // label_Melee2Accuracy
             // 
             this.label_Melee2Accuracy.AutoSize = true;
             this.label_Melee2Accuracy.Location = new System.Drawing.Point(316, 828);
             this.label_Melee2Accuracy.Name = "label_Melee2Accuracy";
-            this.label_Melee2Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee2Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Melee2Accuracy.TabIndex = 210;
-            this.label_Melee2Accuracy.Text = "Accuracy";
+            this.label_Melee2Accuracy.Text = "0";
             // 
             // textBox19
             // 
@@ -2275,9 +2275,9 @@
             this.label_Melee3AB2.AutoSize = true;
             this.label_Melee3AB2.Location = new System.Drawing.Point(123, 1007);
             this.label_Melee3AB2.Name = "label_Melee3AB2";
-            this.label_Melee3AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee3AB2.Size = new System.Drawing.Size(13, 13);
             this.label_Melee3AB2.TabIndex = 224;
-            this.label_Melee3AB2.Text = "Str";
+            this.label_Melee3AB2.Text = "0";
             // 
             // textBox_Melee3Dice
             // 
@@ -2305,27 +2305,27 @@
             this.label_Melee3AB1.AutoSize = true;
             this.label_Melee3AB1.Location = new System.Drawing.Point(407, 950);
             this.label_Melee3AB1.Name = "label_Melee3AB1";
-            this.label_Melee3AB1.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee3AB1.Size = new System.Drawing.Size(13, 13);
             this.label_Melee3AB1.TabIndex = 220;
-            this.label_Melee3AB1.Text = "Str";
+            this.label_Melee3AB1.Text = "0";
             // 
             // label_Melee3Accuracy
             // 
             this.label_Melee3Accuracy.AutoSize = true;
             this.label_Melee3Accuracy.Location = new System.Drawing.Point(316, 940);
             this.label_Melee3Accuracy.Name = "label_Melee3Accuracy";
-            this.label_Melee3Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Melee3Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Melee3Accuracy.TabIndex = 219;
-            this.label_Melee3Accuracy.Text = "Accuracy";
+            this.label_Melee3Accuracy.Text = "0";
             // 
             // label_Ranged1Accuracy
             // 
             this.label_Ranged1Accuracy.AutoSize = true;
             this.label_Ranged1Accuracy.Location = new System.Drawing.Point(314, 1089);
             this.label_Ranged1Accuracy.Name = "label_Ranged1Accuracy";
-            this.label_Ranged1Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged1Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged1Accuracy.TabIndex = 228;
-            this.label_Ranged1Accuracy.Text = "Accuracy";
+            this.label_Ranged1Accuracy.Text = "0";
             // 
             // textBox_Ranged1Traits
             // 
@@ -2374,9 +2374,9 @@
             this.label_Ranged1AB.AutoSize = true;
             this.label_Ranged1AB.Location = new System.Drawing.Point(407, 1090);
             this.label_Ranged1AB.Name = "label_Ranged1AB";
-            this.label_Ranged1AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged1AB.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged1AB.TabIndex = 229;
-            this.label_Ranged1AB.Text = "Dex";
+            this.label_Ranged1AB.Text = "0";
             // 
             // textBox_Ranged1Special
             // 
@@ -2439,18 +2439,18 @@
             this.label_Ranged2AB.AutoSize = true;
             this.label_Ranged2AB.Location = new System.Drawing.Point(407, 1199);
             this.label_Ranged2AB.Name = "label_Ranged2AB";
-            this.label_Ranged2AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged2AB.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged2AB.TabIndex = 239;
-            this.label_Ranged2AB.Text = "Dex";
+            this.label_Ranged2AB.Text = "0";
             // 
             // label_Ranged2Accuracy
             // 
             this.label_Ranged2Accuracy.AutoSize = true;
             this.label_Ranged2Accuracy.Location = new System.Drawing.Point(314, 1198);
             this.label_Ranged2Accuracy.Name = "label_Ranged2Accuracy";
-            this.label_Ranged2Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged2Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged2Accuracy.TabIndex = 238;
-            this.label_Ranged2Accuracy.Text = "Accuracy";
+            this.label_Ranged2Accuracy.Text = "0";
             // 
             // textBox_Ranged3Special
             // 
@@ -2506,18 +2506,18 @@
             this.label_Ranged3AB.AutoSize = true;
             this.label_Ranged3AB.Location = new System.Drawing.Point(407, 1307);
             this.label_Ranged3AB.Name = "label_Ranged3AB";
-            this.label_Ranged3AB.Size = new System.Drawing.Size(26, 13);
+            this.label_Ranged3AB.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged3AB.TabIndex = 248;
-            this.label_Ranged3AB.Text = "Dex";
+            this.label_Ranged3AB.Text = "0";
             // 
             // label_Ranged3Accuracy
             // 
             this.label_Ranged3Accuracy.AutoSize = true;
             this.label_Ranged3Accuracy.Location = new System.Drawing.Point(314, 1306);
             this.label_Ranged3Accuracy.Name = "label_Ranged3Accuracy";
-            this.label_Ranged3Accuracy.Size = new System.Drawing.Size(52, 13);
+            this.label_Ranged3Accuracy.Size = new System.Drawing.Size(13, 13);
             this.label_Ranged3Accuracy.TabIndex = 247;
-            this.label_Ranged3Accuracy.Text = "Accuracy";
+            this.label_Ranged3Accuracy.Text = "0";
             // 
             // textBox46
             // 
