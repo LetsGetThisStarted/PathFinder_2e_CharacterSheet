@@ -1007,11 +1007,23 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_strScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_strScore.Value - 10)/2).ToString();
-            if (numericUpDown_strScore.Value - 10 >= 0) { value = "+" + value; }
+            string value;
+            //Update character object strength ability score value and modifier
+            currentChar.StrScore = (int)numericUpDown_strScore.Value;
+            currentChar.StrMod = (int)Math.Floor(((double)currentChar.StrScore - 10) / 2);
+
+            //Create string version of score modifier
+            if (currentChar.StrMod >= 0) { value = "+" + currentChar.StrMod.ToString(); }
+            else { value = currentChar.StrMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
             label_StrMod.Text = value;
 
-            //TODO - Update all value that rely on this modification value
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
+
         }
 
         /// <summary>
@@ -1021,11 +1033,27 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_dexScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_dexScore.Value - 10) / 2).ToString();
-            if (numericUpDown_dexScore.Value - 10 >= 0) { value = "+" + value; }
-            label_DexMod.Text = value;
+            string value;
+            //Update character object dexterity ability score value and modifier
+            currentChar.DexScore = (int)numericUpDown_dexScore.Value;
+            currentChar.DexMod = (int)Math.Floor(((double)currentChar.DexScore - 10)/ 2);
 
-            //TODO - Update all value that rely on this modification value
+            //Create string version of score modifier
+            if (currentChar.DexMod >= 0) { value = "+" + currentChar.DexMod.ToString(); }
+            else { value = currentChar.DexMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
+            label_DexMod.Text = value;
+            label_AcrobaticsASMod.Text = value;
+            label_AthleticsASMod.Text = value;
+            label_StealthASMod.Text = value;
+            label_ThieveryASMod.Text = value;
+
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
+
         }
 
         /// <summary>
@@ -1035,11 +1063,22 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_conScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_conScore.Value - 10) / 2).ToString();
-            if (numericUpDown_conScore.Value - 10 >= 0) { value = "+" + value; }
+            string value;
+            //Update character object constitution ability score value and modifier
+            currentChar.ConScore = (int)numericUpDown_conScore.Value;
+            currentChar.ConMod = (int)Math.Floor(((double)currentChar.ConScore - 10) / 2);
+
+            //Create string version of score modifier
+            if (currentChar.ConMod >= 0) { value = "+" + currentChar.ConMod.ToString(); }
+            else { value = currentChar.ConMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
             label_ConMod.Text = value;
 
-            //TODO - Update all value that rely on this modification value
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
         }
 
         /// <summary>
@@ -1049,11 +1088,29 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_intScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_intScore.Value - 10) / 2).ToString();
-            if (numericUpDown_intScore.Value - 10 >= 0) { value = "+" + value; }
-            label_IntMod.Text = value;
+            string value;
+            //Update character object intellegence ability score value and modifier
+            currentChar.IntScore = (int)numericUpDown_intScore.Value;
+            currentChar.IntMod = (int)Math.Floor(((double)currentChar.IntScore - 10) / 2);
 
-            //TODO - Update all value that rely on this modification value
+            //Create string version of score modifier
+            if (currentChar.IntMod >= 0) { value = "+" + currentChar.IntMod.ToString(); }
+            else { value = currentChar.IntMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
+            label_IntMod.Text = value;
+            label_ArcanaASMod.Text = value;
+            label_CraftingASMod.Text = value;
+            label_Lore1ASMod.Text = value;
+            label_Lore2ASMod.Text = value;
+            label_OccultismASMod.Text = value;
+            label_SocietyASMod.Text = value;
+
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
+
         }
 
         /// <summary>
@@ -1063,11 +1120,27 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_wisScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_wisScore.Value - 10) / 2).ToString();
-            if (numericUpDown_wisScore.Value - 10 >= 0) { value = "+" + value; }
-            label_WisMod.Text = value;
+            string value;
+            //Update character object wisdom ability score value and modifier
+            currentChar.WisScore = (int)numericUpDown_wisScore.Value;
+            currentChar.WisMod = (int)Math.Floor(((double)currentChar.WisScore - 10) / 2);
 
-            //TODO - Update all value that rely on this modification value
+            //Create string version of score modifier
+            if (currentChar.WisMod >= 0) { value = "+" + currentChar.WisMod.ToString(); }
+            else { value = currentChar.WisMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
+            label_WisMod.Text = value;
+            label_MedicineASMod.Text = value;
+            label_NatureASMod.Text = value;
+            label_ReligionASMod.Text = value;
+            label_SurvivalASMod.Text = value;
+            
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
+
         }
 
         /// <summary>
@@ -1077,11 +1150,27 @@ namespace PathFinder_2e_CharacterSheet
         /// <param name="e"></param>
         private void numericUpDown_chaScore_ValueChanged(object sender, EventArgs e)
         {
-            string value = Math.Floor((numericUpDown_chaScore.Value - 10) / 2).ToString();
-            if (numericUpDown_chaScore.Value - 10 >= 0) { value = "+" + value; }
-            label_ChaMod.Text = value;
+            string value;
+            //Update character object charisma ability score value and modifier
+            currentChar.ChaScore = (int)numericUpDown_chaScore.Value;
+            currentChar.ChaMod = (int)Math.Floor(((double)currentChar.ChaScore - 10) / 2);
 
-            //TODO - Update all value that rely on this modification value
+            //Create string version of score modifier
+            if (currentChar.ChaMod >= 0) { value = "+" + currentChar.ChaMod.ToString(); }
+            else { value = currentChar.ChaMod.ToString(); }
+
+            //Update all relavent values that rely on this modification value
+            //Direct updates to character sheet
+            label_ChaMod.Text = value;
+            label_DeceptionASMod.Text = value;
+            label_DiplomacyASMod.Text = value;
+            label_IntimidationASMod.Text = value;
+            label_PerformanceASMod.Text = value;
+            
+            //Calculated updates to character object
+
+            //Calculated updates to character sheet
+
         }
     }
 }
