@@ -1003,6 +1003,7 @@
             // 
             this.textBox_FortitudeCon.Location = new System.Drawing.Point(448, 493);
             this.textBox_FortitudeCon.Name = "textBox_FortitudeCon";
+            this.textBox_FortitudeCon.ReadOnly = true;
             this.textBox_FortitudeCon.Size = new System.Drawing.Size(33, 20);
             this.textBox_FortitudeCon.TabIndex = 84;
             // 
@@ -1038,6 +1039,7 @@
             // 
             this.textBox_ReflexDex.Location = new System.Drawing.Point(601, 493);
             this.textBox_ReflexDex.Name = "textBox_ReflexDex";
+            this.textBox_ReflexDex.ReadOnly = true;
             this.textBox_ReflexDex.Size = new System.Drawing.Size(33, 20);
             this.textBox_ReflexDex.TabIndex = 88;
             // 
@@ -1068,6 +1070,7 @@
             // 
             this.textBox_WillWis.Location = new System.Drawing.Point(754, 493);
             this.textBox_WillWis.Name = "textBox_WillWis";
+            this.textBox_WillWis.ReadOnly = true;
             this.textBox_WillWis.Size = new System.Drawing.Size(33, 20);
             this.textBox_WillWis.TabIndex = 92;
             // 
@@ -1084,6 +1087,7 @@
             // 
             this.textBox_ACDex.Location = new System.Drawing.Point(601, 251);
             this.textBox_ACDex.Name = "textBox_ACDex";
+            this.textBox_ACDex.ReadOnly = true;
             this.textBox_ACDex.Size = new System.Drawing.Size(33, 20);
             this.textBox_ACDex.TabIndex = 95;
             // 
@@ -2552,7 +2556,6 @@
             this.numericUpDown_xpMax.Cursor = System.Windows.Forms.Cursors.No;
             this.numericUpDown_xpMax.Location = new System.Drawing.Point(493, 168);
             this.numericUpDown_xpMax.Name = "numericUpDown_xpMax";
-            this.numericUpDown_xpMax.ReadOnly = true;
             this.numericUpDown_xpMax.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown_xpMax.TabIndex = 259;
             // 
@@ -2578,6 +2581,7 @@
             this.numericUpDown_strScore.Name = "numericUpDown_strScore";
             this.numericUpDown_strScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_strScore.TabIndex = 262;
+            this.numericUpDown_strScore.ValueChanged += new System.EventHandler(this.numericUpDown_strScore_ValueChanged);
             // 
             // numericUpDown_dexScore
             // 
@@ -2585,6 +2589,7 @@
             this.numericUpDown_dexScore.Name = "numericUpDown_dexScore";
             this.numericUpDown_dexScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_dexScore.TabIndex = 263;
+            this.numericUpDown_dexScore.ValueChanged += new System.EventHandler(this.numericUpDown_dexScore_ValueChanged);
             // 
             // numericUpDown_conScore
             // 
@@ -2592,6 +2597,7 @@
             this.numericUpDown_conScore.Name = "numericUpDown_conScore";
             this.numericUpDown_conScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_conScore.TabIndex = 264;
+            this.numericUpDown_conScore.ValueChanged += new System.EventHandler(this.numericUpDown_conScore_ValueChanged);
             // 
             // numericUpDown_intScore
             // 
@@ -2599,6 +2605,7 @@
             this.numericUpDown_intScore.Name = "numericUpDown_intScore";
             this.numericUpDown_intScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_intScore.TabIndex = 265;
+            this.numericUpDown_intScore.ValueChanged += new System.EventHandler(this.numericUpDown_intScore_ValueChanged);
             // 
             // numericUpDown_wisScore
             // 
@@ -2606,6 +2613,7 @@
             this.numericUpDown_wisScore.Name = "numericUpDown_wisScore";
             this.numericUpDown_wisScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_wisScore.TabIndex = 266;
+            this.numericUpDown_wisScore.ValueChanged += new System.EventHandler(this.numericUpDown_wisScore_ValueChanged);
             // 
             // numericUpDown_chaScore
             // 
@@ -2613,6 +2621,7 @@
             this.numericUpDown_chaScore.Name = "numericUpDown_chaScore";
             this.numericUpDown_chaScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_chaScore.TabIndex = 267;
+            this.numericUpDown_chaScore.ValueChanged += new System.EventHandler(this.numericUpDown_chaScore_ValueChanged);
             // 
             // listBox_ResistAndImmune
             // 

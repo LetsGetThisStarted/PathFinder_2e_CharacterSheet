@@ -999,5 +999,89 @@ namespace PathFinder_2e_CharacterSheet
                 throw new Exception(e.Message);
             }
         }
+
+        /// <summary>
+        /// Converts the raw strength value into the strength modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_strScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_strScore.Value - 10)/2).ToString();
+            if (numericUpDown_strScore.Value - 10 >= 0) { value = "+" + value; }
+            label_StrMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
+
+        /// <summary>
+        /// Converts the raw dexterity value into the dexterity modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_dexScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_dexScore.Value - 10) / 2).ToString();
+            if (numericUpDown_dexScore.Value - 10 >= 0) { value = "+" + value; }
+            label_DexMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
+
+        /// <summary>
+        /// Converts the raw constitution value into the constitution modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_conScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_conScore.Value - 10) / 2).ToString();
+            if (numericUpDown_conScore.Value - 10 >= 0) { value = "+" + value; }
+            label_ConMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
+
+        /// <summary>
+        /// Converts the raw intellegence value into the intellegence modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_intScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_intScore.Value - 10) / 2).ToString();
+            if (numericUpDown_intScore.Value - 10 >= 0) { value = "+" + value; }
+            label_IntMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
+
+        /// <summary>
+        /// Converts the raw wisdom value into the wisdom modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_wisScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_wisScore.Value - 10) / 2).ToString();
+            if (numericUpDown_wisScore.Value - 10 >= 0) { value = "+" + value; }
+            label_WisMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
+
+        /// <summary>
+        /// Converts the raw charisma value into the charisma modification value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void numericUpDown_chaScore_ValueChanged(object sender, EventArgs e)
+        {
+            string value = Math.Floor((numericUpDown_chaScore.Value - 10) / 2).ToString();
+            if (numericUpDown_chaScore.Value - 10 >= 0) { value = "+" + value; }
+            label_ChaMod.Text = value;
+
+            //TODO - Update all value that rely on this modification value
+        }
     }
 }
