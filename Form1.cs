@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using System.Globalization;
 using System.Xml;
+using System.Linq.Expressions;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -21,7 +22,12 @@ namespace PathFinder_2e_CharacterSheet
         // Database variables
         public string provider;
         public string connectionString;
-        
+
+        // Form variables
+        public Dictionary<object, object> pairedObjects = new Dictionary<object, object>();
+        private int armorIndex = 0;
+        List<ProgressBar> pBarList; 
+
         public Form1()
         {
             InitializeComponent();
@@ -33,9 +39,48 @@ namespace PathFinder_2e_CharacterSheet
             return connectionString;
         }
 
+        /// <summary>
+        /// Initialize all items needed to link items on the form
+        /// </summary>
+        private void LinkProgressBars()
+        {
+            pairedObjects.Add(progressBar_Acrobatics, textBox_AcrobaticsProfMod);
+            pairedObjects.Add(progressBar_Arcana, textBox_ArcanaProfMod);
+            pairedObjects.Add(progressBar_ArmorClass, textBox_ACProf);
+            pairedObjects.Add(progressBar_Athletics, textBox_AthleticsProfMod);
+            pairedObjects.Add(progressBar_Crafting, textBox_CraftingProfMod);
+            pairedObjects.Add(progressBar_Deception, textBox_DeceptionProfMod);
+            pairedObjects.Add(progressBar_Diplomacy, textBox_DiplomacyProfMod);
+            pairedObjects.Add(progressBar_Fortitude, textBox_FortitudeProf);
+            pairedObjects.Add(progressBar_Intimidation, textBox_IntimidationProfMod);
+            pairedObjects.Add(progressBar_Lore1, textBox_Lore1ProfMod);
+            pairedObjects.Add(progressBar_Lore2, textBox_Lore2ProfMod);
+            pairedObjects.Add(progressBar_Medicine, textBox_MedicineProfMod);
+            pairedObjects.Add(progressBar_Melee1, textBox_Melee1Prof);
+            pairedObjects.Add(progressBar_Melee2, textBox_Melee2Prof);
+            pairedObjects.Add(progressBar_Melee3, textBox_Melee3Prof);
+            pairedObjects.Add(progressBar_Nature, textBox_NatureProfMod);
+            pairedObjects.Add(progressBar_Occultism, textBox_OccultismProfMod);
+            pairedObjects.Add(progressBar_Perception, textBox_PerceptionProf);
+            pairedObjects.Add(progressBar_Performance, textBox_PerformanceProfMod);
+            pairedObjects.Add(progressBar_Ranged1, textBox_Ranged1Prof);
+            pairedObjects.Add(progressBar_Ranged2, textBox_Ranged2Prof);
+            pairedObjects.Add(progressBar_Ranged3, textBox_Ranged3Prof);
+            pairedObjects.Add(progressBar_Reflex, textBox_ReflexProf);
+            pairedObjects.Add(progressBar_Religion, textBox_ReligionProfMod);
+            pairedObjects.Add(progressBar_Society, textBox_SocietyProfMod);
+            pairedObjects.Add(progressBar_Stealth, textBox_StealthProfMod);
+            pairedObjects.Add(progressBar_Survival, textBox_SurvivalProfMod);
+            pairedObjects.Add(progressBar_Thievery, textBox_ThieveryProfMod);
+            pairedObjects.Add(progressBar_Will, textBox_WillProf);
+
+            // TODO - add all progressbar/textbox connections to 'pairedObjects' dictionary
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            LinkProgressBars();
+            pBarList = new List<ProgressBar> { progressBar_Unarmored, progressBar_Light, progressBar_Medium, progressBar_Heavy };
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -68,9 +113,14 @@ namespace PathFinder_2e_CharacterSheet
 
         }
 
+
         private void progressBar_clicked(object sender, EventArgs e)
         {
             ProgressBar pBar = sender as ProgressBar;
+            TextBox tBox;
+            Object obj;
+            bool pBarPaired;
+
             if (pBar.Value >= pBar.Maximum)
             {
                 pBar.Value = 0;
@@ -79,6 +129,17 @@ namespace PathFinder_2e_CharacterSheet
             {
                 pBar.Value += 1;
             }
+
+            pBarPaired = pairedObjects.TryGetValue(pBar, out obj);
+            if (!pBarPaired)
+            { 
+                Console.WriteLine(pBar.Name + " failed to connect to text box");
+                return;
+            }
+            else { tBox = obj as  TextBox; }
+
+            if (pBar.Value > 0) { tBox.Text = "+" + ((pBar.Value * 2) + currentChar.Level).ToString(); }
+            else { tBox.Text = "+0"; }
 
         }
 
@@ -138,6 +199,15 @@ namespace PathFinder_2e_CharacterSheet
 
         private void UpdateSheetAbilityScores(Character thisChar)
         {
+            // ability scores
+            numericUpDown_dexScore.Value = thisChar.DexScore;
+            numericUpDown_conScore.Value = thisChar.ConScore;
+            numericUpDown_intScore.Value = thisChar.IntScore;
+            numericUpDown_wisScore.Value = thisChar.WisScore;
+            numericUpDown_chaScore.Value = thisChar.ChaScore;
+            numericUpDown_strScore.Value = thisChar.StrScore;
+            
+            // ability score modifiers
             label_DexMod.Text = thisChar.DexMod.ToString();
             label_ConMod.Text = thisChar.ConMod.ToString();
             label_IntMod.Text = thisChar.IntMod.ToString();
@@ -452,123 +522,6 @@ namespace PathFinder_2e_CharacterSheet
             UpdateSheetSkills(thisChar);
             UpdateSheetLanguages(thisChar);
 
-            // Unassigned
-            /*
-            button_AddResistanceImmunity;
-            button_AddCondition;
-            button_AddSense;
-            textBox_Notes;
-            button_AddMovement;
-
-            */
-
-            /*
-
-        button1;
-        radioButton1;
-        groupBox1;
-        radioButton2;
-        radioButton4;
-        groupBox2;
-        radioButton3;
-        radioButton5;
-        radioButton6;
-        groupBox3;
-        radioButton7;
-        radioButton8;
-        radioButton9;
-        groupBox4;
-        radioButton10;
-        radioButton11;
-        radioButton12;
-        groupBox5;
-        radioButton13;
-        radioButton14;
-        radioButton15;
-        groupBox6;
-        radioButton16;
-        radioButton17;
-        radioButton18;
-        textBox_Melee1Name;
-        textBox_Melee2Name;
-        textBox_Melee3Name;
-        textBox_Ranged1Name;
-        textBox_Ranged2Name;
-        textBox_Ranged3Name;
-        label_Melee1Accuracy;
-        label_Melee1AB1;
-        textBox_Melee1Prof;
-        textBox_Melee1Item;
-        textBox_Melee1Dice;
-        label_Melee1AB2;
-        textBox_Melee1WSpec;
-        textBox_Melee1Other;
-        textBox12;
-        textBox13;
-        textBox_Melee2Other;
-        textBox_Melee2WSpec;
-        label_Melee2AB2;
-        textBox_Melee2Dice;
-        textBox_Melee2Item;
-        textBox_Melee2Prof;
-        label_Melee2AB1;
-        label_Melee2Accuracy;
-        textBox19;
-        textBox_Melee3Other;
-        textBox_Melee3WSpec;
-        label_Melee3AB2;
-        textBox_Melee3Dice;
-        textBox_Melee3Item;
-        textBox_Melee3Prof;
-        label_Melee3AB1;
-        label_Melee3Accuracy;
-        label_Ranged1Accuracy;
-        textBox_Ranged1Traits;
-        textBox_Ranged1Other;
-        textBox_Ranged1WSpec;
-        textBox_Ranged1Dice;
-        textBox_Ranged1Item;
-        textBox_Ranged1Prof;
-        label_Ranged1AB;
-        textBox_Ranged1Special;
-        textBox_Ranged2Special;
-        textBox_Ranged2Traits;
-        textBox_Ranged2Other;
-        textBox_Ranged2WSpec;
-        textBox_Ranged2Dice;
-        textBox_Ranged2Item;
-        textBox_Ranged2Prof;
-        label_Ranged2AB;
-        label_Ranged2Accuracy;
-        textBox_Ranged3Special;
-        textBox_Ranged3Traits;
-        textBox_Ranged3Other;
-        textBox_Ranged3WSpec;
-        textBox_Ranged3Dice;
-        textBox_Ranged3Item;
-        textBox_Ranged3Prof;
-        label_Ranged3AB;
-        label_Ranged3Accuracy;
-        textBox46;
-        textBox47;
-        textBox_Size;
-        numericUpDown_xpCurrent;
-        numericUpDown_xpMax;
-        numericUpDown_level;
-        numericUpDown_heroPoints;
-        numericUpDown_strScore;
-        numericUpDown_dexScore;
-        numericUpDown_conScore;
-        numericUpDown_intScore;
-        numericUpDown_wisScore;
-        numericUpDown_chaScore;
-        listBox_ResistAndImmune;
-        listBox_Conditions;
-        listBox_Senses;
-        listBox_Movement;
-        textBox_NotesMovement;
-        button_NewCharacter;
-            */
         }
 
         private void NewCharacter()
@@ -1010,7 +963,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object strength ability score value and modifier
             currentChar.StrScore = (int)numericUpDown_strScore.Value;
-            currentChar.StrMod = (int)Math.Floor(((double)currentChar.StrScore - 10) / 2);
+            currentChar.StrMod = ModIntFromASInt(currentChar.StrScore);
 
             //Create string version of score modifier
             if (currentChar.StrMod >= 0) { value = "+" + currentChar.StrMod.ToString(); }
@@ -1036,7 +989,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object dexterity ability score value and modifier
             currentChar.DexScore = (int)numericUpDown_dexScore.Value;
-            currentChar.DexMod = (int)Math.Floor(((double)currentChar.DexScore - 10)/ 2);
+            currentChar.DexMod = ModIntFromASInt(currentChar.DexScore);
 
             //Create string version of score modifier
             if (currentChar.DexMod >= 0) { value = "+" + currentChar.DexMod.ToString(); }
@@ -1066,7 +1019,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object constitution ability score value and modifier
             currentChar.ConScore = (int)numericUpDown_conScore.Value;
-            currentChar.ConMod = (int)Math.Floor(((double)currentChar.ConScore - 10) / 2);
+            currentChar.ConMod = ModIntFromASInt(currentChar.ConScore);
 
             //Create string version of score modifier
             if (currentChar.ConMod >= 0) { value = "+" + currentChar.ConMod.ToString(); }
@@ -1091,7 +1044,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object intellegence ability score value and modifier
             currentChar.IntScore = (int)numericUpDown_intScore.Value;
-            currentChar.IntMod = (int)Math.Floor(((double)currentChar.IntScore - 10) / 2);
+            currentChar.IntMod = ModIntFromASInt(currentChar.IntScore);
 
             //Create string version of score modifier
             if (currentChar.IntMod >= 0) { value = "+" + currentChar.IntMod.ToString(); }
@@ -1123,7 +1076,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object wisdom ability score value and modifier
             currentChar.WisScore = (int)numericUpDown_wisScore.Value;
-            currentChar.WisMod = (int)Math.Floor(((double)currentChar.WisScore - 10) / 2);
+            currentChar.WisMod = ModIntFromASInt(currentChar.WisScore);
 
             //Create string version of score modifier
             if (currentChar.WisMod >= 0) { value = "+" + currentChar.WisMod.ToString(); }
@@ -1153,7 +1106,7 @@ namespace PathFinder_2e_CharacterSheet
             string value;
             //Update character object charisma ability score value and modifier
             currentChar.ChaScore = (int)numericUpDown_chaScore.Value;
-            currentChar.ChaMod = (int)Math.Floor(((double)currentChar.ChaScore - 10) / 2);
+            currentChar.ChaMod = ModIntFromASInt(currentChar.ChaScore);
 
             //Create string version of score modifier
             if (currentChar.ChaMod >= 0) { value = "+" + currentChar.ChaMod.ToString(); }
@@ -1171,6 +1124,45 @@ namespace PathFinder_2e_CharacterSheet
 
             //Calculated updates to character sheet
 
+        }
+
+        private int ModIntFromASInt(int abilityScore)
+        {
+            int asMod;
+            asMod = (int)Math.Floor(((double)abilityScore - 10) / 2);
+            return asMod; 
+        }
+
+        /// <summary>
+        /// Rotates between the different armor professions available. Armor professions not selected are made invisible.
+        /// </summary>
+        /// <param name="sender">object that sent the event</param>
+        /// <param name="e">type of event that was triggered</param>
+        private void SelectArmorProf(object sender, EventArgs e)
+        {
+            ProgressBar progressBar = sender as ProgressBar;
+            TextBox tBox;
+            Object obj;
+            bool pBarPaired;
+
+            pBarList[armorIndex].Visible = false;
+            if (armorIndex >= pBarList.Count - 1) { armorIndex = 0; }
+            else { armorIndex++; }
+            progressBar.Value = pBarList[armorIndex].Value;
+
+            pBarPaired = pairedObjects.TryGetValue(progressBar, out obj);
+            if (!pBarPaired)
+            {
+                Console.WriteLine(progressBar.Name + " failed to connect to text box");
+                return;
+            }
+            else { tBox = obj as TextBox; }
+
+            if (progressBar.Value > 0) { tBox.Text = "+" + ((progressBar.Value * 2) + currentChar.Level).ToString(); }
+            else { tBox.Text = "+0"; }
+
+            pBarList[armorIndex].Visible = true;
+            
         }
     }
 }

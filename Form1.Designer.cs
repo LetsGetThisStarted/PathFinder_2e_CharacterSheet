@@ -444,9 +444,9 @@
             this.label_AC.AutoSize = true;
             this.label_AC.Location = new System.Drawing.Point(487, 270);
             this.label_AC.Name = "label_AC";
-            this.label_AC.Size = new System.Drawing.Size(21, 13);
+            this.label_AC.Size = new System.Drawing.Size(13, 13);
             this.label_AC.TabIndex = 30;
-            this.label_AC.Text = "AC";
+            this.label_AC.Text = "0";
             // 
             // label_DC
             // 
@@ -477,6 +477,7 @@
             this.progressBar_Light.Step = 4;
             this.progressBar_Light.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar_Light.TabIndex = 32;
+            this.progressBar_Light.Visible = false;
             this.progressBar_Light.Click += new System.EventHandler(this.progressBar_clicked);
             // 
             // progressBar_Medium
@@ -488,6 +489,7 @@
             this.progressBar_Medium.Step = 4;
             this.progressBar_Medium.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar_Medium.TabIndex = 33;
+            this.progressBar_Medium.Visible = false;
             this.progressBar_Medium.Click += new System.EventHandler(this.progressBar_clicked);
             // 
             // progressBar_Heavy
@@ -499,6 +501,7 @@
             this.progressBar_Heavy.Step = 4;
             this.progressBar_Heavy.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar_Heavy.TabIndex = 34;
+            this.progressBar_Heavy.Visible = false;
             this.progressBar_Heavy.Click += new System.EventHandler(this.progressBar_clicked);
             // 
             // textBox_HitPointsMax
@@ -572,7 +575,7 @@
             // 
             // progressBar_Acrobatics
             // 
-            this.progressBar_Acrobatics.Location = new System.Drawing.Point(967, 670);
+            this.progressBar_Acrobatics.Location = new System.Drawing.Point(967, 669);
             this.progressBar_Acrobatics.Maximum = 4;
             this.progressBar_Acrobatics.Name = "progressBar_Acrobatics";
             this.progressBar_Acrobatics.Size = new System.Drawing.Size(58, 21);
@@ -887,7 +890,7 @@
             this.progressBar_ArmorClass.Step = 4;
             this.progressBar_ArmorClass.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar_ArmorClass.TabIndex = 70;
-            this.progressBar_ArmorClass.Click += new System.EventHandler(this.progressBar_clicked);
+            this.progressBar_ArmorClass.Click += new System.EventHandler(this.SelectArmorProf);
             // 
             // button_AddResistanceImmunity
             // 
@@ -946,9 +949,9 @@
             this.label_Perception.AutoSize = true;
             this.label_Perception.Location = new System.Drawing.Point(887, 493);
             this.label_Perception.Name = "label_Perception";
-            this.label_Perception.Size = new System.Drawing.Size(58, 13);
+            this.label_Perception.Size = new System.Drawing.Size(13, 13);
             this.label_Perception.TabIndex = 77;
-            this.label_Perception.Text = "Perception";
+            this.label_Perception.Text = "0";
             // 
             // textBox_PercptionWis
             // 
@@ -961,6 +964,7 @@
             // 
             this.textBox_PerceptionProf.Location = new System.Drawing.Point(985, 526);
             this.textBox_PerceptionProf.Name = "textBox_PerceptionProf";
+            this.textBox_PerceptionProf.ReadOnly = true;
             this.textBox_PerceptionProf.Size = new System.Drawing.Size(36, 20);
             this.textBox_PerceptionProf.TabIndex = 79;
             // 
@@ -1011,6 +1015,7 @@
             // 
             this.textBox_FortitudeProf.Location = new System.Drawing.Point(507, 493);
             this.textBox_FortitudeProf.Name = "textBox_FortitudeProf";
+            this.textBox_FortitudeProf.ReadOnly = true;
             this.textBox_FortitudeProf.Size = new System.Drawing.Size(33, 20);
             this.textBox_FortitudeProf.TabIndex = 85;
             // 
@@ -1032,6 +1037,7 @@
             // 
             this.textBox_ReflexProf.Location = new System.Drawing.Point(660, 493);
             this.textBox_ReflexProf.Name = "textBox_ReflexProf";
+            this.textBox_ReflexProf.ReadOnly = true;
             this.textBox_ReflexProf.Size = new System.Drawing.Size(33, 20);
             this.textBox_ReflexProf.TabIndex = 89;
             // 
@@ -1063,6 +1069,7 @@
             // 
             this.textBox_WillProf.Location = new System.Drawing.Point(813, 493);
             this.textBox_WillProf.Name = "textBox_WillProf";
+            this.textBox_WillProf.ReadOnly = true;
             this.textBox_WillProf.Size = new System.Drawing.Size(33, 20);
             this.textBox_WillProf.TabIndex = 93;
             // 
@@ -1102,6 +1109,7 @@
             // 
             this.textBox_ACProf.Location = new System.Drawing.Point(701, 251);
             this.textBox_ACProf.Name = "textBox_ACProf";
+            this.textBox_ACProf.ReadOnly = true;
             this.textBox_ACProf.Size = new System.Drawing.Size(33, 20);
             this.textBox_ACProf.TabIndex = 97;
             // 
@@ -1188,6 +1196,7 @@
             // 
             this.textBox_AcrobaticsProfMod.Location = new System.Drawing.Point(922, 667);
             this.textBox_AcrobaticsProfMod.Name = "textBox_AcrobaticsProfMod";
+            this.textBox_AcrobaticsProfMod.ReadOnly = true;
             this.textBox_AcrobaticsProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_AcrobaticsProfMod.TabIndex = 111;
             // 
@@ -1223,6 +1232,7 @@
             // 
             this.textBox_AthleticsProfMod.Location = new System.Drawing.Point(922, 751);
             this.textBox_AthleticsProfMod.Name = "textBox_AthleticsProfMod";
+            this.textBox_AthleticsProfMod.ReadOnly = true;
             this.textBox_AthleticsProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_AthleticsProfMod.TabIndex = 116;
             // 
@@ -1255,6 +1265,7 @@
             // 
             this.textBox_StealthProfMod.Location = new System.Drawing.Point(922, 1295);
             this.textBox_StealthProfMod.Name = "textBox_StealthProfMod";
+            this.textBox_StealthProfMod.ReadOnly = true;
             this.textBox_StealthProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_StealthProfMod.TabIndex = 121;
             // 
@@ -1287,6 +1298,7 @@
             // 
             this.textBox_ThieveryProfMod.Location = new System.Drawing.Point(922, 1379);
             this.textBox_ThieveryProfMod.Name = "textBox_ThieveryProfMod";
+            this.textBox_ThieveryProfMod.ReadOnly = true;
             this.textBox_ThieveryProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_ThieveryProfMod.TabIndex = 125;
             // 
@@ -1333,6 +1345,7 @@
             // 
             this.textBox_ArcanaProfMod.Location = new System.Drawing.Point(922, 709);
             this.textBox_ArcanaProfMod.Name = "textBox_ArcanaProfMod";
+            this.textBox_ArcanaProfMod.ReadOnly = true;
             this.textBox_ArcanaProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_ArcanaProfMod.TabIndex = 131;
             // 
@@ -1365,6 +1378,7 @@
             // 
             this.textBox_CraftingProfMod.Location = new System.Drawing.Point(922, 793);
             this.textBox_CraftingProfMod.Name = "textBox_CraftingProfMod";
+            this.textBox_CraftingProfMod.ReadOnly = true;
             this.textBox_CraftingProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_CraftingProfMod.TabIndex = 135;
             // 
@@ -1397,6 +1411,7 @@
             // 
             this.textBox_Lore1ProfMod.Location = new System.Drawing.Point(922, 960);
             this.textBox_Lore1ProfMod.Name = "textBox_Lore1ProfMod";
+            this.textBox_Lore1ProfMod.ReadOnly = true;
             this.textBox_Lore1ProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_Lore1ProfMod.TabIndex = 139;
             // 
@@ -1429,6 +1444,7 @@
             // 
             this.textBox_Lore2ProfMod.Location = new System.Drawing.Point(922, 1002);
             this.textBox_Lore2ProfMod.Name = "textBox_Lore2ProfMod";
+            this.textBox_Lore2ProfMod.ReadOnly = true;
             this.textBox_Lore2ProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_Lore2ProfMod.TabIndex = 143;
             // 
@@ -1461,6 +1477,7 @@
             // 
             this.textBox_OccultismProfMod.Location = new System.Drawing.Point(922, 1128);
             this.textBox_OccultismProfMod.Name = "textBox_OccultismProfMod";
+            this.textBox_OccultismProfMod.ReadOnly = true;
             this.textBox_OccultismProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_OccultismProfMod.TabIndex = 147;
             // 
@@ -1493,6 +1510,7 @@
             // 
             this.textBox_SocietyProfMod.Location = new System.Drawing.Point(922, 1253);
             this.textBox_SocietyProfMod.Name = "textBox_SocietyProfMod";
+            this.textBox_SocietyProfMod.ReadOnly = true;
             this.textBox_SocietyProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_SocietyProfMod.TabIndex = 151;
             // 
@@ -1525,6 +1543,7 @@
             // 
             this.textBox_SurvivalProfMod.Location = new System.Drawing.Point(922, 1337);
             this.textBox_SurvivalProfMod.Name = "textBox_SurvivalProfMod";
+            this.textBox_SurvivalProfMod.ReadOnly = true;
             this.textBox_SurvivalProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_SurvivalProfMod.TabIndex = 155;
             // 
@@ -1557,6 +1576,7 @@
             // 
             this.textBox_ReligionProfMod.Location = new System.Drawing.Point(922, 1211);
             this.textBox_ReligionProfMod.Name = "textBox_ReligionProfMod";
+            this.textBox_ReligionProfMod.ReadOnly = true;
             this.textBox_ReligionProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_ReligionProfMod.TabIndex = 159;
             // 
@@ -1589,6 +1609,7 @@
             // 
             this.textBox_NatureProfMod.Location = new System.Drawing.Point(922, 1085);
             this.textBox_NatureProfMod.Name = "textBox_NatureProfMod";
+            this.textBox_NatureProfMod.ReadOnly = true;
             this.textBox_NatureProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_NatureProfMod.TabIndex = 163;
             // 
@@ -1621,6 +1642,7 @@
             // 
             this.textBox_MedicineProfMod.Location = new System.Drawing.Point(922, 1044);
             this.textBox_MedicineProfMod.Name = "textBox_MedicineProfMod";
+            this.textBox_MedicineProfMod.ReadOnly = true;
             this.textBox_MedicineProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_MedicineProfMod.TabIndex = 167;
             // 
@@ -1653,6 +1675,7 @@
             // 
             this.textBox_IntimidationProfMod.Location = new System.Drawing.Point(922, 918);
             this.textBox_IntimidationProfMod.Name = "textBox_IntimidationProfMod";
+            this.textBox_IntimidationProfMod.ReadOnly = true;
             this.textBox_IntimidationProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_IntimidationProfMod.TabIndex = 171;
             // 
@@ -1685,6 +1708,7 @@
             // 
             this.textBox_DeceptionProfMod.Location = new System.Drawing.Point(922, 833);
             this.textBox_DeceptionProfMod.Name = "textBox_DeceptionProfMod";
+            this.textBox_DeceptionProfMod.ReadOnly = true;
             this.textBox_DeceptionProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_DeceptionProfMod.TabIndex = 175;
             // 
@@ -1717,6 +1741,7 @@
             // 
             this.textBox_DiplomacyProfMod.Location = new System.Drawing.Point(922, 876);
             this.textBox_DiplomacyProfMod.Name = "textBox_DiplomacyProfMod";
+            this.textBox_DiplomacyProfMod.ReadOnly = true;
             this.textBox_DiplomacyProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_DiplomacyProfMod.TabIndex = 179;
             // 
@@ -1750,6 +1775,7 @@
             // 
             this.textBox_PerformanceProfMod.Location = new System.Drawing.Point(922, 1170);
             this.textBox_PerformanceProfMod.Name = "textBox_PerformanceProfMod";
+            this.textBox_PerformanceProfMod.ReadOnly = true;
             this.textBox_PerformanceProfMod.Size = new System.Drawing.Size(33, 20);
             this.textBox_PerformanceProfMod.TabIndex = 183;
             // 
@@ -2137,6 +2163,7 @@
             // 
             this.textBox_Melee1Prof.Location = new System.Drawing.Point(452, 723);
             this.textBox_Melee1Prof.Name = "textBox_Melee1Prof";
+            this.textBox_Melee1Prof.ReadOnly = true;
             this.textBox_Melee1Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Melee1Prof.TabIndex = 203;
             // 
@@ -2159,9 +2186,9 @@
             this.label_Melee1AB2.AutoSize = true;
             this.label_Melee1AB2.Location = new System.Drawing.Point(123, 785);
             this.label_Melee1AB2.Name = "label_Melee1AB2";
-            this.label_Melee1AB2.Size = new System.Drawing.Size(20, 13);
+            this.label_Melee1AB2.Size = new System.Drawing.Size(13, 13);
             this.label_Melee1AB2.TabIndex = 206;
-            this.label_Melee1AB2.Text = "Str";
+            this.label_Melee1AB2.Text = "0";
             // 
             // textBox_Melee1WSpec
             // 
@@ -2232,6 +2259,7 @@
             // 
             this.textBox_Melee2Prof.Location = new System.Drawing.Point(452, 833);
             this.textBox_Melee2Prof.Name = "textBox_Melee2Prof";
+            this.textBox_Melee2Prof.ReadOnly = true;
             this.textBox_Melee2Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Melee2Prof.TabIndex = 212;
             // 
@@ -2301,6 +2329,7 @@
             // 
             this.textBox_Melee3Prof.Location = new System.Drawing.Point(452, 945);
             this.textBox_Melee3Prof.Name = "textBox_Melee3Prof";
+            this.textBox_Melee3Prof.ReadOnly = true;
             this.textBox_Melee3Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Melee3Prof.TabIndex = 221;
             // 
@@ -2370,6 +2399,7 @@
             // 
             this.textBox_Ranged1Prof.Location = new System.Drawing.Point(452, 1085);
             this.textBox_Ranged1Prof.Name = "textBox_Ranged1Prof";
+            this.textBox_Ranged1Prof.ReadOnly = true;
             this.textBox_Ranged1Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Ranged1Prof.TabIndex = 230;
             // 
@@ -2435,6 +2465,7 @@
             // 
             this.textBox_Ranged2Prof.Location = new System.Drawing.Point(452, 1194);
             this.textBox_Ranged2Prof.Name = "textBox_Ranged2Prof";
+            this.textBox_Ranged2Prof.ReadOnly = true;
             this.textBox_Ranged2Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Ranged2Prof.TabIndex = 240;
             // 
@@ -2502,6 +2533,7 @@
             // 
             this.textBox_Ranged3Prof.Location = new System.Drawing.Point(452, 1302);
             this.textBox_Ranged3Prof.Name = "textBox_Ranged3Prof";
+            this.textBox_Ranged3Prof.ReadOnly = true;
             this.textBox_Ranged3Prof.Size = new System.Drawing.Size(33, 20);
             this.textBox_Ranged3Prof.TabIndex = 249;
             // 
@@ -2581,6 +2613,11 @@
             this.numericUpDown_strScore.Name = "numericUpDown_strScore";
             this.numericUpDown_strScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_strScore.TabIndex = 262;
+            this.numericUpDown_strScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_strScore.ValueChanged += new System.EventHandler(this.numericUpDown_strScore_ValueChanged);
             // 
             // numericUpDown_dexScore
@@ -2589,6 +2626,11 @@
             this.numericUpDown_dexScore.Name = "numericUpDown_dexScore";
             this.numericUpDown_dexScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_dexScore.TabIndex = 263;
+            this.numericUpDown_dexScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_dexScore.ValueChanged += new System.EventHandler(this.numericUpDown_dexScore_ValueChanged);
             // 
             // numericUpDown_conScore
@@ -2597,6 +2639,11 @@
             this.numericUpDown_conScore.Name = "numericUpDown_conScore";
             this.numericUpDown_conScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_conScore.TabIndex = 264;
+            this.numericUpDown_conScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_conScore.ValueChanged += new System.EventHandler(this.numericUpDown_conScore_ValueChanged);
             // 
             // numericUpDown_intScore
@@ -2605,6 +2652,11 @@
             this.numericUpDown_intScore.Name = "numericUpDown_intScore";
             this.numericUpDown_intScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_intScore.TabIndex = 265;
+            this.numericUpDown_intScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_intScore.ValueChanged += new System.EventHandler(this.numericUpDown_intScore_ValueChanged);
             // 
             // numericUpDown_wisScore
@@ -2613,6 +2665,11 @@
             this.numericUpDown_wisScore.Name = "numericUpDown_wisScore";
             this.numericUpDown_wisScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_wisScore.TabIndex = 266;
+            this.numericUpDown_wisScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_wisScore.ValueChanged += new System.EventHandler(this.numericUpDown_wisScore_ValueChanged);
             // 
             // numericUpDown_chaScore
@@ -2621,6 +2678,11 @@
             this.numericUpDown_chaScore.Name = "numericUpDown_chaScore";
             this.numericUpDown_chaScore.Size = new System.Drawing.Size(58, 20);
             this.numericUpDown_chaScore.TabIndex = 267;
+            this.numericUpDown_chaScore.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown_chaScore.ValueChanged += new System.EventHandler(this.numericUpDown_chaScore_ValueChanged);
             // 
             // listBox_ResistAndImmune
