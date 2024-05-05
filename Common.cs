@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PathFinder_2e_CharacterSheet
 {
-    internal class TDFunctions
+    public class Common
     {
+
     }
 }

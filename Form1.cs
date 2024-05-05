@@ -1,17 +1,14 @@
-﻿using System;
-using System.IO;
-using System.Windows.Forms;
-using System.Text.Json;
+﻿using Dapper;
+using System;
+using System.Collections.Generic;
 using System.Configuration;
-using System.Data.Common;
 using System.Data;
 using System.Data.SQLite;
-using Dapper;
-using System.Collections.Generic;
-using System.Xml.Serialization;
 using System.Globalization;
+using System.IO;
+using System.Windows.Forms;
 using System.Xml;
-using System.Linq.Expressions;
+using System.Xml.Serialization;
 
 namespace PathFinder_2e_CharacterSheet
 {
@@ -88,32 +85,6 @@ namespace PathFinder_2e_CharacterSheet
 
         }
 
-        private void textBox_IntMod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_ChaMod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_ConMod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_DexMod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_WisMod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void progressBar_clicked(object sender, EventArgs e)
         {
             ProgressBar pBar = sender as ProgressBar;
@@ -145,56 +116,51 @@ namespace PathFinder_2e_CharacterSheet
 
         private void textBox_CharacterName_TextChanged(object sender, EventArgs e)
         {
-            currentChar.CharacterName = textBox_CharacterName.Text;
+            UpdateCharacterNameFromSheet(currentChar);
         }
 
         private void textBox_PlayerName_TextChanged(object sender, EventArgs e)
         {
-            currentChar.PlayerName = textBox_PlayerName.Text;
+            UpdatePlayerNameFromSheet(currentChar);
         }
 
         private void textBox_XPCurrent_TextChanged(object sender, EventArgs e)
         {
-            currentChar.XpCurrent = (int)numericUpDown_xpCurrent.Value;
+            UpdateCurrentXPFromSheet(currentChar);
         }
 
         private void comboBox_Background_SelectedIndexChanged(object sender, EventArgs e)
         {
-            currentChar.Background = comboBox_Background.Text;
+            UpdateBackgroundFromSheet(currentChar);
         }
 
         private void comboBox_Alignment_SelectedIndexChanged(object sender, EventArgs e)
         {
-            currentChar.Alignment = comboBox_Alignment.Text;
+            UpdateAlignmentFromSheet(currentChar);
         }
 
         private void comboBox_Deity_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            currentChar.Deity = comboBox_Deity.Text;
+            UpdateDeityFromSheet(currentChar);
         }
 
         private void numericUpDown_level_ValueChanged(object sender, EventArgs e)
         {
-            currentChar.Level = (int)numericUpDown_level.Value;
+            UpdateLevelFromSheet(currentChar);
         }
 
         private void numericUpDown_heroPoints_ValueChanged(object sender, EventArgs e)
         {
-            currentChar.HeroPoints = (int)numericUpDown_heroPoints.Value;
-        }
-
-        private void listBox_ResistAndImmune_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            UpdateHeroPointsFromSheet(currentChar);
         }
 
         private void UpdateSheetHeader(Character thisChar)
         {
-            textBox_PlayerName.Text = thisChar.PlayerName;
-            textBox_CharacterName.Text = thisChar.CharacterName;
-            comboBox_Deity.Text = thisChar.Deity;
-            comboBox_Alignment.Text = thisChar.Alignment;
-            comboBox_Background.Text = thisChar.Background;
+            UpdatePlayerNameFromSheet(thisChar);
+            UpdateCharacterNameFromSheet(thisChar);
+            UpdateDeityFromSheet(thisChar);
+            UpdateAlignmentFromSheet(thisChar);
+            UpdateBackgroundFromSheet(thisChar);
         }
 
         private void UpdateSheetAbilityScores(Character thisChar)
@@ -306,196 +272,6 @@ namespace PathFinder_2e_CharacterSheet
             progressBar_WeaponMartial.Value = (int)thisChar.MartialWeaponProf;
             progressBar_WeaponOther1.Value = (int)thisChar.OtherWeaponProf1;
             progressBar_WeaponOther2.Value = (int)thisChar.OtherWeaponProf2;
-        }
-
-        private void UpdateSheetAcrobatics(Character thisChar)
-        {
-            progressBar_Acrobatics.Value = (int)thisChar.Acrobatics.Prof;
-            label_Acrobatics.Text = thisChar.Acrobatics.Value.ToString();
-            label_AcrobaticsASMod.Text = thisChar.Acrobatics.AbilityScoreValue.ToString();
-            textBox_AcrobaticsProfMod.Text = thisChar.Acrobatics.Prof.ToString();
-            textBox_AcrobaticsItemMod.Text = thisChar.Acrobatics.Item.ToString();
-            textBox_AcrobaticsArmorMod.Text = thisChar.Acrobatics.ArmorMod.ToString();
-        }
-
-        private void UpdateSheetArcana(Character thisChar)
-        {
-            progressBar_Arcana.Value = (int)thisChar.Arcana.Prof;
-            textBox_ArcanaItemMod.Text = thisChar.Arcana.Item.ToString();
-            textBox_ArcanaProfMod.Text = thisChar.Arcana.Prof.ToString();
-            label_ArcanaASMod.Text = thisChar.Acrobatics.AbilityScoreValue.ToString();
-            label_Arcana.Text = thisChar.Arcana.Value.ToString();
-        }
-
-        private void UpdateSheetAthletics(Character thisChar)
-        {
-            progressBar_Athletics.Value = (int)thisChar.Athletics.Prof;
-            textBox_AthleticsArmorMod.Text = thisChar.Athletics.ArmorMod.ToString();
-            textBox_AthleticsItemMod.Text = thisChar.Athletics.Item.ToString();
-            textBox_AthleticsProfMod.Text = thisChar.Athletics.Prof.ToString();
-            label_AthleticsASMod.Text = thisChar.Athletics.AbilityScoreValue.ToString();
-            label_Athletics.Text = thisChar.Athletics.Value.ToString();
-        }
-
-        private void UpdateSheetCrafting(Character thisChar)
-        {
-            progressBar_Crafting.Value = (int)thisChar.Crafting.Prof;
-            textBox_CraftingItemMod.Text = thisChar.Crafting.Item.ToString();
-            textBox_CraftingProfMod.Text = thisChar.Crafting.Prof.ToString();
-            label_CraftingASMod.Text = thisChar.Crafting.AbilityScoreValue.ToString();
-            label_Crafting.Text = thisChar.Crafting.Value.ToString();
-        }
-
-        private void UpdateSheetDeception(Character thisChar) 
-        {
-            label_Deception.Text = thisChar.Deception.Value.ToString();
-            progressBar_Deception.Value = (int)thisChar.Deception.Prof;
-            textBox_DeceptionItemMod.Text = thisChar.Deception.Item.ToString();
-            textBox_DeceptionProfMod.Text = thisChar.Deception.Prof.ToString();
-            label_DeceptionASMod.Text = thisChar.Deception.AbilityScoreValue.ToString();
-        }
-
-        private void UpdateSheetDiplomacy(Character thisChar)
-        {
-            progressBar_Diplomacy.Value = (int)thisChar.Diplomacy.Prof;
-            textBox_DiplomacyItemMod.Text = thisChar.Diplomacy.Item.ToString();
-            textBox_DiplomacyProfMod.Text = thisChar.Diplomacy.Prof.ToString();
-            label_DiplomacyASMod.Text = thisChar.Diplomacy.AbilityScoreValue.ToString();
-            label_Diplomacy.Text = thisChar.Diplomacy.Value.ToString();
-        }
-
-        private void UpdateSheetIntimidation(Character thisChar)
-        {
-            progressBar_Intimidation.Value = (int)thisChar.Intimidation.Prof;
-            textBox_IntimidationItemMod.Text = thisChar.Intimidation.Item.ToString();
-            textBox_IntimidationProfMod.Text = thisChar.Intimidation.Prof.ToString();
-            label_IntimidationASMod.Text = thisChar.Intimidation.AbilityScoreValue.ToString();
-            label_Intimidation.Text = thisChar.Intimidation.Value.ToString();
-        }
-
-        private void UpdateSheetLore1(Character thisChar)
-        {
-            progressBar_Lore1.Value = (int)thisChar.Lore1.Prof;
-            textBox_Lore1ItemMod.Text = thisChar.Lore1.Item.ToString();
-            textBox_Lore1ProfMod.Text = thisChar.Lore1.Prof.ToString();
-            label_Lore1ASMod.Text = thisChar.Lore1.AbilityScoreValue.ToString();
-            label_Lore1.Text = thisChar.Lore1.Value.ToString(); ;
-            textBox_Lore1SubType.Text = thisChar.Lore1.SubType.ToString();
-        }
-
-        private void UpdateSheetLore2(Character thisChar)
-        {
-            progressBar_Lore2.Value = (int)thisChar.Lore2.Prof;
-            textBox_Lore2ItemMod.Text = thisChar.Lore2.Item.ToString();
-            textBox_Lore2ProfMod.Text = thisChar.Lore2.Prof.ToString();
-            label_Lore2ASMod.Text = thisChar.Lore2.AbilityScoreValue.ToString();
-            label_Lore2.Text = thisChar.Lore2.Value.ToString();
-            textBox_Lore2SubType.Text = thisChar.Lore2.SubType.ToString();
-        }
-
-        private void UpdateSheetMedicine(Character thisChar)
-        {
-            progressBar_Medicine.Value = (int)thisChar.Medicine.Prof;
-            textBox_MedicineItemMod.Text = thisChar.Medicine.Item.ToString();
-            textBox_MedicineProfMod.Text = thisChar.Medicine.Prof.ToString();
-            label_MedicineASMod.Text = thisChar.Medicine.AbilityScoreValue.ToString();
-            label_Medicine.Text = thisChar.Medicine.Value.ToString();
-        }
-
-        private void UpdateSheetNature(Character thisChar)
-        {
-            progressBar_Nature.Value = (int)thisChar.Nature.Prof;
-            textBox_NatureItemMod.Text = thisChar.Nature.Item.ToString();
-            textBox_NatureProfMod.Text = thisChar.Nature.Prof.ToString();
-            label_NatureASMod.Text = thisChar.Nature.AbilityScoreValue.ToString();
-            label_Nature.Text = thisChar.Nature.Value.ToString();
-        }
-
-        private void UpdateSheetOccultism(Character thisChar)
-        {
-            progressBar_Occultism.Value = (int)thisChar.Occultism.Prof;
-            textBox_OccultismItemMod.Text = thisChar.Occultism.Item.ToString();
-            textBox_OccultismProfMod.Text = thisChar.Occultism.Prof.ToString();
-            label_OccultismASMod.Text = thisChar.Occultism.AbilityScoreValue.ToString();
-            label_Occultism.Text = thisChar.Occultism.Value.ToString();
-        }
-
-        private void UpdateSheetPerformance(Character thisChar)
-        {
-            progressBar_Performance.Value = (int)thisChar.Performance.Prof;
-            textBox_PerformanceItemMod.Text = thisChar.Performance.Item.ToString();
-            textBox_PerformanceProfMod.Text = thisChar.Performance.Prof.ToString();
-            label_PerformanceASMod.Text = thisChar.Performance.AbilityScoreValue.ToString();
-            label_Performance.Text = thisChar.Performance.Value.ToString();
-        }
-
-        private void UpdateSheetReligion(Character thisChar)
-        {
-            progressBar_Religion.Value = (int)thisChar.Religion.Prof;
-            textBox_ReligionItemMod.Text = thisChar.Religion.Item.ToString();
-            textBox_ReligionProfMod.Text = thisChar.Religion.Prof.ToString();
-            label_ReligionASMod.Text = thisChar.Religion.AbilityScoreValue.ToString();
-            label_Religion.Text = thisChar.Religion.Value.ToString();
-        }
-
-        private void UpdateSheetSociety(Character thisChar)
-        {
-            progressBar_Society.Value = (int)thisChar.Society.Prof;
-            textBox_SocietyItemMod.Text = thisChar.Society.Item.ToString();
-            textBox_SocietyProfMod.Text = thisChar.Society.Prof.ToString();
-            label_SocietyASMod.Text = thisChar.Society.AbilityScoreValue.ToString();
-            label_Society.Text = thisChar.Society.Value.ToString();
-        }
-
-        private void UpdateSheetStealth(Character thisChar)
-        {
-            progressBar_Stealth.Value = (int)thisChar.Stealth.Prof;
-            textBox_StealthItemMod.Text = thisChar.Stealth.Item.ToString();
-            textBox_StealthProfMod.Text = thisChar.Stealth.Prof.ToString();
-            label_StealthASMod.Text = thisChar.Stealth.AbilityScoreValue.ToString();
-            label_Stealth.Text = thisChar.Stealth.Value.ToString();
-            textBox_StealthArmorMod.Text = thisChar.Stealth.ArmorMod.ToString();
-        }
-
-        private void UpdateSheetSurvival(Character thisChar)
-        {
-            progressBar_Survival.Value = (int)thisChar.Survival.Prof;
-            textBox_SurvivalItemMod.Text = thisChar.Survival.Item.ToString();
-            textBox_SurvivalProfMod.Text = thisChar.Survival.Prof.ToString();
-            label_SurvivalASMod.Text = thisChar.Survival.AbilityScoreValue.ToString();
-            label_Survival.Text = thisChar.Survival.Value.ToString();
-        }
-
-        private void UpdateSheetThievery(Character thisChar)
-        {
-            progressBar_Thievery.Value = (int)thisChar.Thievery.Prof;
-            textBox_ThieveryItemMod.Text = thisChar.Thievery.Item.ToString();
-            textBox_ThieveryProfMod.Text = thisChar.Thievery.Prof.ToString();
-            label_ThieveryASMod.Text = thisChar.Thievery.AbilityScoreValue.ToString();
-            label_Thievery.Text = thisChar.Thievery.Value.ToString();
-            textBox_ThieveryArmorMod.Text = thisChar.Thievery.ArmorMod.ToString();
-        }
-
-        private void UpdateSheetSkills(Character thisChar)
-        {
-            UpdateSheetAcrobatics(thisChar);
-            UpdateSheetArcana(thisChar);
-            UpdateSheetAthletics(thisChar);
-            UpdateSheetCrafting(thisChar);
-            UpdateSheetDeception(thisChar);
-            UpdateSheetDiplomacy(thisChar);
-            UpdateSheetIntimidation(thisChar);
-            UpdateSheetLore1(thisChar);
-            UpdateSheetLore2(thisChar);
-            UpdateSheetMedicine(thisChar);
-            UpdateSheetNature(thisChar);
-            UpdateSheetOccultism(thisChar);
-            UpdateSheetPerformance(thisChar);
-            UpdateSheetReligion(thisChar);
-            UpdateSheetSociety(thisChar);
-            UpdateSheetStealth(thisChar);
-            UpdateSheetSurvival(thisChar);
-            UpdateSheetThievery(thisChar);
         }
 
         // TODO - Complete update language section
@@ -636,29 +412,20 @@ namespace PathFinder_2e_CharacterSheet
             catch { }
         }
 
-        private void UpdateCharacterSkillsFromSheet(Character thisChar)
-        {
-            // Update skills individually, similar to the update methods
-            UpdateCharacterAcrobaticsFromSheet(thisChar);
-            UpdateCharacterArcanaFromSheet(thisChar);
-            UpdateCharacterAthleticsFromSheet(thisChar);
-            UpdateCharacterCraftingFromSheet(thisChar);
-            UpdateCharacterDeceptionFromSheet(thisChar);
-            UpdateCharacterDiplomacyFromSheet(thisChar);
-            UpdateCharacterIntimidationFromSheet(thisChar);
-            UpdateCharacterLore1FromSheet(thisChar);
-            UpdateCharacterLore2FromSheet(thisChar);
-            UpdateCharacterMedicineFromSheet(thisChar);
-            UpdateCharacterNatureFromSheet(thisChar);
-            UpdateCharacterOccultismFromSheet(thisChar);
-            UpdateCharacterPerformanceFromSheet(thisChar);
-            UpdateCharacterReligionFromSheet(thisChar);
-            UpdateCharacterSocietyFromSheet(thisChar);
-            UpdateCharacterStealthFromSheet(thisChar);
-            UpdateCharacterSurvivalFromSheet(thisChar);
-            UpdateCharacterThieveryFromSheet(thisChar);
-        }
+        #region Character Update Functions
+        #region General
+        private void UpdateCharacterNameFromSheet(Character thisChar) { thisChar.CharacterName = textBox_CharacterName.Text; }
+        private void UpdatePlayerNameFromSheet(Character thisChar) { thisChar.PlayerName = textBox_PlayerName.Text; }
+        private void UpdateCurrentXPFromSheet(Character thisChar) { thisChar.XpCurrent = (int)numericUpDown_xpCurrent.Value; }
+        private void UpdateBackgroundFromSheet(Character thisChar) { thisChar.Background = comboBox_Background.Text; }
+        private void UpdateAlignmentFromSheet(Character thisChar) { thisChar.Alignment = comboBox_Alignment.Text; }
+        private void UpdateDeityFromSheet(Character thisChar) { thisChar.Deity = comboBox_Deity.Text; }
+        private void UpdateLevelFromSheet(Character thisChar) { thisChar.Level = (int)numericUpDown_level.Value; }
+        private void UpdateHeroPointsFromSheet(Character thisChar) { thisChar.HeroPoints = (int)numericUpDown_heroPoints.Value; }
 
+        #endregion
+        #region Skills
+        // Acrobatics
         private void UpdateCharacterAcrobaticsFromSheet(Character thisChar)
         {
             thisChar.Acrobatics.Prof = (Proficiency)progressBar_Acrobatics.Value;
@@ -843,6 +610,226 @@ namespace PathFinder_2e_CharacterSheet
             thisChar.Thievery.Value = Convert.ToInt32(label_Thievery.Text);
             thisChar.Thievery.ArmorMod = Convert.ToInt32(textBox_ThieveryArmorMod.Text);
         }
+
+        private void UpdateCharacterSkillsFromSheet(Character thisChar)
+        {
+            // Update skills individually, similar to the update methods
+            UpdateCharacterAcrobaticsFromSheet(thisChar);
+            UpdateCharacterArcanaFromSheet(thisChar);
+            UpdateCharacterAthleticsFromSheet(thisChar);
+            UpdateCharacterCraftingFromSheet(thisChar);
+            UpdateCharacterDeceptionFromSheet(thisChar);
+            UpdateCharacterDiplomacyFromSheet(thisChar);
+            UpdateCharacterIntimidationFromSheet(thisChar);
+            UpdateCharacterLore1FromSheet(thisChar);
+            UpdateCharacterLore2FromSheet(thisChar);
+            UpdateCharacterMedicineFromSheet(thisChar);
+            UpdateCharacterNatureFromSheet(thisChar);
+            UpdateCharacterOccultismFromSheet(thisChar);
+            UpdateCharacterPerformanceFromSheet(thisChar);
+            UpdateCharacterReligionFromSheet(thisChar);
+            UpdateCharacterSocietyFromSheet(thisChar);
+            UpdateCharacterStealthFromSheet(thisChar);
+            UpdateCharacterSurvivalFromSheet(thisChar);
+            UpdateCharacterThieveryFromSheet(thisChar);
+        }
+        #endregion
+
+
+
+        #endregion
+
+        #region Update Sheet Skills
+        private void UpdateSheetAcrobatics(Character thisChar)
+        {
+            progressBar_Acrobatics.Value = (int)thisChar.Acrobatics.Prof;
+            label_Acrobatics.Text = thisChar.Acrobatics.Value.ToString();
+            label_AcrobaticsASMod.Text = thisChar.Acrobatics.AbilityScoreValue.ToString();
+            textBox_AcrobaticsProfMod.Text = thisChar.Acrobatics.Prof.ToString();
+            textBox_AcrobaticsItemMod.Text = thisChar.Acrobatics.Item.ToString();
+            textBox_AcrobaticsArmorMod.Text = thisChar.Acrobatics.ArmorMod.ToString();
+        }
+
+        private void UpdateSheetArcana(Character thisChar)
+        {
+            progressBar_Arcana.Value = (int)thisChar.Arcana.Prof;
+            textBox_ArcanaItemMod.Text = thisChar.Arcana.Item.ToString();
+            textBox_ArcanaProfMod.Text = thisChar.Arcana.Prof.ToString();
+            label_ArcanaASMod.Text = thisChar.Acrobatics.AbilityScoreValue.ToString();
+            label_Arcana.Text = thisChar.Arcana.Value.ToString();
+        }
+
+        private void UpdateSheetAthletics(Character thisChar)
+        {
+            progressBar_Athletics.Value = (int)thisChar.Athletics.Prof;
+            textBox_AthleticsArmorMod.Text = thisChar.Athletics.ArmorMod.ToString();
+            textBox_AthleticsItemMod.Text = thisChar.Athletics.Item.ToString();
+            textBox_AthleticsProfMod.Text = thisChar.Athletics.Prof.ToString();
+            label_AthleticsASMod.Text = thisChar.Athletics.AbilityScoreValue.ToString();
+            label_Athletics.Text = thisChar.Athletics.Value.ToString();
+        }
+
+        private void UpdateSheetCrafting(Character thisChar)
+        {
+            progressBar_Crafting.Value = (int)thisChar.Crafting.Prof;
+            textBox_CraftingItemMod.Text = thisChar.Crafting.Item.ToString();
+            textBox_CraftingProfMod.Text = thisChar.Crafting.Prof.ToString();
+            label_CraftingASMod.Text = thisChar.Crafting.AbilityScoreValue.ToString();
+            label_Crafting.Text = thisChar.Crafting.Value.ToString();
+        }
+
+        private void UpdateSheetDeception(Character thisChar)
+        {
+            label_Deception.Text = thisChar.Deception.Value.ToString();
+            progressBar_Deception.Value = (int)thisChar.Deception.Prof;
+            textBox_DeceptionItemMod.Text = thisChar.Deception.Item.ToString();
+            textBox_DeceptionProfMod.Text = thisChar.Deception.Prof.ToString();
+            label_DeceptionASMod.Text = thisChar.Deception.AbilityScoreValue.ToString();
+        }
+
+        private void UpdateSheetDiplomacy(Character thisChar)
+        {
+            progressBar_Diplomacy.Value = (int)thisChar.Diplomacy.Prof;
+            textBox_DiplomacyItemMod.Text = thisChar.Diplomacy.Item.ToString();
+            textBox_DiplomacyProfMod.Text = thisChar.Diplomacy.Prof.ToString();
+            label_DiplomacyASMod.Text = thisChar.Diplomacy.AbilityScoreValue.ToString();
+            label_Diplomacy.Text = thisChar.Diplomacy.Value.ToString();
+        }
+
+        private void UpdateSheetIntimidation(Character thisChar)
+        {
+            progressBar_Intimidation.Value = (int)thisChar.Intimidation.Prof;
+            textBox_IntimidationItemMod.Text = thisChar.Intimidation.Item.ToString();
+            textBox_IntimidationProfMod.Text = thisChar.Intimidation.Prof.ToString();
+            label_IntimidationASMod.Text = thisChar.Intimidation.AbilityScoreValue.ToString();
+            label_Intimidation.Text = thisChar.Intimidation.Value.ToString();
+        }
+
+        private void UpdateSheetLore1(Character thisChar)
+        {
+            progressBar_Lore1.Value = (int)thisChar.Lore1.Prof;
+            textBox_Lore1ItemMod.Text = thisChar.Lore1.Item.ToString();
+            textBox_Lore1ProfMod.Text = thisChar.Lore1.Prof.ToString();
+            label_Lore1ASMod.Text = thisChar.Lore1.AbilityScoreValue.ToString();
+            label_Lore1.Text = thisChar.Lore1.Value.ToString(); ;
+            textBox_Lore1SubType.Text = thisChar.Lore1.SubType.ToString();
+        }
+
+        private void UpdateSheetLore2(Character thisChar)
+        {
+            progressBar_Lore2.Value = (int)thisChar.Lore2.Prof;
+            textBox_Lore2ItemMod.Text = thisChar.Lore2.Item.ToString();
+            textBox_Lore2ProfMod.Text = thisChar.Lore2.Prof.ToString();
+            label_Lore2ASMod.Text = thisChar.Lore2.AbilityScoreValue.ToString();
+            label_Lore2.Text = thisChar.Lore2.Value.ToString();
+            textBox_Lore2SubType.Text = thisChar.Lore2.SubType.ToString();
+        }
+
+        private void UpdateSheetMedicine(Character thisChar)
+        {
+            progressBar_Medicine.Value = (int)thisChar.Medicine.Prof;
+            textBox_MedicineItemMod.Text = thisChar.Medicine.Item.ToString();
+            textBox_MedicineProfMod.Text = thisChar.Medicine.Prof.ToString();
+            label_MedicineASMod.Text = thisChar.Medicine.AbilityScoreValue.ToString();
+            label_Medicine.Text = thisChar.Medicine.Value.ToString();
+        }
+
+        private void UpdateSheetNature(Character thisChar)
+        {
+            progressBar_Nature.Value = (int)thisChar.Nature.Prof;
+            textBox_NatureItemMod.Text = thisChar.Nature.Item.ToString();
+            textBox_NatureProfMod.Text = thisChar.Nature.Prof.ToString();
+            label_NatureASMod.Text = thisChar.Nature.AbilityScoreValue.ToString();
+            label_Nature.Text = thisChar.Nature.Value.ToString();
+        }
+
+        private void UpdateSheetOccultism(Character thisChar)
+        {
+            progressBar_Occultism.Value = (int)thisChar.Occultism.Prof;
+            textBox_OccultismItemMod.Text = thisChar.Occultism.Item.ToString();
+            textBox_OccultismProfMod.Text = thisChar.Occultism.Prof.ToString();
+            label_OccultismASMod.Text = thisChar.Occultism.AbilityScoreValue.ToString();
+            label_Occultism.Text = thisChar.Occultism.Value.ToString();
+        }
+
+        private void UpdateSheetPerformance(Character thisChar)
+        {
+            progressBar_Performance.Value = (int)thisChar.Performance.Prof;
+            textBox_PerformanceItemMod.Text = thisChar.Performance.Item.ToString();
+            textBox_PerformanceProfMod.Text = thisChar.Performance.Prof.ToString();
+            label_PerformanceASMod.Text = thisChar.Performance.AbilityScoreValue.ToString();
+            label_Performance.Text = thisChar.Performance.Value.ToString();
+        }
+
+        private void UpdateSheetReligion(Character thisChar)
+        {
+            progressBar_Religion.Value = (int)thisChar.Religion.Prof;
+            textBox_ReligionItemMod.Text = thisChar.Religion.Item.ToString();
+            textBox_ReligionProfMod.Text = thisChar.Religion.Prof.ToString();
+            label_ReligionASMod.Text = thisChar.Religion.AbilityScoreValue.ToString();
+            label_Religion.Text = thisChar.Religion.Value.ToString();
+        }
+
+        private void UpdateSheetSociety(Character thisChar)
+        {
+            progressBar_Society.Value = (int)thisChar.Society.Prof;
+            textBox_SocietyItemMod.Text = thisChar.Society.Item.ToString();
+            textBox_SocietyProfMod.Text = thisChar.Society.Prof.ToString();
+            label_SocietyASMod.Text = thisChar.Society.AbilityScoreValue.ToString();
+            label_Society.Text = thisChar.Society.Value.ToString();
+        }
+
+        private void UpdateSheetStealth(Character thisChar)
+        {
+            progressBar_Stealth.Value = (int)thisChar.Stealth.Prof;
+            textBox_StealthItemMod.Text = thisChar.Stealth.Item.ToString();
+            textBox_StealthProfMod.Text = thisChar.Stealth.Prof.ToString();
+            label_StealthASMod.Text = thisChar.Stealth.AbilityScoreValue.ToString();
+            label_Stealth.Text = thisChar.Stealth.Value.ToString();
+            textBox_StealthArmorMod.Text = thisChar.Stealth.ArmorMod.ToString();
+        }
+
+        private void UpdateSheetSurvival(Character thisChar)
+        {
+            progressBar_Survival.Value = (int)thisChar.Survival.Prof;
+            textBox_SurvivalItemMod.Text = thisChar.Survival.Item.ToString();
+            textBox_SurvivalProfMod.Text = thisChar.Survival.Prof.ToString();
+            label_SurvivalASMod.Text = thisChar.Survival.AbilityScoreValue.ToString();
+            label_Survival.Text = thisChar.Survival.Value.ToString();
+        }
+
+        private void UpdateSheetThievery(Character thisChar)
+        {
+            progressBar_Thievery.Value = (int)thisChar.Thievery.Prof;
+            textBox_ThieveryItemMod.Text = thisChar.Thievery.Item.ToString();
+            textBox_ThieveryProfMod.Text = thisChar.Thievery.Prof.ToString();
+            label_ThieveryASMod.Text = thisChar.Thievery.AbilityScoreValue.ToString();
+            label_Thievery.Text = thisChar.Thievery.Value.ToString();
+            textBox_ThieveryArmorMod.Text = thisChar.Thievery.ArmorMod.ToString();
+        }
+
+        private void UpdateSheetSkills(Character thisChar)
+        {
+            UpdateSheetAcrobatics(thisChar);
+            UpdateSheetArcana(thisChar);
+            UpdateSheetAthletics(thisChar);
+            UpdateSheetCrafting(thisChar);
+            UpdateSheetDeception(thisChar);
+            UpdateSheetDiplomacy(thisChar);
+            UpdateSheetIntimidation(thisChar);
+            UpdateSheetLore1(thisChar);
+            UpdateSheetLore2(thisChar);
+            UpdateSheetMedicine(thisChar);
+            UpdateSheetNature(thisChar);
+            UpdateSheetOccultism(thisChar);
+            UpdateSheetPerformance(thisChar);
+            UpdateSheetReligion(thisChar);
+            UpdateSheetSociety(thisChar);
+            UpdateSheetStealth(thisChar);
+            UpdateSheetSurvival(thisChar);
+            UpdateSheetThievery(thisChar);
+        }
+        #endregion
 
         private void label_Diplomacy_Click(object sender, EventArgs e)
         {
@@ -1149,7 +1136,6 @@ namespace PathFinder_2e_CharacterSheet
             if (armorIndex >= pBarList.Count - 1) { armorIndex = 0; }
             else { armorIndex++; }
             progressBar.Value = pBarList[armorIndex].Value;
-
             pBarPaired = pairedObjects.TryGetValue(progressBar, out obj);
             if (!pBarPaired)
             {

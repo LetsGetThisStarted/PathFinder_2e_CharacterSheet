@@ -85,7 +85,7 @@
   <ItemGroup>
     <Compile Include="CharacterHeader.cs" />
     <Compile Include="CharacterClass.cs" />
-    <Compile Include="TDFunctions.cs" />
+    <Compile Include="Common.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

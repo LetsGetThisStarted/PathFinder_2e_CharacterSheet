@@ -2699,7 +2699,6 @@
             this.listBox_ResistAndImmune.Size = new System.Drawing.Size(162, 43);
             this.listBox_ResistAndImmune.Sorted = true;
             this.listBox_ResistAndImmune.TabIndex = 268;
-            this.listBox_ResistAndImmune.SelectedIndexChanged += new System.EventHandler(this.listBox_ResistAndImmune_SelectedIndexChanged);
             // 
             // listBox_Conditions
             // 
